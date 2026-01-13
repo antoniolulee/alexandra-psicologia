@@ -426,6 +426,3 @@ Quiero que me ayudes a mejorar el SEO para el posicionamiento en google de esta 
 Blog
 
 Crear cuenta de email
-
-
-Cookies popup
