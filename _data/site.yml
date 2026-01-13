@@ -160,23 +160,23 @@ specialties:
     - title: "Bienestar Emocional"
       items:
         - name: "Ansiedad y Estrés"
-          desc: "Herramientas para recuperar la calma y el control."
+          desc: "Terapia para gestionar la ansiedad, ataques de pánico y el estrés crónico."
         - name: "Depresión"
-          desc: "Reactivación conductual y trabajo cognitivo."
+          desc: "Reactivación conductual y terapia cognitiva para recuperar la vitalidad."
         - name: "Autoestima"
-          desc: "Fortalecimiento del autoconcepto y la autovalía."
+          desc: "Fortalecimiento del autoconcepto, la seguridad y la autovalía."
         - name: "Duelo"
-          desc: "Acompañamiento compasivo ante la pérdida."
+          desc: "Acompañamiento compasivo para procesar la pérdida y el dolor."
     - title: "Neurodivergencia y Obsesiones"
       items:
         - name: "TDAH Adultos"
-          desc: "Estrategias ejecutivas y gestión emocional."
+          desc: "Estrategias ejecutivas y regulación emocional para adultos con TDAH."
         - name: "TOC"
-          desc: "Trastorno Obsesivo-Compulsivo y pensamientos intrusivos."
+          desc: "Tratamiento del Trastorno Obsesivo-Compulsivo y pensamientos intrusivos."
         - name: "Altas Capacidades"
-          desc: "Gestión de la intensidad emocional y el perfeccionismo."
+          desc: "Gestión de la intensidad emocional y el perfeccionismo en PAS/AACC."
         - name: "Desregulación Emocional"
-          desc: "Aprender a gestionar la intensidad sin desbordarte."
+          desc: "Aprender a gestionar la intensidad emocional sin desbordarte."
 
 # ============================================
 # FOOTER
