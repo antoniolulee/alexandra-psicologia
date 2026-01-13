@@ -1,0 +1,178 @@
+# ============================================
+# IDENTIDAD
+# ============================================
+identity:
+  name: "Alexandra Barroso"
+  title: "Psicóloga Clínica"
+  tagline: "Encuentra tu equilibrio, transforma tu vida"
+  subtitle: "Terapia online personalizada para mujeres y adolescentes"
+  credentials: "Psicóloga Colegiada M-XXXXX · Universidad Complutense de Madrid"
+  location: "Madrid, España"
+
+# ============================================
+# CONTACTO
+# ============================================
+contact:
+  whatsapp: "34600000000"
+  whatsapp_msg: "Hola Alexandra, me gustaría recibir información sobre tus servicios de terapia online."
+  email: "contacto@alexandrabarroso.com"
+  instagram: "https://instagram.com/alexandrabarroso.psicologa"
+
+# ============================================
+# NAVEGACIÓN
+# ============================================
+nav:
+  - text: "Inicio"
+    url: "#inicio"
+  - text: "Sobre Mí"
+    url: "#sobre-mi"
+  - text: "Servicios"
+    url: "#servicios"
+  - text: "FAQ"
+    url: "#faq"
+cta_text: "Solicita Valoración"
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  title_emotional: "Recupera tu bienestar emocional"
+  title_professional: "Psicóloga Clínica Online Colegiada"
+  subtitle: "Acompañamiento terapéutico personalizado desde la comodidad de tu hogar. Sin desplazamientos, sin esperas."
+  cta_primary: "Agenda tu primera sesión"
+  cta_secondary: "Conoce mi metodología"
+  image: "/assets/images/alexandra-hero.jpg"
+
+# ============================================
+# TRUST BAR (MEDIOS)
+# ============================================
+trust_bar:
+  title: "Colaboradora habitual de"
+  logos:
+    - name: "RNE"
+      image: "/assets/images/logos/rne.svg"
+    - name: "El País"
+      image: "/assets/images/logos/elpais.svg"
+    - name: "Vogue"
+      image: "/assets/images/logos/vogue.svg"
+    - name: "Cosmopolitan"
+      image: "/assets/images/logos/cosmopolitan.svg"
+
+# ============================================
+# SOBRE MÍ
+# ============================================
+about:
+  title: "Hola, soy Alexandra"
+  image: "/assets/images/alexandra-about.jpg"
+  bio_intro: "Psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de transformación personal."
+  bio_main: |
+    Mi enfoque terapéutico se aleja de las plataformas masivas donde te asignan un profesional al azar. 
+    Aquí encontrarás un espacio íntimo, seguro y exclusivo donde trabajaremos juntas en tus objetivos.
+
+    Cada proceso es único, por eso no tengo cupos ilimitados. Trabajo con un número reducido de pacientes 
+    para poder ofrecerte la atención personalizada que mereces.
+  bio_boutique: "Sin intermediarios. Sin algoritmos. Sin prisas. Solo tú y yo trabajando en tu bienestar."
+  signature: "Alexandra"
+
+# ============================================
+# ¿PARA QUIÉN ES?
+# ============================================
+for_whom:
+  title: "¿Te identificas?"
+  subtitle: "Mi terapia está diseñada para ti si..."
+  profiles:
+    - icon: "briefcase"
+      title: "Mujeres profesionales"
+      description: "Que buscan equilibrar su vida laboral y personal sin sacrificar su bienestar emocional."
+    - icon: "heart"
+      title: "Adolescentes"
+      description: "Que atraviesan momentos de incertidumbre y necesitan herramientas para gestionar sus emociones."
+    - icon: "cloud"
+      title: "Personas con ansiedad"
+      description: "Que sienten que la preocupación constante les impide disfrutar del presente."
+    - icon: "refresh"
+      title: "En proceso de cambio"
+      description: "Que atraviesan transiciones vitales y necesitan apoyo profesional para navegarlas."
+
+# ============================================
+# SERVICIOS
+# ============================================
+services:
+  title: "Servicios"
+  subtitle: "Terapia online adaptada a tus necesidades"
+  items:
+    - title: "Terapia Individual"
+      description: "Sesiones 100% online de 50-60 minutos. Un espacio seguro para explorar tus emociones y desarrollar herramientas de afrontamiento."
+      features:
+        - "Flexibilidad horaria"
+        - "Sin desplazamientos"
+        - "Confidencialidad garantizada"
+      price: "80€"
+      price_note: "por sesión"
+    - title: "Terapia para Adolescentes"
+      description: "Acompañamiento especializado para jóvenes de 12-18 años. Incluyo sesiones de orientación familiar."
+      features:
+        - "Adaptada a su lenguaje"
+        - "Coordinación con padres"
+        - "Herramientas prácticas"
+      price: "80€"
+      price_note: "por sesión"
+    - title: "Sesión de Valoración"
+      description: "Primera toma de contacto para conocernos y evaluar juntas si mi enfoque es el adecuado para ti."
+      features:
+        - "30 minutos"
+        - "Sin compromiso"
+        - "Orientación inicial"
+      price: "Gratuita"
+      price_note: ""
+
+# ============================================
+# TESTIMONIOS
+# ============================================
+testimonials:
+  title: "Lo que dicen de mí"
+  subtitle: "Experiencias reales de transformación"
+  items:
+    - text: "Después de años buscando a la profesional adecuada, encontré en Alexandra exactamente lo que necesitaba. Su enfoque cercano pero profesional me ayudó a superar mi ansiedad laboral en pocos meses."
+      author: "Directiva de marketing"
+      age: "42 años"
+    - text: "Como madre, ver la transformación de mi hija ha sido increíble. Alexandra conectó con ella desde la primera sesión y le dio herramientas que usa a diario."
+      author: "Madre de adolescente"
+      age: "48 años"
+    - text: "La flexibilidad de las sesiones online fue clave para poder compatibilizarlo con mi trabajo. Alexandra me ayudó a poner límites sanos y recuperar mi equilibrio."
+      author: "Emprendedora"
+      age: "35 años"
+
+# ============================================
+# FAQ
+# ============================================
+faq:
+  title: "Preguntas Frecuentes"
+  subtitle: "Todo lo que necesitas saber antes de empezar"
+  items:
+    - question: "¿Es efectiva la terapia online?"
+      answer: "Absolutamente. Numerosos estudios científicos demuestran que la terapia online tiene la misma efectividad que la presencial. Además, ofrece ventajas como mayor flexibilidad horaria, eliminación de desplazamientos y la comodidad de realizarla desde tu espacio seguro."
+    - question: "¿Cuánto dura una sesión y cuál es el precio?"
+      answer: "Las sesiones tienen una duración de 50-60 minutos y el precio es de 80€ por sesión. Ofrezco una primera sesión de valoración gratuita de 30 minutos para conocernos y evaluar si mi enfoque es el adecuado para ti."
+    - question: "¿Cómo funciona el pago?"
+      answer: "El pago se realiza por transferencia bancaria o mediante un enlace seguro con tarjeta de crédito/débito. Recibirás la factura correspondiente tras cada sesión."
+    - question: "¿Qué diferencia hay con otras plataformas de psicología online?"
+      answer: "A diferencia de las plataformas masivas donde te asignan un profesional según disponibilidad, aquí trabajarás directamente conmigo. No hay intermediarios, algoritmos ni rotación de psicólogos. Es un servicio boutique donde priorizo la calidad sobre la cantidad."
+    - question: "¿Cómo es la primera sesión?"
+      answer: "En la primera sesión de valoración (gratuita) nos conoceremos, exploraremos qué te trae a terapia y evaluaremos juntas si mi enfoque terapéutico encaja con lo que necesitas. Si decidimos continuar, planificaremos las siguientes sesiones."
+    - question: "¿Qué necesito para las sesiones online?"
+      answer: "Solo necesitas un dispositivo con cámara y micrófono (ordenador, tablet o móvil), conexión a internet estable, y un espacio privado donde te sientas cómoda. Utilizamos plataformas seguras y cifradas para garantizar la confidencialidad."
+
+# ============================================
+# FOOTER
+# ============================================
+footer:
+  copyright: "Alexandra Barroso - Psicóloga Clínica"
+  location_seo: "Servicio de Psicología Online desde Madrid, España para todo el mundo"
+  legal_links:
+    - text: "Aviso Legal"
+      url: "/legal"
+    - text: "Política de Privacidad"
+      url: "/privacidad"
+    - text: "Cookies"
+      url: "/cookies"

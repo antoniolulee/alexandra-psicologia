@@ -1,0 +1,28 @@
+# ============================================
+# ARTÍCULOS (SEO Long-Tail)
+# ============================================
+
+items:
+  - title: "Ansiedad vs Estrés: Cómo Diferenciarlos y Qué Hacer"
+    slug: "ansiedad-vs-estres"
+    excerpt: "Aprende a identificar si lo que sientes es ansiedad o estrés, y descubre estrategias prácticas para manejar ambos."
+    date: "2026-01-10"
+    category: "Bienestar Emocional"
+    reading_time: "5 min"
+    image: "/assets/images/articles/ansiedad-estres.jpg"
+
+  - title: "El Apego Ansioso en las Relaciones: Señales y Soluciones"
+    slug: "apego-ansioso-relaciones"
+    excerpt: "Descubre cómo el estilo de apego ansioso afecta tus relaciones y qué puedes hacer para desarrollar vínculos más seguros."
+    date: "2026-01-05"
+    category: "Relaciones"
+    reading_time: "7 min"
+    image: "/assets/images/articles/apego-ansioso.jpg"
+
+  - title: "Cómo Hablar con tu Hija Adolescente sobre Salud Mental"
+    slug: "hablar-adolescente-salud-mental"
+    excerpt: "Guía práctica para padres que quieren abrir conversaciones sobre emociones y bienestar con sus hijos adolescentes."
+    date: "2025-12-28"
+    category: "Adolescentes"
+    reading_time: "6 min"
+    image: "/assets/images/articles/adolescentes.jpg"

@@ -1,0 +1,52 @@
+<!-- About Section -->
+<section id="sobre-mi" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Image -->
+      <div class="relative">
+        <div class="relative aspect-[3/4] max-w-md mx-auto lg:max-w-none">
+          <!-- Decorative accent -->
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/10 dark:bg-dark-accent/10 rounded-lg"></div>
+
+          <img src="{{ site.data.site.about.image }}" alt="{{ site.data.site.identity.name }}"
+            class="relative w-full h-full object-cover rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div>
+        <h2
+          class="font-heading text-3xl md:text-4xl lg:text-5xl text-text dark:text-dark-text leading-heading tracking-heading mb-6">
+          {{ site.data.site.about.title }}
+        </h2>
+
+        <p class="text-lg text-primary dark:text-dark-primary font-medium mb-6">
+          {{ site.data.site.about.bio_intro }}
+        </p>
+
+        <div class="prose prose-lg text-text-muted dark:text-dark-text-muted mb-8 space-y-4">
+          {{ site.data.site.about.bio_main | markdownify }}
+        </div>
+
+        <!-- Boutique Message -->
+        <div
+          class="p-6 bg-primary/5 dark:bg-dark-primary/10 border-l-4 border-accent dark:border-dark-accent rounded-r-lg mb-8">
+          <p class="text-text dark:text-dark-text italic">
+            "{{ site.data.site.about.bio_boutique }}"
+          </p>
+        </div>
+
+        <!-- Credentials -->
+        <p class="text-sm text-text-muted dark:text-dark-text-muted uppercase tracking-wide mb-6">
+          {{ site.data.site.identity.credentials }}
+        </p>
+
+        <!-- Signature -->
+        <p class="font-accent text-4xl text-primary dark:text-dark-primary">
+          {{ site.data.site.about.signature }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

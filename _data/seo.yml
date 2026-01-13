@@ -1,0 +1,52 @@
+# ============================================
+# CONFIGURACIÓN SEO
+# ============================================
+
+# Meta Tags Principales
+meta:
+  title: "Alexandra Barroso | Psicóloga Clínica Online Colegiada"
+  description: "Psicóloga clínica colegiada en Madrid. Terapia online para mujeres y adolescentes. Ansiedad, estrés, autoestima. Primera valoración gratuita."
+  keywords:
+    - "psicóloga online"
+    - "psicóloga clínica Madrid"
+    - "terapia online España"
+    - "psicóloga para mujeres"
+    - "psicóloga adolescentes"
+    - "ansiedad terapia online"
+    - "psicóloga colegiada"
+
+# Open Graph (Facebook, LinkedIn, WhatsApp)
+og:
+  type: "website"
+  image: "/assets/images/og-image.jpg"
+  image_alt: "Alexandra Barroso - Psicóloga Clínica Online"
+  locale: "es_ES"
+
+# Twitter Cards
+twitter:
+  card: "summary_large_image"
+  site: "@alexandrabarroso"
+  image: "/assets/images/twitter-card.jpg"
+
+# Schema.org (JSON-LD)
+schema:
+  type: "Psychologist"
+  name: "Alexandra Barroso"
+  description: "Psicóloga clínica colegiada especializada en terapia online para mujeres y adolescentes."
+  url: "https://alexandrabarroso.com"
+  telephone: "+34600000000"
+  email: "contacto@alexandrabarroso.com"
+  address:
+    type: "PostalAddress"
+    addressLocality: "Madrid"
+    addressCountry: "ES"
+  geo:
+    latitude: "40.4168"
+    longitude: "-3.7038"
+  priceRange: "€€"
+  areaServed: "ES"
+  availableLanguage:
+    - "Spanish"
+    - "English"
+  sameAs:
+    - "https://instagram.com/alexandrabarroso.psicologa"

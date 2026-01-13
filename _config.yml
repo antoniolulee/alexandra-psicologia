@@ -1,0 +1,32 @@
+# Jekyll configuration
+title: "Alexandra Barroso | Psicóloga Clínica Online"
+description: "Psicóloga clínica colegiada especializada en terapia online para mujeres y adolescentes. Sesiones 100% online. Sin intermediarios."
+url: "https://alexandrabarroso.com"
+baseurl: ""
+lang: "es"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins (GitHub Pages whitelist)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+
+# Collections
+collections_dir: collections
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

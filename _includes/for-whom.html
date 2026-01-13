@@ -1,0 +1,60 @@
+<!-- For Whom Section -->
+<section class="py-16 lg:py-24 bg-secondary-alt dark:bg-dark-secondary-alt transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2
+        class="font-heading text-3xl md:text-4xl lg:text-5xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
+        {{ site.data.site.for_whom.title }}
+      </h2>
+      <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
+        {{ site.data.site.for_whom.subtitle }}
+      </p>
+    </div>
+
+    <!-- Profiles Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {% for profile in site.data.site.for_whom.profiles %}
+      <div
+        class="group p-8 bg-white dark:bg-dark-secondary rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-border dark:border-dark-border hover:border-primary/30 dark:hover:border-dark-primary/30">
+
+        <!-- Icon -->
+        <div
+          class="w-14 h-14 mb-6 flex items-center justify-center rounded-full bg-primary/10 dark:bg-dark-primary/10 text-primary dark:text-dark-primary group-hover:bg-primary dark:group-hover:bg-dark-primary group-hover:text-white transition-all duration-300">
+          {% if profile.icon == "briefcase" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          {% elsif profile.icon == "heart" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          {% elsif profile.icon == "cloud" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+          </svg>
+          {% elsif profile.icon == "refresh" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          {% endif %}
+        </div>
+
+        <h3 class="font-heading text-xl text-text dark:text-dark-text mb-3">
+          {{ profile.title }}
+        </h3>
+
+        <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed">
+          {{ profile.description }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
