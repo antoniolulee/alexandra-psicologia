@@ -235,6 +235,34 @@ about:
   image: "/assets/images/alexandra-about.jpg"
 ```
 
+### Gestionar Redes Sociales (Instagram/LinkedIn)
+
+Actualmente Instagram y LinkedIn están **desactivados** (ocultos). Para activarlos:
+
+**1. Instagram (Footer):**
+Edita `_data/site.yml` y elimina el símbolo `#` al inicio de la línea:
+
+```yaml
+contact:
+  # Antes (oculto):
+  # instagram: "https://instagram.com/..."
+  
+  # Después (visible):
+  instagram: "https://instagram.com/tu-usuario"
+```
+
+**2. LinkedIn (SEO Schema):**
+Edita `_data/seo.yml`:
+
+```yaml
+sameAs:
+  # Antes (oculto):
+  # - "https://linkedin.com/in/..."
+  
+  # Después (visible):
+  - "https://linkedin.com/in/tu-usuario"
+```
+
 ---
 
 ## 🔧 Solución de Problemas
@@ -389,3 +417,16 @@ Si usas un asistente de IA (como Cursor, GitHub Copilot, etc.), puedes preguntar
 - "¿Cómo subo esto a producción?"
 
 La estructura de este proyecto está diseñada para que sea fácil de entender tanto para humanos como para IAs.
+
+
+
+Quiero que me ayudes a mejorar el SEO para el posicionamiento en google de esta pagina web. Analiza los keyword y dime que más deberia poner, psicologia perinatal, MDR, infertilidad, ansiedad depresion, transtorno obsesibo, trauma, apego, duelo, TDAH, transtornos de personalidad, autoestima
+
+
+Blog
+
+Crear cuenta de email
+
+viso Legal
+Política de Privacidad
+Cookies

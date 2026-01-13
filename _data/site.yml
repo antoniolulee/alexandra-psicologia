@@ -4,8 +4,8 @@
 identity:
   name: "Alexandra Barroso"
   title: "Psicóloga Clínica"
-  tagline: "Encuentra tu equilibrio, transforma tu vida"
-  subtitle: "Terapia online personalizada para mujeres y adolescentes"
+  tagline: "Psicóloga Online experta en Ansiedad, Trauma (EMDR) y Salud Perinatal. Terapia personalizada sin desplazamientos."
+  subtitle: "Un vínculo seguro para sanar y crecer"
   credentials: "Psicóloga Colegiada M-XXXXX · Universidad Complutense de Madrid"
   location: "Madrid, España"
 
@@ -13,10 +13,11 @@ identity:
 # CONTACTO
 # ============================================
 contact:
-  whatsapp: "34600000000"
+  # Nota: El teléfono se gestiona en _data/seo.yml
+
   whatsapp_msg: "Hola Alexandra, me gustaría recibir información sobre tus servicios de terapia online."
   email: "contacto@alexandrabarroso.com"
-  instagram: "https://instagram.com/alexandrabarroso.psicologa"
+  # instagram: "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar
 
 # ============================================
 # NAVEGACIÓN
@@ -26,8 +27,7 @@ nav:
     url: "#inicio"
   - text: "Sobre Mí"
     url: "#sobre-mi"
-  - text: "Servicios"
-    url: "#servicios"
+
   - text: "FAQ"
     url: "#faq"
 cta_text: "Solicita Valoración"
@@ -38,7 +38,7 @@ cta_text: "Solicita Valoración"
 hero:
   title_emotional: "Recupera tu bienestar emocional"
   title_professional: "Psicóloga Clínica Online Colegiada"
-  subtitle: "Acompañamiento terapéutico personalizado desde la comodidad de tu hogar. Sin desplazamientos, sin esperas."
+  subtitle: "Un vínculo seguro para sanar y crecer"
   cta_primary: "Agenda tu primera sesión"
   cta_secondary: "Conoce mi metodología"
   image: "/assets/images/alexandra-hero.jpg"
@@ -94,37 +94,6 @@ for_whom:
       title: "En proceso de cambio"
       description: "Que atraviesan transiciones vitales y necesitan apoyo profesional para navegarlas."
 
-# ============================================
-# SERVICIOS
-# ============================================
-services:
-  title: "Servicios"
-  subtitle: "Terapia online adaptada a tus necesidades"
-  items:
-    - title: "Terapia Individual"
-      description: "Sesiones 100% online de 50-60 minutos. Un espacio seguro para explorar tus emociones y desarrollar herramientas de afrontamiento."
-      features:
-        - "Flexibilidad horaria"
-        - "Sin desplazamientos"
-        - "Confidencialidad garantizada"
-      price: "80€"
-      price_note: "por sesión"
-    - title: "Terapia para Adolescentes"
-      description: "Acompañamiento especializado para jóvenes de 12-18 años. Incluyo sesiones de orientación familiar."
-      features:
-        - "Adaptada a su lenguaje"
-        - "Coordinación con padres"
-        - "Herramientas prácticas"
-      price: "80€"
-      price_note: "por sesión"
-    - title: "Sesión de Valoración"
-      description: "Primera toma de contacto para conocernos y evaluar juntas si mi enfoque es el adecuado para ti."
-      features:
-        - "30 minutos"
-        - "Sin compromiso"
-        - "Orientación inicial"
-      price: "Gratuita"
-      price_note: ""
 
 # ============================================
 # TESTIMONIOS
@@ -162,6 +131,52 @@ faq:
       answer: "En la primera sesión de valoración (gratuita) nos conoceremos, exploraremos qué te trae a terapia y evaluaremos juntas si mi enfoque terapéutico encaja con lo que necesitas. Si decidimos continuar, planificaremos las siguientes sesiones."
     - question: "¿Qué necesito para las sesiones online?"
       answer: "Solo necesitas un dispositivo con cámara y micrófono (ordenador, tablet o móvil), conexión a internet estable, y un espacio privado donde te sientas cómoda. Utilizamos plataformas seguras y cifradas para garantizar la confidencialidad."
+
+# ============================================
+# ESPECIALIDADES (SEO)
+# ============================================
+specialties:
+  title: "Áreas de Intervención"
+  subtitle: "Abordaje especializado en problemas complejos"
+  categories:
+    - title: "Salud de la Mujer"
+      items:
+        - name: "Psicología Perinatal"
+          desc: "Acompañamiento en embarazo, parto y posparto."
+        - name: "Infertilidad"
+          desc: "Apoyo emocional en procesos de reproducción asistida."
+        - name: "Duelo Gestacional"
+          desc: "Apoyo y validación tras la pérdida de un embarazo."
+        - name: "Trauma de Parto"
+          desc: "Sanar experiencias difíciles vividas durante el nacimiento."
+    - title: "Trauma y Apego"
+      items:
+        - name: "Terapia EMDR"
+          desc: "Procesamiento de traumas y experiencias adversas."
+        - name: "Trastornos de Personalidad"
+          desc: "Trabajo profundo sobre patrones relacionales y de identidad."
+        - name: "Apego"
+          desc: "Sanar heridas vinculares para mejorar tus relaciones."
+    - title: "Bienestar Emocional"
+      items:
+        - name: "Ansiedad y Estrés"
+          desc: "Herramientas para recuperar la calma y el control."
+        - name: "Depresión"
+          desc: "Reactivación conductual y trabajo cognitivo."
+        - name: "Autoestima"
+          desc: "Fortalecimiento del autoconcepto y la autovalía."
+        - name: "Duelo"
+          desc: "Acompañamiento compasivo ante la pérdida."
+    - title: "Neurodivergencia y Obsesiones"
+      items:
+        - name: "TDAH Adultos"
+          desc: "Estrategias ejecutivas y gestión emocional."
+        - name: "TOC"
+          desc: "Trastorno Obsesivo-Compulsivo y pensamientos intrusivos."
+        - name: "Altas Capacidades"
+          desc: "Gestión de la intensidad emocional y el perfeccionismo."
+        - name: "Desregulación Emocional"
+          desc: "Aprender a gestionar la intensidad sin desbordarte."
 
 # ============================================
 # FOOTER

@@ -5,15 +5,22 @@
 # Meta Tags Principales
 meta:
   title: "Alexandra Barroso | Psicóloga Clínica Online Colegiada"
-  description: "Psicóloga clínica colegiada en Madrid. Terapia online para mujeres y adolescentes. Ansiedad, estrés, autoestima. Primera valoración gratuita."
+  # Estrategia: Keyword principal "Online" + Autoridad "Colegiada" + Alcance "España"
+  description: "Psicóloga clínica colegiada. Terapia online experta para adultos en toda España. Especialista en ansiedad, estrés y autoestima. Primera valoración gratuita."
   keywords:
-    - "psicóloga online"
-    - "psicóloga clínica Madrid"
-    - "terapia online España"
-    - "psicóloga para mujeres"
-    - "psicóloga adolescentes"
-    - "ansiedad terapia online"
-    - "psicóloga colegiada"
+    - "psicóloga online españa"
+    - "terapia online ansiedad"
+    - "psicóloga clínica online"
+    - "psicóloga valencia online"
+    - "psicología perinatal"
+    - "terapia EMDR online"
+    - "tratamiento infertilidad psicología"
+    - "terapia trauma y apego"
+    - "psicóloga especialista TDAH adultos"
+    - "trastorno obsesivo compulsivo TOC"
+    - "terapia duelo online"
+    - "trastornos de personalidad"
+    - "autoestima y crecimiento personal"
 
 # Open Graph (Facebook, LinkedIn, WhatsApp)
 og:
@@ -29,24 +36,68 @@ twitter:
   image: "/assets/images/twitter-card.jpg"
 
 # Schema.org (JSON-LD)
+# Definimos "Psychologist" con énfasis en servicio virtual
 schema:
   type: "Psychologist"
   name: "Alexandra Barroso"
-  description: "Psicóloga clínica colegiada especializada en terapia online para mujeres y adolescentes."
+  description: "Psicóloga clínica colegiada especializada en terapia online para adultos. Experta en Psicología Perinatal, EMDR, Trauma y Apego."
   url: "https://alexandrabarroso.com"
-  telephone: "+34600000000"
+  telephone: "+34644873567"
   email: "contacto@alexandrabarroso.com"
+  
+  # Especialidades médicas / psicológicas
+  medicalSpecialty:
+    - "Psychology"
+    - "Clinical Psychology"
+  
+  knowsAbout:
+    - "Psicología Perinatal"
+    - "EMDR"
+    - "Infertilidad"
+    - "Ansiedad"
+    - "Depresión"
+    - "Trauma"
+    - "Apego"
+    - "Duelo"
+    - "TDAH en adultos"
+    - "Trastorno Obsesivo-Compulsivo (TOC)"
+    - "Trastornos de Personalidad"
+    - "Autoestima"
+
+  # Dirección física real (Valencia) para Google My Business y confianza
+  # Aunque el servicio sea online, Google necesita ubicar al profesional en un sitio.
   address:
     type: "PostalAddress"
-    addressLocality: "Madrid"
+    addressLocality: "Valencia"
+    addressRegion: "Valencia"
     addressCountry: "ES"
+  
+  # Coordenadas de Valencia (centro aprox)
   geo:
-    latitude: "40.4168"
-    longitude: "-3.7038"
+    latitude: "39.4699"
+    longitude: "-0.3763"
+  
   priceRange: "€€"
-  areaServed: "ES"
+  
+  # CRÍTICO: Definir que el servicio es para toda España
+  areaServed: 
+    type: "Country"
+    name: "España"
+  
+  # Propiedad específica para indicar servicio online (si es soportado por Google)
+  availableService:
+    type: "PsychologicalTreatment"
+    serviceType: "Online Therapy"
+    availableChannel:
+      type: "ServiceChannel"
+      serviceUrl: "https://alexandrabarroso.com"
+      serviceLocation:
+        type: "VirtualLocation"
+
   availableLanguage:
     - "Spanish"
     - "English"
+  
   sameAs:
-    - "https://instagram.com/alexandrabarroso.psicologa"
+    # - "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar
+    # - "https://linkedin.com/in/alexandrabarroso" # Descomentar para activar

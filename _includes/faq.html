@@ -52,7 +52,7 @@
       <p class="text-text-muted dark:text-dark-text-muted mb-4">
         ¿Tienes más preguntas?
       </p>
-      <a href="https://wa.me/{{ site.data.site.contact.whatsapp }}?text={{ site.data.site.contact.whatsapp_msg | url_encode }}"
+      <a href="https://wa.me/{{ site.data.seo.schema.telephone | remove: '+' }}?text={{ site.data.site.contact.whatsapp_msg | url_encode }}"
         target="_blank" rel="noopener noreferrer"
         class="inline-flex items-center gap-2 text-primary dark:text-dark-primary hover:text-primary-hover dark:hover:text-dark-primary-hover font-medium transition-colors duration-300">
         <span>Escríbeme directamente</span>

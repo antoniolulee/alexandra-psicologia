@@ -48,6 +48,7 @@
             </svg>
             {{ site.data.site.contact.email }}
           </a>
+          {% if site.data.site.contact.instagram %}
           <a href="{{ site.data.site.contact.instagram }}" target="_blank" rel="noopener noreferrer"
             class="flex items-center gap-3 text-white/70 hover:text-white text-sm transition-colors duration-300">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -56,6 +57,7 @@
             </svg>
             Instagram
           </a>
+          {% endif %}
         </div>
       </div>
     </div>
