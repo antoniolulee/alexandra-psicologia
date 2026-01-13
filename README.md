@@ -427,6 +427,5 @@ Blog
 
 Crear cuenta de email
 
-viso Legal
-Política de Privacidad
-Cookies
+
+Cookies popup
