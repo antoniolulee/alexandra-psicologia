@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" :class="{ 'dark': darkMode }">
-  <head>
+<html lang="es" class="scroll-smooth" x-data="{ 
+      darkMode: localStorage.getItem('darkMode') === 'true' || 
+      (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) 
+    }" :class="{ 'dark': darkMode }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,69 +16,8 @@
     href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- Tailwind CSS CDN with Configuration -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-  tailwind.config = {
-    darkMode: 'class',
-    theme: {
-      extend: {
-        colors: {
-          // Light mode colors
-          'primary': '#5d6b5b',
-          'primary-hover': '#4a5649',
-          'secondary': '#f9f8f4',
-          'secondary-alt': '#f0efe8',
-          'accent': '#b8860b',
-          'accent-hover': '#9a7209',
-          'text': '#2d2d2d',
-          'text-muted': '#6b7280',
-          'border': '#e5e5e5',
-          // Dark mode colors (with prefix)
-          'dark-primary': '#8a9a87',
-          'dark-primary-hover': '#9dab9a',
-          'dark-secondary': '#1a1a1a',
-          'dark-secondary-alt': '#252525',
-          'dark-accent': '#d4a853',
-          'dark-accent-hover': '#e0b865',
-          'dark-text': '#f0f0f0',
-          'dark-text-muted': '#9ca3af',
-          'dark-border': '#374151',
-        },
-        fontFamily: {
-          'heading': "'Playfair Display', Georgia, serif".split(','),
-            'body': { { site.data.design.fonts.body.family | jsonify } }.split(','),
-              'accent': { { site.data.design.fonts.accent.family | jsonify } }.split(','),
-        },
-  letterSpacing: {
-    'heading': '0.02em',
-      'body': '0.01em',
-        },
-  lineHeight: {
-    'heading': '1.3',
-      'body': '1.7',
-        },
-  borderRadius: {
-    'sm': '0.25rem',
-      'md': '0.5rem',
-        'lg': '1rem',
-          'xl': '1.5rem',
-        },
-  boxShadow: {
-    'sm': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-      'md': '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1)',
-          'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1)',
-        },
-  transitionDuration: {
-    'fast': '150ms',
-      'base': '300ms',
-        'slow': '500ms',
-        },
-      },
-    },
-  }
-</script>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
@@ -140,8 +82,10 @@
     }
   </script>
 </head>
-  <body class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">
-    <!-- Header -->
+
+<body
+  class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">
+  <!-- Header -->
 <header
   class="fixed top-0 left-0 right-0 z-50 bg-secondary/95 dark:bg-dark-secondary/95 backdrop-blur-sm border-b border-border dark:border-dark-border transition-colors duration-300"
   x-data="{ mobileMenuOpen: false }">
@@ -286,9 +230,9 @@
 
 <!-- Spacer for fixed header -->
 <div class="h-20"></div>
-    
-    <main>
-      <!-- Hero Section -->
+
+  <main>
+    <!-- Hero Section -->
 <section id="inicio" class="relative min-h-[90vh] flex items-center py-16 lg:py-24 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -430,7 +374,7 @@
           Psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de transformación personal.
         </p>
 
-        <div class="prose prose-lg text-text-muted dark:text-dark-text-muted mb-8 space-y-4">
+        <div class="prose prose-lg dark:prose-invert text-text-muted dark:text-dark-text-muted mb-8 space-y-4">
           <p>Mi enfoque terapéutico se aleja de las plataformas masivas donde te asignan un profesional al azar. 
 Aquí encontrarás un espacio íntimo, seguro y exclusivo donde trabajaremos juntas en tus objetivos.</p>
 
@@ -1226,10 +1170,11 @@ para poder ofrecerte la atención personalizada que mereces.</p>
 
   </div>
 </section>
-    </main>
-    
-    <!-- Footer -->
-<footer class="py-16 bg-primary dark:bg-dark-primary text-white transition-colors duration-300">
+  </main>
+
+  <!-- Footer -->
+<footer
+  class="py-16 bg-primary dark:bg-dark-secondary-alt text-white dark:text-gray-200 transition-colors duration-300">
   <div class="max-w-7xl mx-auto px-6">
 
     <div class="grid md:grid-cols-3 gap-12 mb-12">
@@ -1340,7 +1285,7 @@ para poder ofrecerte la atención personalizada que mereces.</p>
 
   </div>
 </footer>
-    <!-- Floating WhatsApp CTA -->
+  <!-- Floating WhatsApp CTA -->
 <div class="fixed bottom-6 right-6 z-50" x-data="{ tooltip: false }">
   <a href="https://wa.me/34600000000?text=Hola+Alexandra%2C+me+gustar%C3%ADa+recibir+informaci%C3%B3n+sobre+tus+servicios+de+terapia+online."
     target="_blank" rel="noopener noreferrer" @mouseenter="tooltip = true" @mouseleave="tooltip = false"
@@ -1368,8 +1313,9 @@ para poder ofrecerte la atención personalizada que mereces.</p>
     </div>
   </div>
 </div>
-    
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </body>
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
 </html>

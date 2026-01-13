@@ -1,102 +1,391 @@
-# Alexandra Barroso - Psicóloga Clínica
+# 🧠 Alexandra Barroso - Psicóloga Clínica
 
-Página web profesional para Alexandra Barroso, Psicóloga Clínica. Construida con Jekyll y optimizada para SEO.
+Página web profesional para Alexandra Barroso, Psicóloga Clínica Online Colegiada.
 
-## 🚀 Inicio Rápido
+> **Stack**: Jekyll (Ruby) + Tailwind CSS v3.4 + Alpine.js + GitHub Pages
 
-### Requisitos Previos
-- Ruby 2.7+
-- Bundler (`gem install bundler`)
+---
 
-### Instalación Local
+## � Tabla de Contenidos
+
+1. [Requisitos Previos](#-requisitos-previos)
+2. [Instalación Paso a Paso](#-instalación-paso-a-paso)
+3. [Comandos Disponibles](#-comandos-disponibles)
+4. [Estructura del Proyecto](#-estructura-del-proyecto)
+5. [Cómo Personalizar](#-cómo-personalizar)
+6. [Solución de Problemas](#-solución-de-problemas)
+7. [Deploy en Producción](#-deploy-en-producción)
+
+---
+
+## 🔧 Requisitos Previos
+
+Antes de empezar, necesitas instalar estas herramientas en tu ordenador:
+
+### 1. Ruby (para Jekyll)
 
 ```bash
-# Instalar dependencias
+# En macOS (con Homebrew):
+brew install ruby
+
+# En Windows: Descarga de https://rubyinstaller.org/
+
+# Verificar instalación:
+ruby --version   # Debe mostrar 2.7 o superior
+```
+
+### 2. Bundler (gestor de gemas de Ruby)
+
+```bash
+gem install bundler
+
+# Verificar instalación:
+bundler --version
+```
+
+### 3. Node.js (para Tailwind CSS)
+
+```bash
+# En macOS (con Homebrew):
+brew install node
+
+# En Windows: Descarga de https://nodejs.org/
+
+# Verificar instalación:
+node --version   # Debe mostrar 18 o superior
+npm --version
+```
+
+---
+
+## 🚀 Instalación Paso a Paso
+
+Sigue estos pasos **en orden** la primera vez que clones el proyecto:
+
+### Paso 1: Clonar el repositorio
+
+```bash
+git clone https://github.com/antoniolulee/alexandra-psicologia.git
+cd alexandra-psicologia
+```
+
+### Paso 2: Instalar dependencias de Ruby (Jekyll)
+
+```bash
 bundle install
-
-# Ejecutar servidor de desarrollo
-bundle exec jekyll serve
-
-# Abrir http://localhost:4000
 ```
 
-### Deploy en GitHub Pages
+> ⏳ Esto puede tardar 1-2 minutos. Instalará Jekyll y sus plugins.
 
-1. Sube el repositorio a GitHub
-2. Ve a Settings → Pages
-3. Selecciona "Deploy from a branch" → main
-4. Tu sitio estará en `https://[usuario].github.io/[repo]`
+### Paso 3: Instalar dependencias de Node (Tailwind CSS)
 
-## 📁 Estructura
-
-```
-├── _config.yml          # Configuración Jekyll
-├── _data/
-│   ├── site.yml         # Contenido editable (textos, servicios, etc.)
-│   ├── seo.yml          # Configuración SEO
-│   ├── design.yml       # Tokens de diseño (colores, tipografía)
-│   └── articles.yml     # Artículos del blog
-├── _layouts/
-│   └── default.html     # Layout principal
-├── _includes/           # Componentes reutilizables
-├── assets/
-│   ├── css/custom.css   # Estilos personalizados
-│   └── images/          # Imágenes (añadir aquí)
-└── index.html           # Página principal
+```bash
+npm install
 ```
 
-## ✏️ Personalización
+> ⏳ Esto instalará Tailwind CSS y sus dependencias.
 
-### Cambiar Contenido
-Edita `_data/site.yml` para modificar:
-- Nombre, título, contacto
-- Servicios y precios
-- Testimonios
-- Preguntas frecuentes
+### Paso 4: Ejecutar el servidor de desarrollo
 
-### Cambiar Colores
-Edita `_data/design.yml` para modificar:
-- Paleta de colores (light/dark mode)
-- Tipografías
-- Espaciado
+```bash
+npm run dev
+```
 
-### Cambiar SEO
-Edita `_data/seo.yml` para modificar:
-- Meta tags
-- Open Graph
-- Schema.org
+### Paso 5: Abrir en el navegador
+
+```
+http://localhost:4000
+```
+
+¡Listo! 🎉 Deberías ver la web funcionando.
+
+---
+
+## 💻 Comandos Disponibles
+
+| Comando | Descripción | Cuándo usarlo |
+|---------|-------------|---------------|
+| `npm run dev` | Inicia Jekyll + Tailwind en modo desarrollo | **Uso diario** para desarrollar |
+| `npm run build:css` | Compila Tailwind CSS (minificado) | Antes de hacer deploy |
+| `npm run watch:css` | Compila Tailwind CSS y vigila cambios | Si solo trabajas con CSS |
+| `bundle exec jekyll serve` | Solo servidor Jekyll (sin Tailwind) | Para debug de Jekyll |
+| `bundle exec jekyll build` | Genera sitio estático en `_site/` | Para deploy manual |
+
+### Ejemplo de flujo de desarrollo típico:
+
+```bash
+# 1. Abrir terminal en la carpeta del proyecto
+cd alexandra-psicologia
+
+# 2. Iniciar servidor de desarrollo
+npm run dev
+
+# 3. Abrir http://localhost:4000 en tu navegador
+# 4. Los cambios se refrescan automáticamente
+# 5. Para parar: Ctrl + C
+```
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+alexandra-psicologia/
+│
+├── 📄 _config.yml           # Configuración global de Jekyll
+├── 📄 package.json          # Scripts de npm y dependencias
+├── 📄 tailwind.config.js    # Configuración de Tailwind CSS
+│
+├── 📂 _data/                # ⭐ CONTENIDO EDITABLE (YAML)
+│   ├── site.yml             # Textos, servicios, testimonios, FAQs
+│   ├── seo.yml              # Meta tags, Open Graph, Schema.org
+│   ├── design.yml           # Colores, tipografías, espaciado
+│   └── articles.yml         # Artículos del blog
+│
+├── 📂 _includes/            # Componentes HTML reutilizables
+│   ├── head.html            # <head> con meta tags y CSS
+│   ├── header.html          # Navegación
+│   ├── hero.html            # Sección principal
+│   ├── about.html           # Sobre mí
+│   ├── services.html        # Servicios
+│   ├── for-whom.html        # Para quién
+│   ├── testimonials.html    # Testimonios
+│   ├── faq.html             # Preguntas frecuentes
+│   ├── cta.html             # Call to action
+│   ├── footer.html          # Pie de página
+│   └── ...
+│
+├── 📂 _layouts/
+│   └── default.html         # Layout principal (estructura base)
+│
+├── 📂 assets/
+│   ├── css/
+│   │   ├── main.css         # Entrada de Tailwind (directives)
+│   │   ├── tailwind.css     # CSS compilado (NO EDITAR)
+│   │   └── custom.css       # Estilos personalizados adicionales
+│   └── images/              # Imágenes del sitio
+│
+├── 📂 _site/                # ⚠️ Sitio compilado (AUTOGENERADO)
+│
+├── 📄 index.html            # Página principal
+├── 📄 robots.txt            # Instrucciones para bots
+└── 📄 sitemap.xml           # Mapa del sitio para SEO
+```
+
+### Archivos importantes para editar contenido:
+
+| Archivo | Qué contiene | Ejemplo de cambio |
+|---------|--------------|-------------------|
+| `_data/site.yml` | Todo el contenido de texto | Cambiar precios, testimonios, FAQs |
+| `_data/seo.yml` | SEO y meta tags | Actualizar título o descripción |
+| `_data/design.yml` | Colores y tipografías | Cambiar paleta de colores |
+| `assets/images/` | Fotos e imágenes | Añadir foto de perfil |
+
+---
+
+## ✏️ Cómo Personalizar
+
+### Cambiar textos y contenido
+
+Edita `_data/site.yml`:
+
+```yaml
+# Ejemplo: cambiar nombre
+identity:
+  name: "Tu Nombre"
+  title: "Psicóloga Clínica"
+
+# Ejemplo: cambiar precio
+services:
+  - name: "Terapia Individual"
+    duration: "60 min"
+    price: "90€"
+```
+
+### Cambiar colores
+
+Edita `_data/design.yml` y `tailwind.config.js`:
+
+```javascript
+// tailwind.config.js
+colors: {
+  'primary': '#5d6b5b',      // Verde Salvia (botones, acentos)
+  'secondary': '#f9f8f4',    // Crema (fondos)
+  'accent': '#b8860b',       // Dorado (detalles)
+}
+```
+
+### Cambiar número de WhatsApp
+
+En `_data/site.yml`:
+
+```yaml
+contact:
+  whatsapp: "34600000000"  # Sin + ni espacios
+```
+
+### Añadir imágenes
+
+1. Coloca las imágenes en `assets/images/`
+2. Referéncialas en `_data/site.yml` o directamente en HTML:
+
+```yaml
+# _data/site.yml
+about:
+  image: "/assets/images/alexandra-about.jpg"
+```
+
+---
+
+## 🔧 Solución de Problemas
+
+### ❌ Error: "Tailwind classes not working"
+
+**Causa**: El CSS de Tailwind no se está compilando.
+
+**Solución**:
+```bash
+# 1. Parar el servidor (Ctrl + C)
+# 2. Recompilar CSS
+npm run build:css
+# 3. Reiniciar servidor
+npm run dev
+```
+
+### ❌ Error: "bundle: command not found"
+
+**Causa**: Bundler no está instalado.
+
+**Solución**:
+```bash
+gem install bundler
+bundle install
+```
+
+### ❌ Error: "Port 4000 already in use"
+
+**Causa**: Ya hay otro servidor corriendo en ese puerto.
+
+**Solución**:
+```bash
+# Opción 1: Usar otro puerto
+bundle exec jekyll serve --port 4001
+
+# Opción 2: Matar el proceso en el puerto 4000
+lsof -i :4000  # Ver qué proceso usa el puerto
+kill -9 <PID>  # Matar el proceso
+```
+
+### ❌ Los estilos no se actualizan
+
+**Causa**: Caché del navegador.
+
+**Solución**: Recarga con `Cmd + Shift + R` (Mac) o `Ctrl + Shift + R` (Windows).
+
+### ❌ Error al instalar gemas en macOS
+
+**Solución**:
+```bash
+# Instalar herramientas de desarrollo de Xcode
+xcode-select --install
+
+# Reintentar
+bundle install
+```
+
+---
+
+## 🌐 Deploy en Producción
+
+### Opción A: GitHub Pages (Recomendado)
+
+1. **Sube el código a GitHub**:
+   ```bash
+   git add .
+   git commit -m "Ready for deploy"
+   git push origin main
+   ```
+
+2. **Activa GitHub Pages**:
+   - Ve a tu repositorio en GitHub
+   - Settings → Pages
+   - Source: "Deploy from a branch"
+   - Branch: `main` / `root`
+   - Save
+
+3. **Tu sitio estará en**:
+   ```
+   https://[tu-usuario].github.io/alexandra-psicologia/
+   ```
+
+### Opción B: Build manual
+
+```bash
+# 1. Compilar CSS para producción
+npm run build:css
+
+# 2. Generar sitio estático
+bundle exec jekyll build
+
+# 3. Los archivos están en _site/
+# Sube el contenido de _site/ a tu hosting
+```
+
+---
+
+## ✨ Características del Diseño
+
+### Paleta de Colores "Quiet Luxury"
+
+| Color | Código | Uso |
+|-------|--------|-----|
+| Verde Salvia | `#5d6b5b` | Botones, acentos (transmite autoridad y calma) |
+| Crema Cálido | `#f9f8f4` | Fondos (transmite calidez) |
+| Dorado Mate | `#b8860b` | Detalles sutiles (transmite exclusividad) |
+
+### Tipografía
+
+| Fuente | Familia | Uso |
+|--------|---------|-----|
+| Playfair Display | Serif | Títulos (elegancia) |
+| Lato | Sans-serif | Cuerpo (legibilidad) |
+| Allura | Cursiva | Firma personal |
+
+### Funcionalidades
+
+- ✅ **Modo Oscuro**: Detecta preferencia del sistema + toggle manual
+- ✅ **Responsive**: Mobile-first, funciona en todos los dispositivos
+- ✅ **SEO Optimizado**: Meta tags, Schema.org, Open Graph
+- ✅ **Rendimiento**: CSS minificado, imágenes lazy-loaded
+- ✅ **WhatsApp**: Botón flotante siempre visible
+
+---
 
 ## 📸 Imágenes Requeridas
 
-Añade las siguientes imágenes en `assets/images/`:
+Añade estas imágenes en `assets/images/`:
 
-- `alexandra-hero.jpg` - Foto Hero (recomendado: 800x1000px)
-- `alexandra-about.jpg` - Foto Sobre Mí (recomendado: 600x800px)
-- `og-image.jpg` - Open Graph (1200x630px)
-- `logos/` - Logos de medios (SVG preferido)
+| Archivo | Tamaño Recomendado | Uso |
+|---------|-------------------|-----|
+| `alexandra-hero.jpg` | 800×1000px | Foto principal del hero |
+| `alexandra-about.jpg` | 600×800px | Foto sección "Sobre mí" |
+| `og-image.jpg` | 1200×630px | Imagen para compartir en redes |
+| `logos/*.svg` | Variable | Logos de medios donde aparece |
 
-## 🌙 Modo Oscuro
-
-El sitio soporta modo oscuro:
-- Detecta automáticamente la preferencia del sistema
-- Toggle manual en el header
-- Persistencia en localStorage
-
-## 📱 Responsive
-
-- Mobile-first design
-- Menú hamburguesa en móvil
-- Botones táctiles de mínimo 44px
-- Botón WhatsApp flotante siempre visible
-
-## 📈 SEO Incluido
-
-- Meta tags optimizados
-- Open Graph y Twitter Cards
-- Schema.org JSON-LD (Psychologist)
-- Sitemap automático
-- Robots.txt
+---
 
 ## 📄 Licencia
 
 © 2026 Alexandra Barroso. Todos los derechos reservados.
+
+---
+
+## 🆘 ¿Necesitas Ayuda?
+
+Si usas un asistente de IA (como Cursor, GitHub Copilot, etc.), puedes preguntarle cosas como:
+
+- "¿Cómo cambio el color principal de la web?"
+- "Quiero añadir una nueva sección de servicios"
+- "¿Cómo subo esto a producción?"
+
+La estructura de este proyecto está diseñada para que sea fácil de entender tanto para humanos como para IAs.

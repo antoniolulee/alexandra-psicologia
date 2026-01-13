@@ -1,0 +1,30 @@
+{
+  "name": "alexandra-psicologia",
+  "version": "1.0.0",
+  "description": "Página web profesional para Alexandra Barroso, Psicóloga Clínica. Construida con Jekyll y optimizada para SEO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --watch",
+    "dev": "npm run watch:css & bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniolulee/alexandra-psicologia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/antoniolulee/alexandra-psicologia/issues"
+  },
+  "homepage": "https://github.com/antoniolulee/alexandra-psicologia#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'es' }}" x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" :class="{ 'dark': darkMode }">
-  {% include head.html %}
-  <body class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">
-    {% include header.html %}
-    
-    <main>
-      {{ content }}
-    </main>
-    
-    {% include footer.html %}
-    {% include cta.html %}
-    
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </body>
+<html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="{ 
+      darkMode: localStorage.getItem('darkMode') === 'true' || 
+      (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) 
+    }" :class="{ 'dark': darkMode }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))">
+{% include head.html %}
+
+<body
+  class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  {% include cta.html %}
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
 </html>
