@@ -35,7 +35,7 @@
           class="block aspect-[16/10] overflow-hidden bg-secondary-alt dark:bg-dark-secondary-alt">
           {% if post.image %}
           <img src="{{ post.image }}" alt="{{ post.title }}"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           {% else %}
           <div class="w-full h-full flex items-center justify-center text-text-muted dark:text-dark-text-muted">
             <svg class="w-12 h-12 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">

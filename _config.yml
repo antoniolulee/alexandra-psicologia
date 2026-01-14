@@ -22,9 +22,6 @@ exclude:
   - README.md
   - node_modules
 
-# Collections
-collections_dir: collections
-
 # Defaults
 defaults:
   - scope:
