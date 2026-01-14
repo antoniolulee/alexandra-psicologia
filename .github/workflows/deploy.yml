@@ -33,7 +33,7 @@ jobs:
         run: npm run build:css
 
       - name: Setup Ruby
-        uses: actions/setup-ruby@v3
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true

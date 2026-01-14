@@ -17,26 +17,36 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
+  <!-- Preload LCP Image (Hero) -->
+  {% if page.url == '/' or page.url == '/index.html' %}
+  <link rel="preload" as="image" href="{{ site.data.site.hero.image }}">
+  {% endif %}
+
   <!-- SEO Meta Tags -->
-  <title>{{ site.data.seo.meta.title }}</title>
-  <meta name="description" content="{{ site.data.seo.meta.description }}">
+  {% assign page_title = page.title | default: nil %}
+  {% assign page_description = page.description | default: site.data.seo.meta.description %}
+  <title>{% if page_title %}{{ page_title }} | {{ site.data.site.identity.name }}{% else %}{{ site.data.seo.meta.title
+    }}{% endif %}</title>
+  <meta name="description" content="{{ page_description }}">
   <meta name="keywords" content="{{ site.data.seo.meta.keywords | join: ', ' }}">
   <meta name="author" content="{{ site.data.site.identity.name }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="{{ site.data.seo.og.type }}">
-  <meta property="og:title" content="{{ site.data.seo.meta.title }}">
-  <meta property="og:description" content="{{ site.data.seo.meta.description }}">
+  <meta property="og:title"
+    content="{% if page_title %}{{ page_title }} | {{ site.data.site.identity.name }}{% else %}{{ site.data.seo.meta.title }}{% endif %}">
+  <meta property="og:description" content="{{ page_description }}">
   <meta property="og:image" content="{{ site.url }}{{ site.data.seo.og.image }}">
   <meta property="og:image:alt" content="{{ site.data.seo.og.image_alt }}">
-  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:locale" content="{{ site.data.seo.og.locale }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="{{ site.data.seo.twitter.card }}">
   <meta name="twitter:site" content="{{ site.data.seo.twitter.site }}">
-  <meta name="twitter:title" content="{{ site.data.seo.meta.title }}">
-  <meta name="twitter:description" content="{{ site.data.seo.meta.description }}">
+  <meta name="twitter:title"
+    content="{% if page_title %}{{ page_title }} | {{ site.data.site.identity.name }}{% else %}{{ site.data.seo.meta.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page_description }}">
   <meta name="twitter:image" content="{{ site.url }}{{ site.data.seo.twitter.image }}">
 
   <!-- Canonical URL -->

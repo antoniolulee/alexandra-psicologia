@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Política de Cookies
+description: "Política de Cookies de Alexandra Barroso. Información sobre el uso de cookies, finalidad y cómo gestionar tu consentimiento."
 permalink: /cookies/
 ---
 

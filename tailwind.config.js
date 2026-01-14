@@ -4,6 +4,7 @@ module.exports = {
     './_includes/**/*.{html,js}',
     './_layouts/**/*.{html,js}',
     './_posts/**/*.{html,md}',
+    './blog/**/*.{html,md}',
     './*.{html,md}',
   ],
   darkMode: 'class',

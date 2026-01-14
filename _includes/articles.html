@@ -1,4 +1,4 @@
-<!-- Articles Section -->
+<!-- Articles Section (Homepage) -->
 <section class="py-16 lg:py-24 bg-secondary-alt dark:bg-dark-secondary-alt transition-colors duration-300">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <a href="#"
+      <a href="/blog/"
         class="inline-flex items-center gap-2 text-primary dark:text-dark-primary hover:text-primary-hover dark:hover:text-dark-primary-hover font-medium transition-colors duration-300">
         <span>Ver todos</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,41 +25,57 @@
 
     <!-- Articles Grid -->
     <div class="grid md:grid-cols-3 gap-8">
-      {% for article in site.data.articles.items %}
+      {% assign recent_posts = site.posts | limit: 3 %}
+      {% for post in recent_posts %}
       <article
         class="group bg-white dark:bg-dark-secondary rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-border dark:border-dark-border">
 
         <!-- Image -->
-        <div class="aspect-[16/10] overflow-hidden bg-secondary-alt dark:bg-dark-secondary-alt">
+        <a href="{{ post.url }}"
+          class="block aspect-[16/10] overflow-hidden bg-secondary-alt dark:bg-dark-secondary-alt">
+          {% if post.image %}
+          <img src="{{ post.image }}" alt="{{ post.title }}"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          {% else %}
           <div class="w-full h-full flex items-center justify-center text-text-muted dark:text-dark-text-muted">
             <svg class="w-12 h-12 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                 d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </div>
-        </div>
+          {% endif %}
+        </a>
 
         <!-- Content -->
         <div class="p-6">
           <!-- Meta -->
           <div class="flex items-center gap-4 text-xs text-text-muted dark:text-dark-text-muted mb-3">
-            <span class="uppercase tracking-wider">{{ article.category }}</span>
+            {% if post.categories.first %}
+            <span class="uppercase tracking-wider">{{ post.categories.first }}</span>
             <span>·</span>
-            <span>{{ article.reading_time }}</span>
+            {% endif %}
+            <span>{{ post.reading_time | default: "5 min" }}</span>
           </div>
 
           <h3
             class="font-heading text-xl text-text dark:text-dark-text mb-3 group-hover:text-primary dark:group-hover:text-dark-primary transition-colors duration-300">
-            <a href="#">{{ article.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
           </h3>
 
-          <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed">
-            {{ article.excerpt }}
+          <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed line-clamp-2">
+            {{ post.excerpt | strip_html | truncatewords: 20 }}
           </p>
         </div>
       </article>
       {% endfor %}
     </div>
+
+    <!-- Empty State -->
+    {% if site.posts.size == 0 %}
+    <div class="text-center py-12">
+      <p class="text-text-muted dark:text-dark-text-muted">Próximamente: artículos sobre bienestar emocional.</p>
+    </div>
+    {% endif %}
 
   </div>
 </section>

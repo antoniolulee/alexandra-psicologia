@@ -15,7 +15,7 @@ identity:
 contact:
   # Nota: El teléfono se gestiona en _data/seo.yml
 
-  whatsapp_msg: "Hola Alexandra, me gustaría recibir información sobre tus servicios de terapia online."
+  whatsapp_msg: "Hola Alexandra, me gustaría recibir información sobre tus servicios y contarte mi situación actual para valorar cómo puedes ayudarme."
   email: "contacto@alexandrabarroso.com"
   # instagram: "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar
 
@@ -24,12 +24,17 @@ contact:
 # ============================================
 nav:
   - text: "Inicio"
-    url: "#inicio"
+    url: "/"
   - text: "Sobre Mí"
-    url: "#sobre-mi"
-
+    url: "/#sobre-mi"
+  - text: "Especialidades"
+    url: "/#especialidades"
+  - text: "Blog"
+    url: "/blog/"
+  - text: "Testimonios"
+    url: "/#testimonios"
   - text: "FAQ"
-    url: "#faq"
+    url: "/#faq"
 cta_text: "Solicita Valoración"
 
 # ============================================
@@ -41,7 +46,7 @@ hero:
   subtitle: "Un vínculo seguro para sanar y crecer"
   cta_primary: "Agenda tu primera sesión"
   cta_secondary: "Conoce mi metodología"
-  image: "/assets/images/alexandra-hero.jpg"
+  image: "/assets/images/alexandra-hero.webp"
 
 # ============================================
 # TRUST BAR (MEDIOS)
@@ -63,7 +68,7 @@ trust_bar:
 # ============================================
 about:
   title: "Hola, soy Alexandra"
-  image: "/assets/images/alexandra-about.jpg"
+  image: "/assets/images/alexandra-about.webp"
   bio_intro: "Psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de transformación personal."
   bio_main: |
     Mi enfoque terapéutico se aleja de las plataformas masivas donde te asignan un profesional al azar. 

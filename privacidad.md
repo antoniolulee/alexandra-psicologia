@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Política de Privacidad
+description: "Política de Privacidad de Alexandra Barroso. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD."
 permalink: /privacidad/
 ---
 

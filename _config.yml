@@ -8,6 +8,7 @@ lang: "es"
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true
 
 # Plugins (GitHub Pages whitelist)
 plugins:
@@ -30,3 +31,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alexandra Barroso"

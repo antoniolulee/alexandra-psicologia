@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Aviso Legal
+description: "Aviso Legal de Alexandra Barroso, Psicóloga Clínica. Información legal, datos identificativos, propiedad intelectual y condiciones de uso."
 permalink: /legal/
 ---
 

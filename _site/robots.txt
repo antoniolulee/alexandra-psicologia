@@ -1,7 +1,0 @@
-# Robots.txt for Alexandra Barroso - Psicóloga Clínica
-
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://alexandrabarroso.com/sitemap.xml
