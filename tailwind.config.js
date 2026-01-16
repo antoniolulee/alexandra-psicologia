@@ -19,7 +19,7 @@ module.exports = {
         'accent': '#b8860b',         // Dorado mate
         'accent-hover': '#9a7209',
         'text': '#2d2d2d',           // Texto principal
-        'text-muted': '#6b7280',     // Texto secundario
+        'text-muted': '#555555',     // Texto secundario (mejor contraste WCAG AA)
         'border': '#e5e5e5',
         // Dark mode colors (with prefix)
         'dark-primary': '#8a9a87',        // Verde más claro para dark
@@ -29,7 +29,7 @@ module.exports = {
         'dark-accent': '#d4a853',         // Dorado más brillante
         'dark-accent-hover': '#e0b865',
         'dark-text': '#f0f0f0',           // Texto claro
-        'dark-text-muted': '#9ca3af',
+        'dark-text-muted': '#b0b0b0', // Mejor contraste WCAG AA
         'dark-border': '#374151',
       },
       fontFamily: {
