@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="{ 
-      darkMode: localStorage.getItem('darkMode') === 'true' || 
-      (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) 
-    }" :class="{ 'dark': darkMode }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))">
+      darkMode: document.documentElement.classList.contains('dark')
+    }" x-init="$watch('darkMode', val => { 
+      document.documentElement.classList.toggle('dark', val);
+      localStorage.setItem('darkMode', val);
+    })">
 {% include head.html %}
 
 <body
