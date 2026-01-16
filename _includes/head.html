@@ -6,20 +6,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS (Critical) -->
   <link rel="stylesheet" href="/assets/css/tailwind.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
+  <!-- Google Fonts (Non-blocking) -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
   <!-- Preload LCP Image (Hero) -->
   {% if page.url == '/' or page.url == '/index.html' %}
-  <link rel="preload" as="image" href="{{ site.data.site.hero.image }}">
+  <link rel="preload" as="image" href="{{ site.data.site.hero.image }}" fetchpriority="high">
   {% endif %}
 
   <!-- SEO Meta Tags -->
