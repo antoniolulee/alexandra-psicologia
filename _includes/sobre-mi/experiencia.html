@@ -1,0 +1,54 @@
+<!-- Sobre Mí: Experiencia Clínica Section -->
+<section class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span
+        class="inline-block text-accent dark:text-dark-accent font-heading text-sm tracking-widest uppercase mb-4">{{
+        site.data.sobre_mi.experiencia.badge }}</span>
+      <h2 class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text mb-4">
+        {{ site.data.sobre_mi.experiencia.title }}
+      </h2>
+      <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
+        {{ site.data.sobre_mi.experiencia.subtitle }}
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      {% for column in site.data.sobre_mi.experiencia.columns %}
+      <div class="p-8 bg-surface dark:bg-dark-surface rounded-lg border border-border dark:border-dark-border">
+        <div class="flex items-start gap-5 mb-6">
+          <div
+            class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-{{ column.color }}/10 dark:bg-dark-{{ column.color }}/10 text-{{ column.color }} dark:text-dark-{{ column.color }}">
+            {% if column.color == "accent" %}
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+            {% else %}
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            {% endif %}
+          </div>
+          <div>
+            <h3 class="font-heading text-xl text-text dark:text-dark-text mb-1">{{ column.title }}</h3>
+            <p class="text-sm text-text-muted dark:text-dark-text-muted">{{ column.subtitle }}</p>
+          </div>
+        </div>
+        <ul class="space-y-3">
+          {% for item in column.items %}
+          <li class="flex items-center gap-3 text-text-muted dark:text-dark-text-muted">
+            <svg class="w-5 h-5 text-{{ column.color }} dark:text-dark-{{ column.color }} flex-shrink-0" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>{{ item }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

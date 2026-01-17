@@ -1,0 +1,47 @@
+<!-- Sobre Mí: Metodología Section -->
+<section class="py-16 lg:py-24">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span
+        class="inline-block text-accent dark:text-dark-accent font-heading text-sm tracking-widest uppercase mb-4">{{
+        site.data.sobre_mi.metodologia.badge }}</span>
+      <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl text-text dark:text-dark-text">
+        {{ site.data.sobre_mi.metodologia.title }}
+      </h2>
+    </div>
+
+    <div class="prose prose-lg dark:prose-invert mx-auto text-center">
+      <p class="text-text-muted dark:text-dark-text-muted leading-relaxed">
+        {{ site.data.sobre_mi.metodologia.paragraphs[0].intro }}
+      </p>
+    </div>
+
+    <!-- Visual Separator -->
+    <div class="flex items-center justify-center gap-4 my-12">
+      <div class="w-16 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent dark:via-dark-accent/50">
+      </div>
+      <div class="w-2 h-2 rounded-full bg-accent/50 dark:bg-dark-accent/50"></div>
+      <div class="w-16 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent dark:via-dark-accent/50">
+      </div>
+    </div>
+
+    <div class="prose prose-lg dark:prose-invert mx-auto text-center">
+      <p class="text-text-muted dark:text-dark-text-muted leading-relaxed">
+        {{ site.data.sobre_mi.metodologia.paragraphs[1].narrative }}
+      </p>
+    </div>
+
+    <!-- Quote Card -->
+    <div
+      class="relative mt-12 p-8 bg-surface dark:bg-dark-surface rounded-lg border border-border dark:border-dark-border">
+      <div class="absolute -top-4 left-8">
+        <span class="text-5xl text-accent/30 dark:text-dark-accent/30 font-heading leading-none">"</span>
+      </div>
+      <blockquote class="relative pt-2">
+        <p class="text-lg text-text dark:text-dark-text leading-relaxed italic text-center">
+          {{ site.data.sobre_mi.metodologia.quote }}
+        </p>
+      </blockquote>
+    </div>
+  </div>
+</section>

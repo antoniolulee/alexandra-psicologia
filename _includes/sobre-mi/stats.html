@@ -1,0 +1,42 @@
+<!-- Sobre Mí: Stats Section -->
+<section class="py-16 lg:py-24 bg-secondary-alt dark:bg-dark-secondary-alt transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text mb-4">{{ site.data.sobre_mi.stats.title
+        }}</h2>
+      <p class="text-text-muted dark:text-dark-text-muted max-w-xl mx-auto">
+        {{ site.data.sobre_mi.stats.subtitle }}
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for stat in site.data.sobre_mi.stats.items %}
+      <div
+        class="group p-8 bg-white dark:bg-dark-secondary rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-border dark:border-dark-border text-center">
+        <div
+          class="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-full bg-primary/10 dark:bg-dark-primary/10 text-primary dark:text-dark-primary group-hover:bg-primary dark:group-hover:bg-dark-primary group-hover:text-white transition-all duration-300">
+          {% if stat.icon == "calendar" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          {% elsif stat.icon == "badge" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+          {% elsif stat.icon == "desktop" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          {% endif %}
+        </div>
+        <span class="block text-4xl font-accent text-primary dark:text-dark-primary mb-2">{{ stat.value }}</span>
+        <span class="block text-sm font-bold uppercase tracking-wider text-text-muted dark:text-dark-text-muted">{{
+          stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

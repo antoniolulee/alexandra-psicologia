@@ -137,7 +137,8 @@ alexandra-psicologia/
 ├── 📄 tailwind.config.js    # Configuración de Tailwind CSS
 │
 ├── 📂 _data/                # ⭐ CONTENIDO EDITABLE (YAML)
-│   ├── site.yml             # Textos, servicios, testimonios, FAQs
+│   ├── site.yml             # Textos de página principal (index)
+│   ├── sobre_mi.yml         # Textos de página "Sobre Mí"
 │   ├── seo.yml              # Meta tags, Open Graph, Schema.org
 │   ├── design.yml           # Colores, tipografías, espaciado
 │   └── articles.yml         # Artículos del blog
@@ -145,15 +146,23 @@ alexandra-psicologia/
 ├── 📂 _includes/            # Componentes HTML reutilizables
 │   ├── head.html            # <head> con meta tags y CSS
 │   ├── header.html          # Navegación
-│   ├── hero.html            # Sección principal
-│   ├── about.html           # Sobre mí
-│   ├── services.html        # Servicios
+│   ├── hero.html            # Sección principal (index)
+│   ├── about.html           # Resumen "Sobre mí" (index)
 │   ├── for-whom.html        # Para quién
+│   ├── specialties.html     # Especialidades
 │   ├── testimonials.html    # Testimonios
 │   ├── faq.html             # Preguntas frecuentes
-│   ├── cta.html             # Call to action
+│   ├── cta.html             # Botón flotante WhatsApp
 │   ├── footer.html          # Pie de página
-│   └── ...
+│   │
+│   └── 📂 sobre-mi/         # Componentes específicos "Sobre Mí"
+│       ├── hero.html        # Hero con imagen y título
+│       ├── stats.html       # Estadísticas (años, PIR, etc.)
+│       ├── metodologia.html # Enfoque terapéutico
+│       ├── trayectoria.html # Formación y experiencia
+│       ├── experiencia.html # Visión clínica
+│       ├── supervision.html # Para profesionales
+│       └── cta.html         # CTA final
 │
 ├── 📂 _layouts/
 │   └── default.html         # Layout principal (estructura base)
@@ -168,6 +177,7 @@ alexandra-psicologia/
 ├── 📂 _site/                # ⚠️ Sitio compilado (AUTOGENERADO)
 │
 ├── 📄 index.html            # Página principal
+├── 📄 sobre-mi.md           # Página "Sobre Mí"
 ├── 📄 robots.txt            # Instrucciones para bots
 └── 📄 sitemap.xml           # Mapa del sitio para SEO
 ```
@@ -176,10 +186,53 @@ alexandra-psicologia/
 
 | Archivo | Qué contiene | Ejemplo de cambio |
 |---------|--------------|-------------------|
-| `_data/site.yml` | Todo el contenido de texto | Cambiar precios, testimonios, FAQs |
+| `_data/site.yml` | Contenido de página principal | Cambiar precios, testimonios, FAQs |
+| `_data/sobre_mi.yml` | Contenido de página "Sobre Mí" | Editar biografía, trayectoria |
 | `_data/seo.yml` | SEO y meta tags | Actualizar título o descripción |
 | `_data/design.yml` | Colores y tipografías | Cambiar paleta de colores |
 | `assets/images/` | Fotos e imágenes | Añadir foto de perfil |
+
+---
+
+## 🏗️ Arquitectura Modular
+
+### Patrón de Diseño
+
+Este proyecto sigue una arquitectura **modular basada en componentes**:
+
+```
+Página (.html/.md) → Includes (componentes) → Datos (YAML)
+```
+
+**Ejemplo: `index.html`**
+```liquid
+{% include hero.html %}        {# Lee de site.data.site.hero #}
+{% include about.html %}       {# Lee de site.data.site.about #}
+{% include testimonials.html %} {# Lee de site.data.site.testimonials #}
+```
+
+**Ejemplo: `sobre-mi.md`**
+```liquid
+{% include sobre-mi/hero.html %}  {# Lee de site.data.sobre_mi.hero #}
+{% include sobre-mi/stats.html %} {# Lee de site.data.sobre_mi.stats #}
+```
+
+### Convenciones para Nuevas Páginas
+
+1. **Datos**: Crear `_data/[nombre_pagina].yml` con el contenido
+2. **Componentes**: Crear `_includes/[nombre-pagina]/` con los includes específicos
+3. **Página**: Crear `[nombre-pagina].md` con solo includes
+4. **Acceso a datos**: Usar `site.data.[nombre_pagina].[seccion]`
+
+### Guía para IA
+
+> **IMPORTANTE**: Si eres un asistente de IA trabajando en este proyecto, sigue estas reglas:
+
+1. **Nunca hardcodear texto** en HTML. Siempre usar datos de `_data/*.yml`
+2. **Crear componentes reutilizables** en `_includes/` para cada sección visual
+3. **Mantener coherencia visual** usando las clases Tailwind existentes (ver `tailwind.config.js`)
+4. **Una página = un archivo de datos** (ej: `sobre-mi.md` → `sobre_mi.yml`)
+5. **Documentar cambios** actualizando este README si la estructura cambia
 
 ---
 
@@ -417,14 +470,3 @@ Si usas un asistente de IA (como Cursor, GitHub Copilot, etc.), puedes preguntar
 - "¿Cómo subo esto a producción?"
 
 La estructura de este proyecto está diseñada para que sea fácil de entender tanto para humanos como para IAs.
-
-
-
-Quiero que me ayudes a mejorar el SEO para el posicionamiento en google de esta pagina web. Analiza los keyword y dime que más deberia poner, psicologia perinatal, MDR, infertilidad, ansiedad depresion, transtorno obsesibo, trauma, apego, duelo, TDAH, transtornos de personalidad, autoestima
-
-
-Blog
-
-Crear not found 404 page
-
-Crear cuenta de email

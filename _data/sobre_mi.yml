@@ -1,0 +1,123 @@
+# ============================================
+# SOBRE MÍ - Contenido de la página
+# Acceso: site.data.sobre_mi.xxx
+# ============================================
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  badge: "Mi Historia"
+  title:
+    line1: "La psicología"
+    line2: "no te elige a ti"
+    line3: "tú la eliges a ella."
+  paragraphs:
+    - "Dicen que la vocación nace de la curiosidad. En mi caso, esa inquietud por comprender el <em>\"porqué\"</em> de nuestras emociones y conductas fue el motor que me impulsó desde muy joven."
+    - "No me conformaba con explicaciones superficiales; quería entender la raíz del sufrimiento humano para poder ayudar a sanarlo."
+  image: "/assets/images/Alejandra_LQ-79.webp"
+  image_alt: "Alexandra Barroso - Psicóloga Clínica"
+
+# ============================================
+# STATS (Solidez Clínica)
+# ============================================
+stats:
+  title: "Solidez Clínica y Trayectoria"
+  subtitle: "Más de una década dedicada a comprender y acompañar el sufrimiento humano."
+  items:
+    - value: "15+"
+      label: "Años de experiencia"
+      icon: "calendar"
+    - value: "PIR"
+      label: "Especialista Clínica"
+      icon: "badge"
+    - value: "100%"
+      label: "Dedicación Online"
+      icon: "desktop"
+
+# ============================================
+# METODOLOGÍA
+# ============================================
+metodologia:
+  badge: "Mi Enfoque"
+  title: "Terapia Integradora y Narrativa"
+  paragraphs:
+    - intro: "Trabajo desde una <strong>perspectiva integradora</strong>. ¿Qué significa esto? Que no me ciño a un único modelo rígido. Cada persona es un mundo, y mi objetivo es adaptar las herramientas más efectivas de diversas orientaciones a tus necesidades específicas."
+    - narrative: "En el centro de mi terapia están las <strong>narrativas personales</strong>: esas historias que nos contamos sobre quiénes somos y que, a veces, nos atrapan en el sufrimiento. Mi trabajo consiste en ayudarte a identificar esas narrativas dolorosas y, trabajando en equipo, reescribirlas para que recuperes el control de tu vida."
+  quote: "Ya sea que el malestar provenga de síntomas de ansiedad, conflictos en tus relaciones o heridas del pasado, construiremos juntas un nuevo relato que dé sentido a tu experiencia."
+
+# ============================================
+# TRAYECTORIA (Formación)
+# ============================================
+trayectoria:
+  badge: "Trayectoria"
+  title: "Formación y Experiencia"
+  subtitle: "Mi base es clínica y rigurosa, complementada con formación continua para ofrecerte siempre lo mejor."
+  cards:
+    - icon: "hospital"
+      title: "Especialista Psicología Clínica (PIR)"
+      institution: "Hospital Arnau de Vilanova, Valencia"
+      description: "4 años de residencia intensiva rotando por todas las unidades de Salud Mental. La formación más rigurosa en España."
+    - icon: "book"
+      title: "Máster Psicoterapia Integradora"
+      institution: "Universidad de Alcalá"
+      description: "Especialización en modelos de integración psicoterapéutica para un abordaje flexible y personalizado."
+    - icon: "briefcase"
+      title: "Experiencia Hospitalaria"
+      institution: "Hospital Vithas Valencia al Mar"
+      description: "Adjunta en Salud Mental en áreas de Hospitalización y Consultas Externas."
+  credentials:
+    - "Licenciada en Psicología (UCM)"
+    - "Docencia en academia PIR"
+    - "Publicaciones científicas"
+
+# ============================================
+# EXPERIENCIA CLÍNICA
+# ============================================
+experiencia:
+  badge: "Visión Clínica"
+  title: "Más allá de la consulta de hoy"
+  subtitle: "Mi experiencia hospitalaria me permite detectar y abordar cualquier nivel de gravedad con seguridad."
+  columns:
+    - title: "Experiencia Hospitalaria"
+      subtitle: "Formación en patología grave"
+      color: "accent"
+      items:
+        - "Trastornos de Personalidad"
+        - "Trastorno Bipolar y Psicosis"
+        - "Trastornos de Conducta Alimentaria"
+        - "Adicciones"
+    - title: "Enfoque Actual"
+      subtitle: "Especialización en consulta online"
+      color: "primary"
+      items:
+        - "Ansiedad, Pánico y Fobias"
+        - "Trauma y Apego (EMDR)"
+        - "Duelo y Crisis Vitales"
+        - "Salud Reproductiva (Infertilidad/Perinatal)"
+
+# ============================================
+# SUPERVISIÓN
+# ============================================
+supervision:
+  badge: "Para Profesionales"
+  title: "Supervisión de Casos Clínicos"
+  paragraphs:
+    - "Creo en la excelencia compartida. Dedico parte de mi tiempo a la supervisión de casos clínicos para psicólogos y estudiantes, ofreciendo el <em>\"sostén teórico\"</em> necesario para crecer con seguridad."
+    - "Si estás iniciando tu carrera como psicoterapeuta o simplemente necesitas un espacio de reflexión sobre tus casos, estaré encantada de acompañarte."
+  cta_text: "Consultar por Supervisión"
+  benefits:
+    - title: "Análisis de casos"
+      description: "Revisión detallada de formulaciones clínicas y planes de tratamiento."
+    - title: "Orientación técnica"
+      description: "Herramientas y técnicas específicas para cada situación clínica."
+    - title: "Apoyo emocional"
+      description: "Espacio seguro para procesar la carga emocional del trabajo clínico."
+  card_title: "¿Qué incluye la supervisión?"
+
+# ============================================
+# CTA FINAL
+# ============================================
+cta:
+  title: "¿Comenzamos tu proceso?"
+  subtitle: "Sin desplazamientos, con total confidencialidad y con la seguridad de estar en manos expertas."

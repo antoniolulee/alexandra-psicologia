@@ -69,14 +69,14 @@ trust_bar:
 about:
   title: "Hola, soy Alexandra"
   image: "/assets/images/alexandra-about.webp"
-  bio_intro: "Psicóloga clínica con más de 15 años de experiencia acompañando a personas en su proceso de transformación personal."
+  bio_intro: "Psicóloga clínica especialista (PIR) con más de 15 años de experiencia."
   bio_main: |
-    Mi enfoque terapéutico se aleja de las plataformas masivas donde te asignan un profesional al azar. 
-    Aquí encontrarás un espacio íntimo, seguro y exclusivo donde trabajaremos juntas en tus objetivos.
-
-    Cada proceso es único, por eso no tengo cupos ilimitados. Trabajo con un número reducido de pacientes 
-    para poder ofrecerte la atención personalizada que mereces.
-  bio_boutique: "Sin intermediarios. Sin algoritmos. Sin prisas. Solo tú y yo trabajando en tu bienestar."
+    Mi enfoque se aleja de las plataformas masivas. Aquí encontrarás un espacio íntimo y seguro, sin intermediarios ni algoritmos.
+    
+    Combino el rigor científico de mi formación clínica hospitalaria con la cercanía humana que necesitas para sanar.
+  bio_boutique: "Sin intermediarios. Sin algoritmos. Solo tú y yo trabajando en tu bienestar."
+  cta_more: "Conoce mi historia completa"
+  cta_more_url: "/sobre-mi/"
   signature: "Alexandra"
 
 # ============================================
@@ -196,3 +196,5 @@ footer:
       url: "/privacidad"
     - text: "Cookies"
       url: "/cookies"
+    - text: "Supervisión Profesionales"
+      url: "/sobre-mi/#supervision-para-profesionales"

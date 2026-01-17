@@ -1,0 +1,45 @@
+<!-- Sobre Mí: Hero Section -->
+<section class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Content -->
+      <div class="order-2 lg:order-1 text-center lg:text-left">
+        <span
+          class="inline-block text-accent dark:text-dark-accent font-heading text-sm tracking-widest uppercase mb-4">{{
+          site.data.sobre_mi.hero.badge }}</span>
+
+        <h1
+          class="font-heading text-4xl md:text-5xl lg:text-6xl text-text dark:text-dark-text leading-heading tracking-heading mb-6">
+          {{ site.data.sobre_mi.hero.title.line1 }}<br>
+          <span class="text-primary dark:text-dark-primary">{{ site.data.sobre_mi.hero.title.line2 }}</span>,<br>
+          {{ site.data.sobre_mi.hero.title.line3 }}
+        </h1>
+
+        <div
+          class="space-y-4 text-lg text-text-muted dark:text-dark-text-muted leading-relaxed max-w-xl mx-auto lg:mx-0">
+          {% for paragraph in site.data.sobre_mi.hero.paragraphs %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="order-1 lg:order-2 relative">
+        <div class="relative max-w-lg mx-auto lg:max-w-none">
+          <!-- Decorative frames -->
+          <div
+            class="absolute -inset-4 border-2 border-accent/30 dark:border-dark-accent/30 rounded-lg transform rotate-2">
+          </div>
+          <div
+            class="absolute -inset-4 border-2 border-primary/20 dark:border-dark-primary/20 rounded-lg transform -rotate-1">
+          </div>
+
+          <!-- Main image -->
+          <img src="{{ site.data.sobre_mi.hero.image }}" alt="{{ site.data.sobre_mi.hero.image_alt }}"
+            class="relative w-full rounded-lg shadow-xl" loading="eager">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
