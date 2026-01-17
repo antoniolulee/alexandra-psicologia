@@ -47,6 +47,7 @@ hero:
   cta_primary: "Agenda tu primera sesión"
   cta_secondary: "Conoce mi metodología"
   image: "/assets/images/alexandra-hero.webp"
+  frame_style: "rotate"  # Options: rotate, rotate-alt, simple, none
 
 # ============================================
 # TRUST BAR (MEDIOS)

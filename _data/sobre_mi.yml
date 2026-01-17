@@ -17,6 +17,8 @@ hero:
     - "No me conformaba con explicaciones superficiales; quería entender la raíz del sufrimiento humano para poder ayudar a sanarlo."
   image: "/assets/images/Alejandra_LQ-79.webp"
   image_alt: "Alexandra Barroso - Psicóloga Clínica"
+  frame_style: "rotate-alt"  # Options: rotate, rotate-alt, simple, none
+  show_ctas: false  # Show WhatsApp + secondary CTA buttons
 
 # ============================================
 # STATS (Solidez Clínica)
