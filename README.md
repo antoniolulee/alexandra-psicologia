@@ -236,6 +236,112 @@ Página (.html/.md) → Includes (componentes) → Datos (YAML)
 
 ---
 
+## 🎯 Landing Pages de Especialidades (SEO)
+
+### Arquitectura Data-Driven
+
+Para mejorar el posicionamiento SEO, el proyecto soporta **landing pages específicas por especialidad** (ej. `/psicologia-perinatal/`, `/ansiedad/`, `/trauma-emdr/`).
+
+Cada landing page se compone de:
+- **1 archivo de datos** en `_data/especialidades/[nombre].yml`
+- **1 archivo de página** en `especialidades/[nombre].md` (solo 5 líneas)
+- **1 layout compartido** en `_layouts/especialidad.html`
+
+### Cómo Crear una Nueva Landing de Especialidad
+
+#### Paso 1: Crear el archivo de datos
+
+Crea `_data/especialidades/[tu-especialidad].yml`:
+
+```yaml
+# SEO
+seo:
+  title: "Tu Especialidad Online | Alexandra Barroso"
+  description: "Descripción SEO de 150-160 caracteres..."
+  keywords: ["keyword1", "keyword2"]
+
+# Hero
+hero:
+  badge: "Especialidad"
+  headline: "Título Principal Emocional"
+  subtitle: "Subtítulo descriptivo"
+  image: "/assets/images/tu-imagen.webp"
+  cta_text: "Reservar llamada"
+
+# Sección: Qué es
+que_es:
+  title: "¿Qué es [Tu Especialidad]?"
+  content: |
+    Texto de 200-400 palabras explicando la especialidad.
+    Puedes usar **markdown** para formatear.
+
+# Sección: Cuándo acudir
+cuando_acudir:
+  title: "¿Cuándo buscar ayuda?"
+  items:
+    - title: "Situación 1"
+      description: "Descripción breve de cuándo aplica."
+    - title: "Situación 2"
+      description: "Descripción breve de cuándo aplica."
+
+# Sección: Enfoque
+enfoque:
+  title: "Mi enfoque en [Especialidad]"
+  content: |
+    Breve texto sobre cómo trabaja Alexandra estos casos.
+
+# CTA Final
+cta_final:
+  title: "¿Comenzamos?"
+  subtitle: "Texto de llamada a la acción."
+```
+
+#### Paso 2: Crear la página
+
+Crea `especialidades/[tu-especialidad].md`:
+
+```yaml
+---
+layout: especialidad
+permalink: /tu-especialidad/
+data_key: tu-especialidad
+---
+```
+
+¡Eso es todo! Solo 5 líneas.
+
+#### Paso 3: (Opcional) Añadir al sitemap
+
+El sitemap dinámico debería detectarlo automáticamente. Si usas sitemap manual, añade:
+
+```xml
+<url>
+  <loc>https://alexandrabarroso.com/tu-especialidad/</loc>
+</url>
+```
+
+### Especialidades Existentes
+
+| Especialidad | URL | Archivo de datos |
+|--------------|-----|------------------|
+| Psicología Perinatal | `/psicologia-perinatal/` | `_data/especialidades/psicologia-perinatal.yml` |
+
+### Footer Dinámico
+
+El **footer** incluye una columna "Especialidades" que se **genera automáticamente** a partir de los archivos en `_data/especialidades/`. Cuando crees una nueva especialidad, aparecerá en el footer sin necesidad de editar `_includes/footer.html`.
+
+**Cómo funciona**: El footer itera sobre `site.data.especialidades` y extrae el título de cada archivo YAML.
+
+### Guía para IA
+
+> Si eres un asistente de IA y necesitas crear una nueva landing de especialidad:
+> 1. Copia un archivo `.yml` existente de `_data/especialidades/` como plantilla
+> 2. Modifica el contenido para la nueva especialidad
+> 3. Crea el archivo `.md` correspondiente en `especialidades/`
+> 4. El layout `_layouts/especialidad.html` se encarga del resto
+> 5. La especialidad aparecerá automáticamente en el footer
+
+
 ## ✏️ Cómo Personalizar
 
 ### Cambiar textos y contenido
@@ -304,16 +410,19 @@ contact:
   instagram: "https://instagram.com/tu-usuario"
 ```
 
-**2. LinkedIn (SEO Schema):**
-Edita `_data/seo.yml`:
+**2. LinkedIn (SEO Schema y Footer):**
+Edita `_data/site.yml` para mostrarlo en el footer:
+
+```yaml
+contact:
+  linkedin: "https://www.linkedin.com/in/alexandrabarrosodiaz/"
+```
+
+Y `_data/seo.yml` para SEO (Schema.org):
 
 ```yaml
 sameAs:
-  # Antes (oculto):
-  # - "https://linkedin.com/in/..."
-  
-  # Después (visible):
-  - "https://linkedin.com/in/tu-usuario"
+  - "https://www.linkedin.com/in/alexandrabarrosodiaz/"
 ```
 
 ---
@@ -468,5 +577,79 @@ Si usas un asistente de IA (como Cursor, GitHub Copilot, etc.), puedes preguntar
 - "¿Cómo cambio el color principal de la web?"
 - "Quiero añadir una nueva sección de servicios"
 - "¿Cómo subo esto a producción?"
+
+La estructura de este proyecto está diseñada para que sea fácil de entender tanto para humanos como para IAs.
+
+---
+
+## 📊 Google Analytics
+
+### Configurar Google Analytics 4
+
+Para activar el tracking de Google Analytics:
+
+1. **Crea una propiedad en Google Analytics 4**:
+   - Ve a [analytics.google.com](https://analytics.google.com)
+   - Crea una cuenta o selecciona una existente
+   - Crea una nueva propiedad (tipo: Web)
+   - Configura el flujo de datos para tu sitio web
+
+2. **Obtén tu ID de medición**:
+   - En Administrar → Flujo de datos → Tu sitio web
+   - Copia el ID de medición (formato: `G-XXXXXXXXXX`)
+
+3. **Añádelo al proyecto**:
+   - Edita `_data/seo.yml`
+   - Busca la sección `analytics`
+   - Añade tu ID:
+
+```yaml
+analytics:
+  ga4_id: "G-TU-ID-AQUI"  # Ejemplo: G-ABC123XYZ
+```
+
+4. **Reinicia el servidor de desarrollo** para ver los cambios.
+
+### Páginas sin Tracking
+
+Las páginas legales (`/legal/`, `/privacidad/`, `/cookies/`) están configuradas para:
+- **No ser indexadas por Google** (meta robots: noindex, nofollow)
+- **No ser trackeadas** por Google Analytics (track: false)
+- **Excluidas del sitemap** automáticamente
+
+Esto ahorra crawl budget y evita trackear páginas que no aportan valor analítico.
+
+Para excluir otras páginas del tracking, añade en su front matter:
+
+```yaml
+---
+robots: "noindex, nofollow"
+track: false
+---
+```
+
+---
+
+## 📝 Notas de Desarrollo
+
+- [ ] Crear página 404 personalizada
+- [ ] Configurar cuenta de email profesional
+
+---
+
+## 📄 Licencia
+
+© 2026 Alexandra Barroso. Todos los derechos reservados.
+
+---
+
+## 🆘 ¿Necesitas Ayuda?
+
+Si usas un asistente de IA (como Cursor, GitHub Copilot, etc.), puedes preguntarle cosas como:
+
+- "¿Cómo cambio el color principal de la web?"
+- "Quiero añadir una nueva sección de servicios"
+- "¿Cómo subo esto a producción?"
+- "¿Cómo configuro Google Analytics?"
 
 La estructura de este proyecto está diseñada para que sea fácil de entender tanto para humanos como para IAs.

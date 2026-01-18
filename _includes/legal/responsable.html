@@ -1,0 +1,26 @@
+{% comment %}
+Datos del Responsable Legal
+Uso: {% include legal/responsable.html %}
+{% include legal/responsable.html show_razon_social=true show_colegiado=true %}
+
+Parámetros opcionales:
+- show_razon_social: usa "Razón Social / Nombre" y "Domicilio Social" en lugar de "Identidad" y "Dirección"
+- show_colegiado: muestra el número de colegiado
+{% endcomment %}
+<ul class="list-disc pl-6 mb-4">
+  {% if include.show_razon_social %}
+  <li><strong>Razón Social / Nombre:</strong> {{ site.data.site.legal.responsable.nombre }}</li>
+  {% else %}
+  <li><strong>Identidad:</strong> {{ site.data.site.legal.responsable.nombre }}</li>
+  {% endif %}
+  <li><strong>NIF:</strong> {{ site.data.site.legal.responsable.nif }}</li>
+  {% if include.show_razon_social %}
+  <li><strong>Domicilio Social:</strong> {{ site.data.site.legal.responsable.direccion }}</li>
+  {% else %}
+  <li><strong>Dirección:</strong> {{ site.data.site.legal.responsable.direccion }}</li>
+  {% endif %}
+  <li><strong>Email:</strong> {{ site.data.site.legal.responsable.email }}</li>
+  {% if include.show_colegiado %}
+  <li><strong>Colegiado/a:</strong> {{ site.data.site.legal.responsable.colegiado }}</li>
+  {% endif %}
+</ul>

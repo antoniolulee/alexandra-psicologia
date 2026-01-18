@@ -5,7 +5,7 @@ identity:
   name: "Alexandra Barroso"
   title: "Psicóloga Clínica"
   tagline: "Psicóloga Online experta en Ansiedad, Trauma (EMDR) y Salud Perinatal. Terapia personalizada sin desplazamientos."
-  subtitle: "Un vínculo seguro para sanar y crecer"
+  subtitle: "Psicoterapia integradora que se adapta a ti"
   credentials: "Psicóloga Colegiada CV-13539 · Universidad Complutense de Madrid"
   location: "Madrid, España"
 
@@ -18,6 +18,7 @@ contact:
   whatsapp_msg: "Hola Alexandra, me gustaría recibir información sobre tus servicios y contarte mi situación actual para valorar cómo puedes ayudarme."
   email: "contacto@alexandrabarroso.com"
   # instagram: "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar
+  linkedin: "https://www.linkedin.com/in/alexandrabarrosodiaz/"
 
 # ============================================
 # NAVEGACIÓN
@@ -43,7 +44,7 @@ cta_text: "Solicita Valoración"
 hero:
   title_emotional: "Recupera tu bienestar emocional"
   title_professional: "Psicóloga Clínica Online Colegiada"
-  subtitle: "Un vínculo seguro para sanar y crecer"
+  subtitle: "Entiendo tu sufrimiento. Juntas, lo transformamos."
   cta_primary: "Agenda tu primera sesión"
   cta_secondary: "Conoce mi metodología"
   image: "/assets/images/alexandra-hero.webp"
@@ -70,12 +71,12 @@ trust_bar:
 about:
   title: "Hola, soy Alexandra"
   image: "/assets/images/alexandra-about.webp"
-  bio_intro: "Psicóloga clínica especialista (PIR) con más de 15 años de experiencia."
+  bio_intro: "Algunos dicen que la psicología te elige. A mí me eligió."
   bio_main: |
-    Mi enfoque se aleja de las plataformas masivas. Aquí encontrarás un espacio íntimo y seguro, sin intermediarios ni algoritmos.
+    La curiosidad por comprender **por qué sufrimos** y cómo podemos dejar de hacerlo me llevó a dedicar más de 10 años a la psicología clínica.
     
-    Combino el rigor científico de mi formación clínica hospitalaria con la cercanía humana que necesitas para sanar.
-  bio_boutique: "Sin intermediarios. Sin algoritmos. Solo tú y yo trabajando en tu bienestar."
+    Trabajo desde una orientación **humanista, personal y cercana**. Mi terapia se adapta a ti, no al revés: selecciono las técnicas más efectivas de cada enfoque para crear un tratamiento a tu medida.
+  bio_boutique: "Sin intermediarios. Sin algoritmos. Solo tú y yo, trabajando en equipo para reescribir las narrativas que te causan sufrimiento."
   cta_more: "Conoce mi historia completa"
   cta_more_url: "/sobre-mi/"
   signature: "Alexandra"
@@ -87,18 +88,18 @@ for_whom:
   title: "¿Te identificas?"
   subtitle: "Mi terapia está diseñada para ti si..."
   profiles:
-    - icon: "briefcase"
-      title: "Mujeres profesionales"
-      description: "Que buscan equilibrar su vida laboral y personal sin sacrificar su bienestar emocional."
     - icon: "heart"
-      title: "Adolescentes"
-      description: "Que atraviesan momentos de incertidumbre y necesitan herramientas para gestionar sus emociones."
+      title: "Vives con ansiedad o miedos"
+      description: "Si la preocupación constante o el pánico te impiden disfrutar del presente."
     - icon: "cloud"
-      title: "Personas con ansiedad"
-      description: "Que sienten que la preocupación constante les impide disfrutar del presente."
+      title: "Atraviesas un duelo o ruptura"
+      description: "Una pérdida, una separación, o el fin de una etapa que necesitas procesar."
     - icon: "refresh"
-      title: "En proceso de cambio"
-      description: "Que atraviesan transiciones vitales y necesitan apoyo profesional para navegarlas."
+      title: "Intentas ser madre"
+      description: "Acompañamiento emocional en procesos de infertilidad, reproducción asistida o pérdidas gestacionales."
+    - icon: "briefcase"
+      title: "Buscas entenderte mejor"
+      description: "Problemas de autoestima, relaciones conflictivas o patrones que se repiten en tu vida."
 
 
 # ============================================
@@ -127,16 +128,24 @@ faq:
   items:
     - question: "¿Es efectiva la terapia online?"
       answer: "Absolutamente. Numerosos estudios científicos demuestran que la terapia online tiene la misma efectividad que la presencial. Además, ofrece ventajas como mayor flexibilidad horaria, eliminación de desplazamientos y la comodidad de realizarla desde tu espacio seguro."
-    - question: "¿Cuánto dura una sesión y cuál es el precio?"
-      answer: "Las sesiones tienen una duración de 50-60 minutos y el precio es de 80€ por sesión. Ofrezco una primera sesión de valoración gratuita de 30 minutos para conocernos y evaluar si mi enfoque es el adecuado para ti."
+    - question: "¿Cuánto dura una sesión ?"
+      answer: "Las sesiones tienen una duración de 50 minutos."
     - question: "¿Cómo funciona el pago?"
       answer: "El pago se realiza por transferencia bancaria o mediante un enlace seguro con tarjeta de crédito/débito. Recibirás la factura correspondiente tras cada sesión."
     - question: "¿Qué diferencia hay con otras plataformas de psicología online?"
       answer: "A diferencia de las plataformas masivas donde te asignan un profesional según disponibilidad, aquí trabajarás directamente conmigo. No hay intermediarios, algoritmos ni rotación de psicólogos. Es un servicio boutique donde priorizo la calidad sobre la cantidad."
     - question: "¿Cómo es la primera sesión?"
-      answer: "En la primera sesión de valoración (gratuita) nos conoceremos, exploraremos qué te trae a terapia y evaluaremos juntas si mi enfoque terapéutico encaja con lo que necesitas. Si decidimos continuar, planificaremos las siguientes sesiones."
+      answer: "El proceso comienza con una **llamada telefónica** donde me cuentas tu situación y valoro si soy la profesional adecuada para ti. Si es así, agendaremos la primera sesión de terapia para iniciar el tratamiento. Si no, te derivaré al especialista que crea que mejor pueda ayudarte."
     - question: "¿Qué necesito para las sesiones online?"
       answer: "Solo necesitas un dispositivo con cámara y micrófono (ordenador, tablet o móvil), conexión a internet estable, y un espacio privado donde te sientas cómoda. Utilizamos plataformas seguras y cifradas para garantizar la confidencialidad."
+    - question: "¿Con qué frecuencia tendremos las sesiones?"
+      answer: "Al inicio, lo más recomendable es una frecuencia semanal o quincenal para generar inercia terapéutica. A medida que avancemos y consigamos objetivos, espaciaremos las sesiones a mensuales de seguimiento hasta dar alta."
+    - question: "¿Quanto tiempo durará mi terapia?"
+      answer: "Es difícil predecirlo, ya que cada persona tiene su ritmo y cada caso es único. Mi objetivo es que puedas ser autónoma lo antes posible."
+    - question: "¿Qué pasa si tengo que cancelar una sesión?"
+      answer: "Entiendo los imprevistos. Solo te pido que me avises con al menos 24 horas de antelación para poder reorganizar la agenda y ofrecer ese hueco a otra persona que lo necesite. Las cancelaciones con menos tiempo implican el abono de la sesión."
+    - question: "¿Es segura y confidencial la terapia online?"
+      answer: "Totalmente. La confidencialidad es sagrada en mi consulta. Utilizo plataformas de videollamada encriptadas (Google Meet, Skype, Zoom) y seguras que cumplen estrictamente con la Ley de Protección de Datos, garantizando que nuestro espacio sea tan privado como una consulta presencial."
 
 # ============================================
 # ESPECIALIDADES (SEO)
@@ -183,6 +192,17 @@ specialties:
           desc: "Gestión de la intensidad emocional y el perfeccionismo en PAS/AACC."
         - name: "Desregulación Emocional"
           desc: "Aprender a gestionar la intensidad emocional sin desbordarte."
+
+# ============================================
+# LEGAL (Datos del responsable)
+# ============================================
+legal:
+  responsable:
+    nombre: "Alexandra Barroso"
+    nif: "49024563V"
+    direccion: "Madrid, España"
+    email: "contacto@alexandrabarroso.com"
+    colegiado: "Psicóloga Colegiada CV-13539"
 
 # ============================================
 # FOOTER

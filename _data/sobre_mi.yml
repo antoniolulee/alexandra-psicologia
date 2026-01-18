@@ -9,9 +9,9 @@
 hero:
   badge: "Mi Historia"
   title:
-    line1: "La psicología"
-    line2: "no te elige a ti"
-    line3: "tú la eliges a ella."
+    line1: "Algunos dicen que"
+    line2: "la psicología te elige."
+    line3: "A mí me eligió."
   paragraphs:
     - "Dicen que la vocación nace de la curiosidad. En mi caso, esa inquietud por comprender el <em>\"porqué\"</em> de nuestras emociones y conductas fue el motor que me impulsó desde muy joven."
     - "No me conformaba con explicaciones superficiales; quería entender la raíz del sufrimiento humano para poder ayudar a sanarlo."
@@ -84,6 +84,7 @@ experiencia:
     - title: "Experiencia Hospitalaria"
       subtitle: "Formación en patología grave"
       color: "accent"
+      icon: "clipboard"
       items:
         - "Trastornos de Personalidad"
         - "Trastorno Bipolar y Psicosis"
@@ -91,7 +92,8 @@ experiencia:
         - "Adicciones"
     - title: "Enfoque Actual"
       subtitle: "Especialización en consulta online"
-      color: "primary"
+      color: "accent"
+      icon: "heart"
       items:
         - "Ansiedad, Pánico y Fobias"
         - "Trauma y Apego (EMDR)"
@@ -108,6 +110,7 @@ supervision:
     - "Creo en la excelencia compartida. Dedico parte de mi tiempo a la supervisión de casos clínicos para psicólogos y estudiantes, ofreciendo el <em>\"sostén teórico\"</em> necesario para crecer con seguridad."
     - "Si estás iniciando tu carrera como psicoterapeuta o simplemente necesitas un espacio de reflexión sobre tus casos, estaré encantada de acompañarte."
   cta_text: "Consultar por Supervisión"
+  whatsapp_msg: "Hola Alexandra, soy profesional de la salud mental y me interesa recibir información sobre tus servicios de supervisión clínica."
   benefits:
     - title: "Análisis de casos"
       description: "Revisión detallada de formulaciones clínicas y planes de tratamiento."

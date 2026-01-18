@@ -9,13 +9,18 @@
                 this.show = true;
                 // Auto-dismiss after 10 seconds if not interacted with
                 setTimeout(() => {
-                    this.show = false;
+                    this.dismiss();
                 }, 10000);
             }, 1000);
         }
     },
+    dismiss() {
+        // Mark as seen so it doesn't reappear
+        localStorage.setItem('cookieConsent', 'dismissed');
+        this.show = false;
+    },
     accept() {
-        localStorage.setItem('cookieConsent', 'true');
+        localStorage.setItem('cookieConsent', 'accepted');
         this.show = false;
     }
 }" x-show="show" x-transition:enter="transition ease-out duration-300"
@@ -28,8 +33,7 @@
     class="bg-white dark:bg-dark-secondary-alt border border-border dark:border-dark-border rounded-lg shadow-lg p-6 flex flex-col gap-4">
     <div class="flex justify-between items-start">
       <h3 class="text-lg font-heading font-semibold text-primary dark:text-dark-primary">Uso de Cookies</h3>
-      <button @click="show = false"
-        aria-label="Cerrar"
+      <button @click="dismiss()" aria-label="Cerrar"
         class="text-text-muted hover:text-text dark:text-dark-text-muted dark:hover:text-dark-text transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

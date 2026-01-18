@@ -51,6 +51,7 @@ html {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -62,21 +63,35 @@ html {
 }
 
 /* Stagger children animation */
-.stagger-children > * {
+.stagger-children>* {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
-.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
-.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children>*:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stagger-children>*:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stagger-children>*:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stagger-children>*:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 /* Floating animation for decorative elements */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -86,8 +101,29 @@ html {
   animation: float 6s ease-in-out infinite;
 }
 
+/* Horizontal bounce animation for arrows */
+@keyframes bounceX {
+
+  0%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateX(25%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounceX 1s infinite;
+}
+
 /* Text balance for headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-wrap: balance;
 }
 
@@ -101,7 +137,9 @@ button:focus-visible {
 
 /* Ensure touch targets are at least 44px */
 @media (pointer: coarse) {
-  a, button {
+
+  a,
+  button {
     min-height: 44px;
     min-width: 44px;
   }
@@ -109,6 +147,7 @@ button:focus-visible {
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -121,18 +160,19 @@ button:focus-visible {
 
 /* Print styles */
 @media print {
+
   .no-print,
   header,
   footer,
   .fixed {
     display: none !important;
   }
-  
+
   body {
     font-size: 12pt;
     line-height: 1.5;
   }
-  
+
   a {
     text-decoration: underline;
   }

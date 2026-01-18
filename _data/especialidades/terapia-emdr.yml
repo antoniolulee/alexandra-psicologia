@@ -1,0 +1,141 @@
+---
+# ============================================
+# TERAPIA EMDR - Landing Page SEO
+# ============================================
+# Acceso desde layout: site.data.especialidades.terapia-emdr
+
+# ============================================
+# SEO
+# ============================================
+seo:
+  title: "Terapia EMDR Online | Alexandra Barroso - Psicóloga Especialista"
+  description: "Psicóloga formada en EMDR. Terapia online para superar trauma, ansiedad, fobias y experiencias difíciles. Procesamiento del trauma seguro y efectivo."
+  keywords:
+    - "terapia EMDR online"
+    - "psicóloga EMDR España"
+    - "EMDR trauma psicóloga"
+    - "tratamiento EMDR online"
+    - "terapia trauma adultos"
+    - "EMDR ansiedad"
+    - "EMDR fobias"
+    - "superar trauma psicóloga"
+    - "desensibilización reprocesamiento movimientos oculares"
+    - "psicóloga especialista EMDR"
+    - "EMDR duelo"
+    - "EMDR estrés postraumático"
+    - "terapia trauma infancia"
+    - "EMDR online efectivo"
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  badge: "Especialidad"
+  headline: "Libérate del peso del pasado con Terapia EMDR"
+  subtitle: "Trauma, ansiedad, fobias y experiencias difíciles. El EMDR te ayuda a procesarlas para que dejen de condicionar tu presente."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "AGENDA TU PRIMERA SESIÓN"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre la terapia EMDR que ofreces."
+
+# ============================================
+# QUÉ ES
+# ============================================
+que_es:
+  title: "¿Qué es la Terapia EMDR?"
+  content: |
+    **EMDR** (Eye Movement Desensitization and Reprocessing, o Desensibilización y Reprocesamiento por Movimientos Oculares) es una terapia psicológica **avalada científicamente** para el tratamiento del trauma y otras experiencias difíciles.
+
+    Desarrollada por la psicóloga Francine Shapiro en 1987, el EMDR es reconocido por la **Organización Mundial de la Salud (OMS)** y la **American Psychological Association (APA)** como tratamiento de elección para el Trastorno de Estrés Postraumático (TEPT).
+
+    ### ¿Cómo funciona el EMDR?
+
+    El EMDR se basa en el **modelo de Procesamiento Adaptativo de la Información (PAI)**. Cuando vivimos experiencias traumáticas o muy perturbadoras, a veces nuestro cerebro no puede procesarlas correctamente. Estas memorias quedan "atascadas" con las mismas emociones, sensaciones y creencias que tenían en el momento del trauma.
+
+    La terapia EMDR utiliza **estimulación bilateral** (movimientos oculares, tapping o sonidos alternados) mientras accedes a esas memorias difíciles. Esta estimulación activa los mecanismos naturales de procesamiento del cerebro, permitiendo que:
+
+    - Las memorias traumáticas se integren de forma adaptativa
+    - Las emociones intensas asociadas disminuyan significativamente
+    - Las creencias negativas sobre ti misma se transformen en creencias más positivas y realistas
+    - Puedas recordar sin revivir el sufrimiento
+
+    ### Mi formación en EMDR
+
+    Estoy **formada específicamente en EMDR** a través de programas acreditados. Esta formación especializada me permite aplicar el protocolo completo de 8 fases con seguridad, adaptándolo a cada caso y asegurando un procesamiento seguro del material traumático.
+
+# ============================================
+# CUÁNDO ACUDIR
+# ============================================
+cuando_acudir:
+  title: "¿Cuándo puede ayudarte el EMDR?"
+  subtitle: "El EMDR es eficaz para una amplia variedad de situaciones más allá del trauma evidente:"
+  items:
+    - title: "Trauma y TEPT"
+      description: "Accidentes, agresiones, violencia, catástrofes naturales o cualquier evento que haya dejado huella emocional profunda."
+      icon: "alert"
+    - title: "Trauma de la infancia"
+      description: "Negligencia emocional, abusos, bullying, separaciones traumáticas o experiencias de la infancia que siguen afectándote."
+      icon: "cloud"
+    - title: "Ansiedad y ataques de pánico"
+      description: "Ansiedad generalizada, fobias específicas, agorafobia o ataques de pánico recurrentes."
+      icon: "lightning"
+    - title: "Duelo complicado"
+      description: "Pérdidas de seres queridos que no has podido elaborar, duelo perinatal o muertes traumáticas."
+      icon: "heart"
+    - title: "Fobias específicas"
+      description: "Miedo intenso a volar, a los animales, a las inyecciones, a espacios cerrados u otras fobias que limitan tu vida."
+      icon: "star"
+    - title: "Baja autoestima"
+      description: "Creencias negativas sobre ti misma arraigadas desde experiencias pasadas: 'no valgo', 'no soy suficiente', 'soy defectuosa'."
+      icon: "user"
+    - title: "Parto traumático"
+      description: "Experiencias de parto que dejaron secuelas emocionales y dificultan el vínculo o la posibilidad de un nuevo embarazo."
+      icon: "baby"
+    - title: "Depresión"
+      description: "Especialmente cuando hay eventos vitales o experiencias pasadas identificables que contribuyen al cuadro depresivo."
+      icon: "moon"
+    - title: "Problemas de apego"
+      description: "Dificultades en las relaciones de pareja o interpersonales derivadas de experiencias tempranas con figuras de apego."
+      icon: "link"
+    - title: "Adicciones"
+      description: "Como complemento al tratamiento de adicciones, procesando los traumas subyacentes que pueden estar manteniendo la conducta adictiva."
+      icon: "refresh"
+
+# ============================================
+# ENFOQUE
+# ============================================
+enfoque:
+  title: "Mi enfoque en Terapia EMDR"
+  content: |
+    El EMDR no es simplemente una técnica que se aplica mecánicamente. Requiere una **evaluación cuidadosa**, preparación adecuada y un vínculo terapéutico sólido antes de comenzar el reprocesamiento.
+
+    ### Las 8 fases del protocolo EMDR
+
+    1. **Historia clínica**: Evaluación completa de tu historia, síntomas actuales y recursos personales.
+    2. **Preparación**: Te explico cómo funciona el EMDR y establecemos técnicas de regulación emocional.
+    3. **Evaluación**: Identificamos las memorias diana, las creencias negativas asociadas y las emociones presentes.
+    4. **Desensibilización**: Procesamiento de las memorias con estimulación bilateral hasta que la perturbación disminuya.
+    5. **Instalación**: Fortalecemos la creencia positiva que quieres asociar a esa experiencia.
+    6. **Escaneo corporal**: Verificamos que no queden sensaciones físicas perturbadoras.
+    7. **Cierre**: Aseguramos que sales de cada sesión en un estado de equilibrio.
+    8. **Reevaluación**: En la siguiente sesión, comprobamos los avances y ajustamos el tratamiento.
+
+    ### EMDR online: ¿es efectivo?
+
+    **Sí, el EMDR online es igual de efectivo que el presencial**. Utilizamos plataformas especializadas con herramientas de estimulación bilateral (puntos visuales que sigues con los ojos, o sonidos alternados con auriculares).
+
+    Las ventajas de la terapia EMDR online incluyen:
+    - Realizar las sesiones desde tu espacio seguro (tu casa)
+    - Evitar desplazamientos después de sesiones emocionalmente intensas
+    - Mayor flexibilidad horaria
+    - Acceso a una especialista formada en EMDR sin importar tu ubicación
+
+    ### Un proceso seguro y respetuoso
+
+    Nunca te fuerzo a hablar en detalle sobre lo que sucedió si no quieres. El EMDR permite procesar sin necesidad de narrar cada detalle del trauma. El proceso es **gradual** y siempre respetamos tu ritmo.
+
+# ============================================
+# CTA FINAL
+# ============================================
+cta_final:
+  title: "¿Comenzamos?"
+  subtitle: "El primer paso es contarme tu situación. Agenda una llamada para valorar si el EMDR es el enfoque adecuado para ti."

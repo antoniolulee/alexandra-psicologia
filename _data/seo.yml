@@ -2,6 +2,19 @@
 # CONFIGURACIÓN SEO
 # ============================================
 
+# ============================================
+# GOOGLE ANALYTICS
+# ============================================
+# Para activar Google Analytics, añade tu ID de medición de GA4:
+# 1. Ve a Google Analytics → Administrar → Flujos de datos → Tu sitio web
+# 2. Copia el ID de medición (empieza por G-)
+# 3. Pégalo aquí (sin comillas)
+# Ejemplo: ga4_id: G-XXXXXXXXXX
+# Déjalo vacío o comenta la línea para desactivar el tracking
+analytics:
+  ga4_id: "G-P6LDK867HQ"  # Google Analytics 4 activo
+  # track_localhost: false  # Descomenta para trackear en localhost (solo desarrollo)
+
 # Meta Tags Principales
 meta:
   title: "Alexandra Barroso | Psicóloga Clínica Online Colegiada"
@@ -100,4 +113,4 @@ schema:
   
   sameAs:
     # - "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar
-    # - "https://linkedin.com/in/alexandrabarroso" # Descomentar para activar
+    - "https://www.linkedin.com/in/alexandrabarrosodiaz/"

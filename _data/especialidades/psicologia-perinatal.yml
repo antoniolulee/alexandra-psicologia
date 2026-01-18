@@ -1,0 +1,134 @@
+---
+# ============================================
+# PSICOLOGÍA PERINATAL - Landing Page SEO
+# ============================================
+# Acceso desde layout: site.data.especialidades.psicologia-perinatal
+
+# ============================================
+# SEO
+# ============================================
+seo:
+  title: "Psicología Perinatal Online | Alexandra Barroso"
+  description: "Psicóloga perinatal online. Apoyo emocional en infertilidad, embarazo, parto traumático, postparto y duelo gestacional. Terapia especializada para madres."
+  keywords:
+    - "psicóloga perinatal online"
+    - "psicología perinatal España"
+    - "apoyo psicológico embarazo"
+    - "duelo gestacional psicóloga"
+    - "ansiedad postparto"
+    - "depresión postparto tratamiento"
+    - "infertilidad apoyo emocional"
+    - "reproducción asistida psicóloga"
+    - "miedo al parto tocofobia"
+    - "parto traumático psicóloga"
+    - "baby blues tratamiento"
+    - "ansiedad materna"
+    - "psicóloga maternidad online"
+    - "matrescence"
+    - "preparación emocional embarazo"
+    - "vínculo madre bebé"
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  badge: "Especialidad"
+  headline: "Te acompaño en el camino hacia la maternidad"
+  subtitle: "No tienes que vivirlo sola. Apoyo emocional en infertilidad, embarazo, parto, postparto y duelo gestacional."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "AGENDA TU PRIMERA SESIÓN"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre tus servicios de psicología perinatal."
+
+# ============================================
+# QUÉ ES
+# ============================================
+que_es:
+  title: "¿Qué es la Psicología Perinatal?"
+  content: |
+    La **psicología perinatal** es la rama de la psicología que se ocupa de la salud mental durante todo el proceso reproductivo: desde la búsqueda del embarazo hasta el postparto y la crianza temprana.
+
+    Este período vital supone una de las transiciones más intensas que puede experimentar una mujer. Los cambios físicos, hormonales, emocionales y de identidad ocurren simultáneamente, y no siempre el entorno o los profesionales sanitarios están preparados para atender el malestar psicológico que puede surgir.
+
+    A esta transformación profunda de convertirse en madre se le conoce como **matrescence** (maternidad + adolescencia). Es un proceso de cambio de identidad comparable al de la adolescencia, pero que ocurre en la vida adulta y suele pasar desapercibido por la sociedad.
+
+    ### ¿Por qué es importante el acompañamiento profesional?
+
+    - **El bienestar emocional de la madre influye directamente en el desarrollo del bebé**
+    - Previene complicaciones como la depresión postparto si se detecta a tiempo
+    - Ayuda a procesar experiencias difíciles (pérdidas, partos traumáticos)
+    - Facilita el establecimiento de un vínculo seguro con el bebé
+    - Valida tus emociones en una sociedad que romantiza la maternidad
+
+    Mi trabajo consiste en acompañarte en este proceso, normalizando tus emociones, validando tu experiencia y proporcionándote herramientas para atravesar esta etapa con mayor seguridad y equilibrio.
+
+# ============================================
+# CUÁNDO ACUDIR
+# ============================================
+cuando_acudir:
+  title: "¿Cuándo buscar ayuda?"
+  subtitle: "Estas son algunas situaciones en las que puedo acompañarte:"
+  items:
+    - title: "Dificultades para concebir"
+      description: "Cuando la búsqueda del embarazo se alarga y genera estrés, frustración o afecta a tu relación de pareja."
+      icon: "heart"
+    - title: "Reproducción asistida"
+      description: "Acompañamiento emocional durante los tratamientos de fertilidad, con sus altibajos, la incertidumbre y el impacto en tu cuerpo."
+      icon: "refresh"
+    - title: "Pérdidas gestacionales"
+      description: "Duelo perinatal por abortos, pérdidas tardías o muerte neonatal. Un dolor que necesita espacio y validación."
+      icon: "cloud"
+    - title: "Miedo al parto"
+      description: "Tocofobia o ansiedad intensa ante el parto. Miedos que pueden paralizarte e impedir que disfrutes del embarazo."
+      icon: "alert"
+    - title: "Ansiedad durante el embarazo"
+      description: "Miedos intensos a la salud del bebé, pensamientos intrusivos o preocupaciones que no te dejan descansar."
+      icon: "lightning"
+    - title: "Parto traumático"
+      description: "Experiencias de parto que dejan huella emocional: cesáreas de emergencia, partos instrumentalizados, sensación de pérdida de control."
+      icon: "star"
+    - title: "Depresión postparto"
+      description: "Tristeza profunda, desconexión del bebé, agotamiento extremo o pensamientos negativos tras el nacimiento. No es solo 'baby blues'."
+      icon: "moon"
+    - title: "Dificultades en el vínculo"
+      description: "Cuando sientes que no conectas con tu bebé como 'deberías' o la maternidad no es como esperabas."
+      icon: "link"
+    - title: "Cambio de identidad (Matrescence)"
+      description: "Sensación de pérdida de ti misma, duelo por tu vida anterior o crisis existencial al convertirte en madre."
+      icon: "user"
+    - title: "Lactancia y crianza temprana"
+      description: "El agotamiento, la presión social y las decisiones sobre crianza pueden generar mucho malestar emocional."
+      icon: "baby"
+
+# ============================================
+# ENFOQUE
+# ============================================
+enfoque:
+  title: "Mi enfoque en Psicología Perinatal"
+  content: |
+    Trabajo desde una perspectiva **integradora y respetuosa**, entendiendo que cada mujer vive la maternidad de forma única. No existe una manera "correcta" de sentirse, y todas tus emociones son válidas.
+
+    Mi objetivo no es decirte cómo debes sentirte o qué decisiones tomar, sino acompañarte en el proceso de conectar con tus propias necesidades y recursos.
+
+    ### Metodologías que utilizo
+
+    - **Enfoque narrativo**: Te ayudo a reescribir las historias que te cuentas sobre la maternidad, liberándote de expectativas imposibles y culpas innecesarias.
+    - **EMDR para trauma**: Especialmente útil para procesar partos traumáticos, pérdidas gestacionales o experiencias médicas difíciles.
+    - **Regulación emocional**: Técnicas para gestionar la intensidad emocional del postparto sin desbordarte.
+    - **Trabajo con el vínculo**: Herramientas para facilitar la conexión con tu bebé desde la seguridad.
+
+    ### ¿Por qué terapia online?
+
+    **La terapia online** permite que puedas acceder a este acompañamiento sin salir de casa, algo especialmente valioso durante:
+    - El embarazo de riesgo o reposo
+    - El postparto inmediato, cuando salir con un bebé es un reto
+    - Las tomas del bebé (puedes conectarte con bebé en brazos, ¡lo hemos hecho muchas veces!)
+    - Momentos de baja energía donde desplazarte sería un obstáculo más
+
+    También trabajo incluir a la pareja en sesiones puntuales cuando es relevante para el proceso.
+
+# ============================================
+# CTA FINAL
+# ============================================
+cta_final:
+  title: "¿Comenzamos?"
+  subtitle: "El primer paso es hablar. Agenda una llamada telefónica para contarme tu situación y explorar juntas cómo puedo acompañarte."

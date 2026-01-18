@@ -10,13 +10,13 @@ layout: null
     <priority>1.0</priority>
   </url>
   {% for page in site.pages %}
-  {% if page.url != '/sitemap.xml' and page.url != '/robots.txt' %}
+  {% unless page.url == '/sitemap.xml' or page.url == '/robots.txt' or page.robots contains 'noindex' %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endif %}
+  {% endunless %}
   {% endfor %}
 </urlset>

@@ -29,6 +29,11 @@
   <link rel="preload" as="image" href="{{ site.data.site.hero.image }}" fetchpriority="high">
   {% endif %}
 
+  <!-- Robots Meta Tag (para excluir páginas legales de indexación) -->
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
+
   <!-- SEO Meta Tags -->
   {% assign page_title = page.title | default: nil %}
   {% assign page_description = page.description | default: site.data.seo.meta.description %}
@@ -85,6 +90,17 @@
     "sameAs": {{ site.data.seo.schema.sameAs | jsonify }}
   }
   </script>
+
+  <!-- Google Analytics 4 (solo si está configurado y no es página sin tracking) -->
+  {% if site.data.seo.analytics.ga4_id and site.data.seo.analytics.ga4_id != "" and page.track != false %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.seo.analytics.ga4_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.data.seo.analytics.ga4_id }}');
+  </script>
+  {% endif %}
 
   <!-- Dark Mode Detection -->
   <script>
