@@ -85,7 +85,7 @@
       "longitude": "{{ site.data.seo.schema.geo.longitude }}"
     },
     "priceRange": "{{ site.data.seo.schema.priceRange }}",
-    "areaServed": "{{ site.data.seo.schema.areaServed }}",
+    "areaServed": {{ site.data.seo.schema.areaServed | jsonify }},
     "availableLanguage": {{ site.data.seo.schema.availableLanguage | jsonify }},
     "sameAs": {{ site.data.seo.schema.sameAs | jsonify }}
   }

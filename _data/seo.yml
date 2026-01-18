@@ -94,7 +94,7 @@ schema:
   
   # CRÍTICO: Definir que el servicio es para toda España
   areaServed: 
-    type: "Country"
+    "@type": "Country"
     name: "España"
   
   # Propiedad específica para indicar servicio online (si es soportado por Google)
