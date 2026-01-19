@@ -68,23 +68,23 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "{{ site.data.seo.schema.type }}",
-    "name": "{{ site.data.seo.schema.name }}",
-    "description": "{{ site.data.seo.schema.description }}",
-    "url": "{{ site.data.seo.schema.url }}",
-    "telephone": "{{ site.data.seo.schema.telephone }}",
-    "email": "{{ site.data.seo.schema.email }}",
+    "@type": {{ site.data.seo.schema.type | jsonify }},
+    "name": {{ site.data.seo.schema.name | jsonify }},
+    "description": {{ site.data.seo.schema.description | jsonify }},
+    "url": {{ site.data.seo.schema.url | jsonify }},
+    "telephone": {{ site.data.seo.schema.telephone | jsonify }},
+    "email": {{ site.data.seo.schema.email | jsonify }},
     "address": {
-      "@type": "{{ site.data.seo.schema.address.type }}",
-      "addressLocality": "{{ site.data.seo.schema.address.addressLocality }}",
-      "addressCountry": "{{ site.data.seo.schema.address.addressCountry }}"
+      "@type": {{ site.data.seo.schema.address.type | jsonify }},
+      "addressLocality": {{ site.data.seo.schema.address.addressLocality | jsonify }},
+      "addressCountry": {{ site.data.seo.schema.address.addressCountry | jsonify }}
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "{{ site.data.seo.schema.geo.latitude }}",
-      "longitude": "{{ site.data.seo.schema.geo.longitude }}"
+      "latitude": {{ site.data.seo.schema.geo.latitude | jsonify }},
+      "longitude": {{ site.data.seo.schema.geo.longitude | jsonify }}
     },
-    "priceRange": "{{ site.data.seo.schema.priceRange }}",
+    "priceRange": {{ site.data.seo.schema.priceRange | jsonify }},
     "areaServed": {{ site.data.seo.schema.areaServed | jsonify }},
     "availableLanguage": {{ site.data.seo.schema.availableLanguage | jsonify }},
     "sameAs": {{ site.data.seo.schema.sameAs | jsonify }}
