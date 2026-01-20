@@ -1,0 +1,120 @@
+---
+# ============================================
+# ANSIEDAD Y ESTRÉS - Landing Page SEO
+# ============================================
+
+# ============================================
+# SEO
+# ============================================
+seo:
+  title: "Psicóloga Ansiedad Online | Terapia para Estrés | Alexandra Barroso"
+  description: "Psicóloga especialista en ansiedad y estrés. Terapia online para ataques de pánico, ansiedad generalizada y estrés crónico. Primera valoración gratuita."
+  keywords:
+    - "psicóloga ansiedad online"
+    - "terapia ansiedad online"
+    - "psicólogo estrés"
+    - "ataques de pánico tratamiento"
+    - "ansiedad generalizada psicóloga"
+    - "estrés crónico terapia"
+    - "ansiedad laboral psicólogo"
+    - "crisis de ansiedad ayuda"
+    - "psicóloga ansiedad España"
+    - "terapia cognitivo conductual ansiedad"
+    - "técnicas para la ansiedad"
+    - "ansiedad síntomas tratamiento"
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  badge: "Bienestar Emocional"
+  headline: "Recupera la calma que mereces"
+  subtitle: "La ansiedad no define quién eres. Aprende a gestionarla y recupera el control de tu vida con terapia especializada."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre terapia para ansiedad."
+
+# ============================================
+# QUÉ ES
+# ============================================
+que_es:
+  title: "¿Qué es la ansiedad?"
+  content: |
+    La **ansiedad** es una respuesta natural del cuerpo ante situaciones percibidas como amenazantes. En su justa medida, nos ayuda a estar alerta y reaccionar. El problema surge cuando esta respuesta se activa de forma desproporcionada, constante o sin un peligro real.
+
+    Cuando la ansiedad se vuelve crónica o intensa, puede manifestarse como:
+    - **Ansiedad generalizada**: Preocupación excesiva y constante por múltiples aspectos de la vida
+    - **Ataques de pánico**: Episodios intensos de miedo con síntomas físicos abrumadores
+    - **Ansiedad social**: Miedo intenso a situaciones sociales o de evaluación
+    - **Fobias específicas**: Miedos irracionales a objetos o situaciones concretas
+
+    ### ¿Y el estrés?
+
+    El **estrés** es la respuesta del organismo ante demandas o presiones externas. A diferencia de la ansiedad, suele tener una causa identificable (trabajo, conflictos, cambios vitales). Sin embargo, cuando el estrés se mantiene en el tiempo, puede derivar en problemas de ansiedad, agotamiento o burnout.
+
+    ### ¿Por qué buscar ayuda profesional?
+
+    - Porque los síntomas físicos (taquicardia, tensión, insomnio) afectan tu calidad de vida
+    - Porque evitas situaciones que antes disfrutabas
+    - Porque las estrategias que usas (evitación, control excesivo) ya no funcionan
+    - Porque mereces herramientas efectivas, no solo "aguantar"
+
+# ============================================
+# CUÁNDO ACUDIR
+# ============================================
+cuando_acudir:
+  title: "¿Te identificas con alguna de estas situaciones?"
+  subtitle: "Quizás es momento de pedir ayuda profesional"
+  items:
+    - title: "Preocupación constante"
+      description: "Tu mente no para. Anticipas catástrofes y te cuesta dejar de darle vueltas a las cosas."
+    - title: "Síntomas físicos"
+      description: "Taquicardia, tensión muscular, problemas digestivos, dolores de cabeza sin causa médica aparente."
+    - title: "Problemas de sueño"
+      description: "Te cuesta conciliar el sueño, te despiertas por la noche o no descansas aunque duermas."
+    - title: "Ataques de pánico"
+      description: "Episodios intensos de miedo con sensación de perder el control, ahogo o miedo a morir."
+    - title: "Evitación"
+      description: "Has dejado de hacer cosas que antes hacías por miedo a cómo te sentirás."
+    - title: "Irritabilidad"
+      description: "Saltas por cualquier cosa, tienes poca paciencia y te sientes al límite."
+    - title: "Agotamiento"
+      description: "Sientes que no puedes más, que todo te supera y no tienes energía para nada."
+    - title: "Estrés laboral"
+      description: "El trabajo te consume, no desconectas y sientes que nunca llegas a todo."
+
+# ============================================
+# ENFOQUE
+# ============================================
+enfoque:
+  title: "Mi enfoque en el tratamiento de la ansiedad"
+  content: |
+    Trabajo con un enfoque **integrativo** que combina las técnicas más efectivas según la evidencia científica, adaptándolas a tu situación particular.
+
+    ### Metodologías que utilizo
+
+    - **Terapia Cognitivo-Conductual (TCC)**: Identificamos los pensamientos y comportamientos que mantienen tu ansiedad y trabajamos para modificarlos.
+    - **Técnicas de regulación emocional**: Aprenderás a gestionar la intensidad de tus emociones sin desbordarte.
+    - **Mindfulness y relajación**: Herramientas prácticas para anclarte al presente y reducir la activación fisiológica.
+    - **EMDR**: Si tu ansiedad tiene raíces en experiencias pasadas traumáticas, podemos procesarlas de forma segura.
+
+    ### ¿Qué puedes esperar del proceso?
+
+    1. **Comprender tu ansiedad**: Entender qué la dispara, qué la mantiene y cómo funciona en tu caso particular.
+    2. **Herramientas prácticas**: Técnicas que puedas usar en tu día a día cuando aparezca la ansiedad.
+    3. **Cambios graduales**: No se trata de eliminar la ansiedad (es imposible y no deseable), sino de aprender a relacionarte con ella de forma diferente.
+    4. **Autonomía**: Mi objetivo es que al final del proceso tengas las herramientas para gestionar tu ansiedad sin depender de nadie.
+
+    ### ¿Por qué terapia online?
+
+    La terapia online es igual de efectiva que la presencial para el tratamiento de la ansiedad. Además, te permite:
+    - Conectarte desde tu espacio seguro, reduciendo la ansiedad de desplazarte
+    - Mayor flexibilidad horaria
+    - Acceso desde cualquier lugar de España
+
+# ============================================
+# CTA FINAL
+# ============================================
+cta_final:
+  title: "¿Empezamos a trabajar juntas?"
+  subtitle: "El primer paso es una llamada gratuita donde me cuentas tu situación y valoramos si soy la profesional adecuada para ti."

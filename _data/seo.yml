@@ -109,7 +109,6 @@ schema:
 
   availableLanguage:
     - "Spanish"
-    - "English"
   
   sameAs:
     # - "https://instagram.com/alexandrabarroso.psicologa" # Descomentar para activar

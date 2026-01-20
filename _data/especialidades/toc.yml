@@ -1,0 +1,101 @@
+---
+# ============================================
+# TOC (Trastorno Obsesivo-Compulsivo) - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga TOC Online | Tratamiento Obsesiones | Alexandra Barroso"
+  description: "Psicóloga especialista en TOC. Terapia online para obsesiones, compulsiones y pensamientos intrusivos. Tratamiento basado en evidencia."
+  keywords:
+    - "psicóloga TOC online"
+    - "tratamiento TOC"
+    - "trastorno obsesivo compulsivo terapia"
+    - "pensamientos intrusivos"
+    - "compulsiones tratamiento"
+    - "obsesiones ayuda"
+    - "TOC puro"
+    - "TOC contaminación"
+    - "TOC relacional"
+    - "exposición y prevención respuesta"
+    - "rumiación mental"
+    - "pensamientos repetitivos"
+
+hero:
+  badge: "Especialización Clínica"
+  headline: "Liberarte de la trampa de tus pensamientos"
+  subtitle: "El TOC te hace creer que necesitas controlar tus pensamientos. Aprende a soltar el control y recuperar tu libertad."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, sufro de pensamientos obsesivos y me gustaría ayuda."
+
+que_es:
+  title: "¿Qué es el TOC?"
+  content: |
+    El **Trastorno Obsesivo-Compulsivo (TOC)** es un trastorno de ansiedad caracterizado por pensamientos intrusivos no deseados (obsesiones) y comportamientos repetitivos realizados para aliviar la ansiedad que generan (compulsiones).
+
+    ### Lo que el TOC NO es
+
+    - No es ser "maniático del orden"
+    - No es simplemente preocuparse mucho
+    - No es una preferencia o manía
+    - No es algo que puedas controlar "si quisieras"
+
+    ### Tipos de TOC
+
+    - **TOC de contaminación**: Miedo intenso a gérmenes, suciedad o contaminantes. Compulsiones de lavado.
+    - **TOC de verificación**: Comprobar repetidamente cerraduras, electrodomésticos, etc.
+    - **TOC de orden y simetría**: Necesidad de que las cosas estén "bien" o simétricas.
+    - **TOC puro (intrusive thoughts)**: Pensamientos obsesivos sin compulsiones visibles (o con compulsiones mentales).
+    - **TOC relacional**: Dudas obsesivas sobre la pareja ("¿Le quiero realmente?")
+    - **TOC moral o escrupulosidad**: Obsesiones sobre hacer daño, ser mala persona, temas religiosos.
+
+    ### La trampa del TOC
+
+    El TOC funciona así: tienes un pensamiento intrusivo → te genera ansiedad → haces algo para neutralizarlo → sientes alivio temporal → pero el pensamiento vuelve más fuerte. La compulsión alimenta la obsesión.
+
+cuando_acudir:
+  title: "¿Reconoces estos patrones?"
+  subtitle: "El TOC puede manifestarse de muchas formas"
+  items:
+    - title: "Pensamientos intrusivos"
+      description: "Ideas que aparecen sin querer y que te generan angustia. Pueden ser sobre daño, contaminación, sexualidad, etc."
+    - title: "Rituales repetitivos"
+      description: "Conductas que sientes que 'tienes' que hacer: verificar, ordenar, lavar, repetir palabras."
+    - title: "Rituales mentales"
+      description: "Compulsiones que no se ven: contar, repasar, analizar, buscar certeza mental."
+    - title: "Evitación"
+      description: "Evitas lugares, personas o situaciones para no disparar las obsesiones."
+    - title: "Búsqueda de reassurance"
+      description: "Necesitas que otros te confirmen que todo está bien, que no has hecho nada malo."
+    - title: "Tiempo consumido"
+      description: "Las obsesiones y compulsiones ocupan horas de tu día."
+    - title: "Vergüenza por los pensamientos"
+      description: "No puedes contarle a nadie lo que piensas porque te parece horrible."
+    - title: Sientes que te estás volviendo loca
+      description: "Temes que estos pensamientos signifiquen algo sobre ti o que pierdas el control."
+
+enfoque:
+  title: "Mi enfoque en el tratamiento del TOC"
+  content: |
+    El tratamiento de elección para el TOC es la **Terapia de Exposición y Prevención de Respuesta (EPR)**, considerada el "gold standard" con tasas de éxito del 60-80%.
+
+    ### Cómo funciona la EPR
+
+    1. **Psicoeducación**: Entender cómo funciona el TOC y por qué tus estrategias actuales lo mantienen.
+    2. **Jerarquía de exposiciones**: Ordenamos tus miedos de menor a mayor intensidad.
+    3. **Exposición gradual**: Te enfrentas progresivamente a lo que temes SIN realizar la compulsión.
+    4. **Habituación**: Con el tiempo, la ansiedad baja sola sin necesidad de neutralizar.
+
+    ### Lo que necesitas saber
+
+    - **Es incómodo al principio**: Vamos a tu ritmo, pero implica sentir ansiedad sin hacer la compulsión. Yo estaré ahí acompañándote.
+    - **Funciona**: La EPR es la intervención más efectiva que tenemos para el TOC.
+    - **No elimina los pensamientos**: El objetivo no es dejar de tener pensamientos intrusivos (todos los tenemos), sino que dejen de controlarte.
+
+    ### Terapia online para TOC
+
+    La terapia online funciona muy bien para el TOC. De hecho, muchas exposiciones pueden hacerse directamente en tu entorno real, lo que puede ser incluso más efectivo.
+
+cta_final:
+  title: "Hay una salida del bucle"
+  subtitle: "El primer paso es contarme lo que te está pasando. Sin juicio, con comprensión."

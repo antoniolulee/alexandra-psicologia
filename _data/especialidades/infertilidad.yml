@@ -1,0 +1,99 @@
+---
+# ============================================
+# INFERTILIDAD - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Infertilidad Online | Apoyo Reproducción Asistida | Alexandra Barroso"
+  description: "Psicóloga especialista en infertilidad. Terapia online para el proceso emocional de la reproducción asistida, donación y espera de resultados."
+  keywords:
+    - "psicóloga infertilidad online"
+    - "apoyo emocional reproducción asistida"
+    - "FIV psicóloga"
+    - "inseminación artificial apoyo"
+    - "infertilidad secundaria psicología"
+    - "ansiedad tratamiento fertilidad"
+    - "duelo infertilidad"
+    - "donación óvulos apoyo emocional"
+    - "ovodonación psicóloga"
+    - "espera beta ansiedad"
+    - "infertilidad y pareja"
+    - "no poder quedarme embarazada"
+
+hero:
+  badge: "Salud de la Mujer"
+  headline: "Entiendo cada negativo, cada espera, cada silencio"
+  subtitle: "Entiendo la montaña rusa emocional de la infertilidad. Te acompaño en cada paso del proceso."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, estoy en un proceso de fertilidad y necesito apoyo emocional."
+
+que_es:
+  title: "El impacto emocional de la infertilidad"
+  content: |
+    La **infertilidad** afecta aproximadamente a 1 de cada 6 parejas. Más allá del diagnóstico médico, supone un impacto emocional profundo que a menudo se minimiza o se pasa por alto.
+
+    ### Lo que nadie te cuenta
+
+    - La infertilidad es un duelo silenciado. Pierdes un futuro que imaginabas, mes a mes.
+    - Los tratamientos son invasivos física y emocionalmente, pero se espera que lo lleves "con normalidad".
+    - El entorno no siempre entiende: "Relájate y vendrá", "¿Habéis probado...?", "Podéis adoptar".
+    - Afecta a la identidad, la autoestima, la sexualidad y la relación de pareja.
+
+    ### La reproducción asistida
+
+    Los tratamientos de fertilidad (FIV, inseminación, donación) añaden capas de complejidad emocional:
+    - La incertidumbre constante
+    - Las hormonas que alteran el estado de ánimo
+    - Las decisiones éticas y personales (donación, cuántos intentos)
+    - El impacto económico
+    - La espera del resultado (la famosa "beta")
+
+    ### ¿Por qué acompañamiento psicológico?
+
+    Porque necesitas un espacio donde poder expresar todo lo que sientes sin ser juzgada. Donde tu dolor sea validado. Donde recibas herramientas para gestionar la ansiedad, la incertidumbre y el impacto en tu vida.
+
+cuando_acudir:
+  title: "¿En qué momentos puedo ayudarte?"
+  subtitle: "El proceso de infertilidad tiene muchas etapas difíciles"
+  items:
+    - title: "Diagnóstico de infertilidad"
+      description: "El shock inicial, las preguntas, el duelo por la fertilidad que dabas por hecha."
+    - title: "Durante los tratamientos"
+      description: "Gestionar la ansiedad, los efectos de las hormonas, las decisiones a tomar."
+    - title: "La espera del resultado"
+      description: "Las dos semanas más largas de tu vida. La betaespera."
+    - title: "Resultados negativos"
+      description: "Procesar el duelo de cada intento fallido, decidir si continuar."
+    - title: "Donación de gametos"
+      description: "Decisiones sobre ovodonación, donación de semen, embriones. Aspectos emocionales."
+    - title: "Impacto en la pareja"
+      description: "La infertilidad puede tensar la relación. Trabajamos juntos o por separado."
+    - title: "Decidir parar"
+      description: "Uno de los momentos más difíciles. Acompañamiento en la decisión de cerrar el capítulo."
+    - title: "Embarazo tras infertilidad"
+      description: "Sí, conseguirlo también requiere acompañamiento. El miedo no desaparece."
+
+enfoque:
+  title: "Mi enfoque en infertilidad"
+  content: |
+    Trabajo con personas y parejas en todo el proceso de infertilidad, desde el diagnóstico hasta el cierre del proceso (sea cual sea el resultado).
+
+    ### Cómo te acompaño
+
+    - **Espacio de validación**: Aquí puedes sentir rabia, tristeza, envidia, desesperanza. Todo es válido.
+    - **Gestión de la ansiedad**: Técnicas específicas para momentos de espera, procedimientos médicos, etc.
+    - **Decisiones informadas**: Te ayudo a clarificar qué quieres tú, más allá de las presiones externas.
+    - **Trabajo con la pareja**: A veces los ritmos son diferentes. A veces hay desacuerdos. A veces uno lleva más peso.
+    - **Duelo**: Cada negativo es una pérdida. Cada decisión de parar es un duelo. Están permitidos.
+
+    ### Terapia online para infertilidad
+
+    La terapia online es ideal para este proceso:
+    - Puedes conectar el día de la beta sin tener que salir de casa
+    - Flexibilidad para adaptarse a las citas médicas impredecibles
+    - Espacio privado donde llorar sin que te vea nadie en la sala de espera de una consulta
+
+cta_final:
+  title: "Mereces apoyo en este camino"
+  subtitle: "No tienes que llevarlo todo sola. El primer paso es contarme dónde estás."

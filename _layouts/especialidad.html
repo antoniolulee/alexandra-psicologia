@@ -2,57 +2,13 @@
 <html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="darkMode()" x-init="init()"
   :class="{ 'dark': isDark }">
 
-
-<head>
-  {% assign datos = site.data.especialidades[page.data_key] %}
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Tailwind & Custom CSS -->
-  <link rel="stylesheet" href="/assets/css/tailwind.css">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-
-  <!-- Fonts -->
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-    rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-  </noscript>
-
-  <!-- Dark Mode Detection (Critical for avoiding FOUC) -->
-  <script>
-    if (localStorage.getItem('darkMode') === 'true' ||
-      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
-
-  <!-- SEO from YAML Data -->
-  <title>{{ datos.seo.title }}</title>
-  <meta name="description" content="{{ datos.seo.description }}">
-  <meta name="keywords" content="{{ datos.seo.keywords | join: ', ' }}">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ datos.seo.title }}">
-  <meta property="og:description" content="{{ datos.seo.description }}">
-  <meta property="og:image" content="{{ site.url }}{{ datos.hero.image }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-</head>
+{% assign datos = site.data.especialidades[page.data_key] %}
+{% include head.html
+seo_title=datos.seo.title
+seo_description=datos.seo.description
+seo_keywords=datos.seo.keywords
+og_image=datos.hero.image
+%}
 
 <body
   class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">

@@ -1,0 +1,94 @@
+---
+# ============================================
+# DUELO - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Duelo Online | Acompañamiento en Pérdidas | Alexandra Barroso"
+  description: "Psicóloga especialista en duelo. Terapia online para procesar pérdidas, separaciones y muertes. Acompañamiento compasivo en tu proceso."
+  keywords:
+    - "psicóloga duelo online"
+    - "terapia duelo"
+    - "superar pérdida de un ser querido"
+    - "duelo complicado ayuda"
+    - "psicólogo duelo España"
+    - "acompañamiento duelo"
+    - "duelo por muerte"
+    - "duelo por separación"
+    - "duelo patológico tratamiento"
+    - "fases del duelo psicóloga"
+    - "no supero la muerte de"
+    - "terapia pérdida"
+
+hero:
+  badge: "Acompañamiento"
+  headline: "Hay un lugar para tu dolor"
+  subtitle: "El duelo no se supera, se transita. Te acompaño a encontrar la forma de seguir adelante sin olvidar."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, estoy pasando por un duelo y necesito ayuda."
+
+que_es:
+  title: "¿Qué es el duelo?"
+  content: |
+    El **duelo** es el proceso natural de adaptación ante una pérdida significativa. Aunque solemos asociarlo con la muerte de un ser querido, también experimentamos duelos ante:
+
+    - Rupturas de pareja
+    - Pérdida de salud o capacidades
+    - Pérdida de empleo o estatus
+    - Fin de etapas vitales
+    - Pérdida de la vida que imaginábamos
+
+    ### No hay una forma "correcta" de hacer duelo
+
+    Cada persona procesa la pérdida a su manera y en su tiempo. No hay fases obligatorias ni un calendario que cumplir. Lo que sí hay son señales de que el proceso se ha complicado y podría beneficiarse de acompañamiento profesional.
+
+    ### ¿Cuándo el duelo se complica?
+
+    - Cuando el dolor no disminuye con el tiempo (meses, años)
+    - Cuando interfiere significativamente con tu vida diaria
+    - Cuando evitas todo lo relacionado con la pérdida
+    - Cuando sientes que "deberías" haberlo superado ya
+    - Cuando hay sentimientos de culpa o rabia que no puedes procesar
+
+cuando_acudir:
+  title: "¿En qué momentos puedo acompañarte?"
+  subtitle: "El duelo tiene muchas caras"
+  items:
+    - title: "Muerte de un ser querido"
+      description: "La pérdida de alguien importante: padres, pareja, hijos, amigos. Cada pérdida es única."
+    - title: "Duelo anticipatorio"
+      description: "Cuando sabes que la pérdida va a llegar (enfermedad terminal) y el duelo comienza antes."
+    - title: "Pérdidas no reconocidas"
+      description: "Duelos que la sociedad no valida: mascotas, ex parejas, abortos, pérdidas laborales."
+    - title: "Ruptura de pareja"
+      description: "El fin de una relación es una pérdida que requiere su propio proceso de duelo."
+    - title: "Duelo complicado"
+      description: "Cuando el proceso se estanca y no encuentras la forma de avanzar."
+    - title: "Aniversarios difíciles"
+      description: "Fechas señaladas que reabren el dolor y no sabes cómo afrontarlas."
+    - title: "Culpa y arrepentimiento"
+      description: "Cosas que no dijiste, que no hiciste, que te gustaría haber hecho diferente."
+    - title: "Duelo infantil"
+      description: "Acompañamiento a padres para ayudar a sus hijos a procesar pérdidas."
+
+enfoque:
+  title: "Mi enfoque en el acompañamiento del duelo"
+  content: |
+    Mi trabajo en duelo no consiste en "ayudarte a superar" la pérdida. Consiste en acompañarte mientras encuentras una forma de integrarla en tu vida, de seguir adelante sin olvidar, de encontrar un lugar para ese amor que ya no tiene dónde ir.
+
+    ### Cómo trabajo el duelo
+
+    - **Espacio para el dolor**: Un lugar seguro donde puedas expresar lo que sientes sin ser juzgada ni presionada.
+    - **Validación**: Tu forma de hacer duelo es válida. No hay tiempos correctos ni emociones incorrectas.
+    - **Trabajo con la culpa**: Muchos duelos se complican por cosas no dichas o no hechas. Trabajamos con eso.
+    - **Rituales y despedidas**: A veces necesitamos crear nuestros propios rituales para cerrar o transformar.
+    - **EMDR**: Para procesar aspectos traumáticos de la pérdida (muertes súbitas, violentas, etc.).
+
+    ### Lo que puedes esperar
+
+    No voy a pedirte que dejes de sentir. No voy a decirte que "está en un lugar mejor" o que "el tiempo lo cura todo". Voy a estar contigo en el dolor, ayudándote a encontrar tu propia manera de transitar este camino.
+
+cta_final:
+  title: "No tienes que hacer esto sola"
+  subtitle: "A veces solo necesitas a alguien que escuche sin juzgar y te acompañe. Estoy aquí."

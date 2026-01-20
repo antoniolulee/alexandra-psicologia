@@ -1,0 +1,93 @@
+---
+# ============================================
+# AUTOESTIMA - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Autoestima Online | Seguridad Personal | Alexandra Barroso"
+  description: "Psicóloga especialista en autoestima. Terapia online para fortalecer tu autoconcepto, superar inseguridades y desarrollar confianza en ti misma."
+  keywords:
+    - "psicóloga autoestima online"
+    - "terapia autoestima"
+    - "mejorar autoestima psicólogo"
+    - "inseguridad tratamiento"
+    - "falta de confianza ayuda"
+    - "autoconcepto bajo"
+    - "autoestima baja psicología"
+    - "quererse a una misma"
+    - "seguridad personal terapia"
+    - "dependencia emocional autoestima"
+    - "crítica interna psicóloga"
+    - "amor propio terapia"
+
+hero:
+  badge: "Desarrollo Personal"
+  headline: "Aprende a mirarte con los ojos que mereces"
+  subtitle: "Tu valor no depende de lo que haces o de lo que otros piensan de ti. Es hora de que empieces a creerlo."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre terapia para mejorar mi autoestima."
+
+que_es:
+  title: "¿Qué es la autoestima?"
+  content: |
+    La **autoestima** es la valoración que hacemos de nosotras mismas. Incluye nuestros pensamientos, sentimientos y creencias sobre nuestro propio valor como personas.
+
+    Una autoestima sana no significa creerse perfecta o superior. Significa:
+    - Aceptarte con tus virtudes y limitaciones
+    - Tratarte con la misma compasión que tratarías a una amiga
+    - Confiar en tu capacidad para afrontar los retos de la vida
+    - No necesitar constantemente la aprobación externa para sentirte válida
+
+    ### ¿Cómo se forma la autoestima?
+
+    La autoestima se construye desde la infancia a través de:
+    - Las experiencias con nuestras figuras de apego
+    - Los mensajes que recibimos sobre nuestro valor
+    - Las experiencias de éxito y fracaso
+    - El trato que observamos hacia nosotras mismas y hacia otros
+
+    ### ¿Por qué cuesta tanto cambiarla?
+
+    Porque la baja autoestima no es solo un pensamiento que puedas cambiar con fuerza de voluntad. Está enraizada en experiencias tempranas, en patrones de relación y en una forma de mirarte que has aprendido durante años. Por eso, trabajarla requiere un proceso terapéutico que vaya a la raíz.
+
+cuando_acudir:
+  title: "¿Te sientes identificada?"
+  subtitle: "Señales de que tu autoestima necesita atención"
+  items:
+    - title: "Autocrítica constante"
+      description: "Tu diálogo interno es duro, exigente y nunca estás satisfecha contigo misma."
+    - title: "Comparación con otros"
+      description: "Sientes que todos lo hacen mejor que tú y que siempre sales perdiendo en la comparación."
+    - title: "Dificultad para decir no"
+      description: "Priorizas las necesidades de otros por encima de las tuyas por miedo al rechazo."
+    - title: "Búsqueda de aprobación"
+      description: "Necesitas constantemente que otros validen lo que haces o quién eres."
+    - title: "Miedo al rechazo"
+      description: "Evitas mostrarte tal como eres por miedo a no gustar o a ser rechazada."
+    - title: "Relaciones desequilibradas"
+      description: Tiendes a relaciones donde das más de lo que recibes o te sientes menos que tu pareja.
+    - title: "Dificultad para aceptar cumplidos"
+      description: "Cuando alguien te dice algo positivo, no te lo crees o lo minimizas."
+    - title: "Perfeccionismo paralizante"
+      description: "Te exiges tanto que a veces prefieres no intentarlo a arriesgarte a fallar."
+
+enfoque:
+  title: "Mi enfoque para trabajar la autoestima"
+  content: |
+    La autoestima no se mejora con afirmaciones positivas frente al espejo. Requiere un trabajo profundo que explore el origen de esas creencias sobre ti misma.
+
+    ### Cómo trabajamos juntas
+
+    - **Exploración del origen**: ¿De dónde vienen esas creencias sobre ti? ¿Quién te enseñó a mirarte así?
+    - **Trabajo con la crítica interna**: Identificamos esa voz que te machaca y aprendemos a relacionarnos con ella de otra forma.
+    - **Terapia narrativa**: Reescribimos la historia que te cuentas sobre quién eres y lo que vales.
+    - **Experiencias correctivas**: Pequeños experimentos en tu vida real que desafían esas creencias limitantes.
+
+    ### El proceso
+
+    No se trata de convencerte de que eres maravillosa. Se trata de que puedas verte con más claridad, sin el filtro distorsionado de la autocrítica, y aprendas a tratarte con el respeto y la compasión que mereces.
+
+cta_final:
+  title: "Mereces mirarte con otros ojos"
+  subtitle: "El primer paso es una conversación. Cuéntame cómo te sientes y exploramos juntas si puedo acompañarte."

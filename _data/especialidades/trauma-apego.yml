@@ -1,0 +1,96 @@
+---
+# ============================================
+# TRAUMA Y APEGO - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Trauma y Apego Online | Heridas Vinculares | Alexandra Barroso"
+  description: "Psicóloga especialista en trauma y apego. Terapia online para sanar heridas de la infancia, experiencias adversas y mejorar tus relaciones."
+  keywords:
+    - "psicóloga trauma online"
+    - "terapia trauma"
+    - "apego ansioso psicóloga"
+    - "heridas de la infancia"
+    - "trauma infantil terapia"
+    - "apego evitativo tratamiento"
+    - "experiencias adversas infancia"
+    - "sanar el pasado"
+    - "trauma relacional"
+    - "apego desorganizado"
+    - "terapia apego adultos"
+    - "trauma complejo TEPT-C"
+
+hero:
+  badge: "Trauma & EMDR"
+  headline: "Sanar las heridas que no se ven"
+  subtitle: "Lo que viviste en el pasado moldea cómo te relacionas hoy. Pero no tiene por qué seguir definiéndote."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, me gustaría trabajar temas de trauma y apego."
+
+que_es:
+  title: "¿Qué es el trauma y el apego?"
+  content: |
+    El **trauma psicológico** no es solo lo que pasó, sino cómo tu sistema nervioso procesó esa experiencia. Eventos que objetivamente no parecen "tan graves" pueden dejar huellas profundas si ocurrieron en momentos de vulnerabilidad o sin el apoyo adecuado.
+
+    ### Tipos de trauma
+
+    - **Trauma de choque**: Eventos puntuales abrumadores (accidentes, violencia, pérdidas súbitas)
+    - **Trauma relacional/complejo**: Experiencias repetidas en el contexto de relaciones, especialmente en la infancia (negligencia, abuso, abandono, invalidación emocional)
+
+    ### ¿Qué es el apego?
+
+    El **apego** es el vínculo emocional que desarrollamos con nuestras figuras de cuidado principales. Este vínculo temprano crea un "modelo interno" de cómo funcionan las relaciones que nos acompaña toda la vida.
+
+    - **Apego seguro**: Capacidad de confiar, pedir ayuda y mantener la autonomía
+    - **Apego ansioso**: Miedo al abandono, necesidad de cercanía constante, celos
+    - **Apego evitativo**: Dificultad para la intimidad, autosuficiencia excesiva
+    - **Apego desorganizado**: Mezcla de ansiedad y evitación, caos relacional
+
+    ### La buena noticia
+
+    El apego se puede "ganar" en la vida adulta. Con las experiencias relacionales correctas (incluida la terapia), podemos desarrollar patrones más seguros.
+
+cuando_acudir:
+  title: "¿Reconoces estos patrones?"
+  subtitle: "Señales de que el trauma o el apego pueden estar afectándote"
+  items:
+    - title: "Relaciones que se repiten"
+      description: "Siempre terminas en el mismo tipo de relaciones dolorosas o insatisfactorias."
+    - title: "Miedo al abandono"
+      description: "Necesitas constante confirmación de que no te van a dejar. Los silencios te generan ansiedad."
+    - title: "Dificultad para la intimidad"
+      description: "Cuando alguien se acerca demasiado, sientes la necesidad de alejarte."
+    - title: "Flashbacks o recuerdos intrusivos"
+      description: "Imágenes o sensaciones del pasado que irrumpen sin avisar."
+    - title: "Hipervigilancia"
+      description: "Estás siempre alerta, anticipando peligros, sin poder relajarte."
+    - title: "Desregulación emocional"
+      description: "Pasas de 0 a 100 en segundos, o te desconectas emocionalmente para no sentir."
+    - title: "Sensación de vacío"
+      description: "No sabes muy bien quién eres o qué quieres. Sensación crónica de insatisfacción."
+    - title: "Dificultad para poner límites"
+      description: "Te cuesta decir no, defender tus necesidades o alejarte de relaciones tóxicas."
+
+enfoque:
+  title: "Mi enfoque en trauma y apego"
+  content: |
+    El trabajo con trauma requiere un abordaje especializado, respetuoso con tus tiempos y que priorice tu seguridad emocional.
+
+    ### Metodologías que utilizo
+
+    - **EMDR (Desensibilización y Reprocesamiento por Movimientos Oculares)**: Técnica con amplia evidencia para procesar recuerdos traumáticos de forma segura y efectiva.
+    - **Terapia sensoriomotriz**: Trabajo con el cuerpo y las sensaciones para liberar el trauma almacenado.
+    - **Modelo de apego**: Entenderemos juntas tu estilo de apego y trabajaremos para desarrollar patrones más seguros.
+    - **Regulación del sistema nervioso**: Técnicas para gestionar las respuestas de hiperactivación o bloqueo.
+
+    ### El proceso terapéutico
+
+    1. **Seguridad y estabilización**: Antes de procesar trauma, necesitas recursos para regularte.
+    2. **Comprensión**: Entender cómo tu historia moldea tu presente.
+    3. **Procesamiento**: Trabajar con los recuerdos y experiencias de forma segura.
+    4. **Integración**: Incorporar los cambios en tu vida y relaciones actuales.
+
+cta_final:
+  title: "Tu pasado no tiene que definir tu futuro"
+  subtitle: "El primer paso es una llamada donde exploramos juntas si puedo acompañarte en este proceso."

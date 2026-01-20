@@ -1,0 +1,20 @@
+# ============================================
+# PÁGINA 404 - CONTENIDO
+# ============================================
+
+seo:
+  title: "Página no encontrada"
+  description: "La página que buscas no existe o ha sido movida."
+  robots: "noindex, nofollow"
+
+content:
+  code: "404"
+  headline: "Esta página no existe"
+  message: "Lo siento, la página que buscas ha sido movida o no existe. Pero no te preocupes, puedo ayudarte a encontrar lo que necesitas."
+
+actions:
+  home:
+    text: "Volver al inicio"
+    url: "/"
+  contact:
+    text: "Escríbeme"

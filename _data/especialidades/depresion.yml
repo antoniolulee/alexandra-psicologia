@@ -1,0 +1,117 @@
+---
+# ============================================
+# DEPRESIÓN - Landing Page SEO
+# ============================================
+
+# ============================================
+# SEO
+# ============================================
+seo:
+  title: "Psicóloga Depresión Online | Tratamiento Efectivo | Alexandra Barroso"
+  description: "Psicóloga especialista en depresión. Terapia online para superar la tristeza profunda, apatía y falta de motivación. Recupera tu vitalidad."
+  keywords:
+    - "psicóloga depresión online"
+    - "tratamiento depresión"
+    - "terapia depresión online"
+    - "psicólogo tristeza"
+    - "depresión síntomas ayuda"
+    - "superar depresión"
+    - "apatía tratamiento"
+    - "falta de motivación psicólogo"
+    - "depresión mayor tratamiento"
+    - "distimia psicóloga"
+    - "terapia cognitiva depresión"
+    - "reactivación conductual"
+
+# ============================================
+# HERO
+# ============================================
+hero:
+  badge: "Bienestar Emocional"
+  headline: "Volver a sentir que la vida merece la pena"
+  subtitle: "Entiendo ese vacío que sientes. Juntas podemos encontrar el camino de vuelta a ti misma."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre terapia para depresión."
+
+# ============================================
+# QUÉ ES
+# ============================================
+que_es:
+  title: "¿Qué es la depresión?"
+  content: |
+    La **depresión** es mucho más que estar triste. Es un trastorno del estado de ánimo que afecta a cómo te sientes, piensas y manejas las actividades diarias. A menudo se describe como un vacío, una falta de color en la vida o una sensación de estar atrapada bajo un peso invisible.
+
+    ### Tipos de depresión
+
+    - **Depresión mayor**: Episodios intensos de tristeza profunda, pérdida de interés y síntomas físicos que dificultan el funcionamiento diario.
+    - **Distimia**: Una forma más leve pero crónica de depresión que puede durar años, haciéndote sentir que "siempre has sido así".
+    - **Depresión situacional**: Respuesta a eventos vitales difíciles (pérdidas, rupturas, cambios) que se prolonga más de lo esperado.
+
+    ### La depresión NO es...
+
+    - Debilidad o falta de voluntad
+    - Algo que puedas superar "poniendo de tu parte"
+    - Una excusa o exageración
+    - Algo de lo que avergonzarte
+
+    ### ¿Por qué buscar ayuda?
+
+    La depresión es una de las condiciones más tratables en salud mental. Con el acompañamiento adecuado, la mayoría de las personas experimentan una mejora significativa. Buscar ayuda no es rendirse, es el primer paso valiente hacia la recuperación.
+
+# ============================================
+# CUÁNDO ACUDIR
+# ============================================
+cuando_acudir:
+  title: "¿Reconoces estos síntomas?"
+  subtitle: "La depresión puede manifestarse de muchas formas"
+  items:
+    - title: "Tristeza persistente"
+      description: "Un estado de ánimo bajo que no mejora con el tiempo y que no responde a las cosas que antes te animaban."
+    - title: "Pérdida de interés"
+      description: "Nada te motiva. Las actividades que antes disfrutabas ahora te resultan indiferentes o un esfuerzo enorme."
+    - title: "Fatiga constante"
+      description: "Aunque duermas, te sientes agotada. Incluso las tareas pequeñas parecen requerir un esfuerzo monumental."
+    - title: "Cambios en el sueño"
+      description: "Insomnio o hipersomnia. Duermes demasiado o no consigues descansar."
+    - title: "Cambios en el apetito"
+      description: "Comes mucho más o mucho menos de lo habitual, con cambios de peso asociados."
+    - title: "Dificultad para concentrarte"
+      description: "Niebla mental, olvidos frecuentes, incapacidad para tomar decisiones."
+    - title: "Sentimientos de culpa"
+      description: "Te culpas por todo, sientes que eres una carga o que no vales nada."
+    - title: "Aislamiento social"
+      description: "Has dejado de ver a amigos y familia porque no tienes energía o no quieres ser una carga."
+
+# ============================================
+# ENFOQUE
+# ============================================
+enfoque:
+  title: "Mi enfoque en el tratamiento de la depresión"
+  content: |
+    Trabajo desde una perspectiva **integradora** que combina las técnicas con mayor evidencia científica para el tratamiento de la depresión.
+
+    ### Metodologías principales
+
+    - **Activación conductual**: Comenzamos identificando pequeñas acciones que pueden reactivar tu sistema de recompensa. No esperamos a que tengas ganas para actuar; actuamos para que vuelvan las ganas.
+    - **Terapia cognitiva**: Trabajamos con los pensamientos negativos automáticos que alimentan y mantienen la depresión.
+    - **Enfoque narrativo**: Exploramos la historia que te cuentas sobre ti misma y la vida, identificando narrativas que te limitan.
+    - **EMDR**: Si hay experiencias pasadas que contribuyen a tu estado actual, podemos procesarlas de forma segura.
+
+    ### El proceso terapéutico
+
+    1. **Evaluación inicial**: Entender tu situación, tu historia y tus recursos.
+    2. **Estabilización**: Primeras estrategias para frenar la caída y empezar a encontrar pequeños alivios.
+    3. **Trabajo profundo**: Abordar las causas subyacentes y cambiar patrones de pensamiento y comportamiento.
+    4. **Prevención de recaídas**: Herramientas para mantener los logros y detectar señales de alarma tempranas.
+
+    ### ¿Por qué terapia online?
+
+    La terapia online es especialmente útil cuando la depresión hace que salir de casa sea un reto. Puedes conectarte desde tu sofá, en pijama si lo necesitas. Lo importante es que vengas, no cómo vengas.
+
+# ============================================
+# CTA FINAL
+# ============================================
+cta_final:
+  title: "No tienes que seguir sintiéndote así"
+  subtitle: "El primer paso es una llamada donde me cuentas cómo te sientes. Sin compromiso, solo para ver si puedo ayudarte."

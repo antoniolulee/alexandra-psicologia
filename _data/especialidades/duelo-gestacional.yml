@@ -1,0 +1,107 @@
+---
+# ============================================
+# DUELO GESTACIONAL - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Duelo Gestacional Online | Pérdida Embarazo | Alexandra Barroso"
+  description: "Psicóloga especialista en duelo gestacional. Terapia online para abortos, pérdidas tardías y muerte perinatal. Acompañamiento compasivo."
+  keywords:
+    - "psicóloga duelo gestacional online"
+    - "pérdida embarazo apoyo"
+    - "aborto espontáneo psicóloga"
+    - "duelo perinatal"
+    - "muerte fetal intrauterina"
+    - "pérdida gestacional"
+    - "aborto diferido duelo"
+    - "embarazo ectópico psicología"
+    - "pérdida tardía embarazo"
+    - "neonatología duelo"
+    - "superar pérdida bebé"
+    - "muerte neonatal apoyo"
+
+hero:
+  badge: "Salud de la Mujer"
+  headline: "Tu dolor es real. Tu bebé existió."
+  subtitle: "El duelo gestacional es uno de los más silenciados. Aquí tienes un espacio para nombrarlo, sentirlo y transitarlo."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, he tenido una pérdida gestacional y necesito ayuda."
+
+que_es:
+  title: "¿Qué es el duelo gestacional?"
+  content: |
+    El **duelo gestacional** o **duelo perinatal** es el proceso de duelo que sigue a la pérdida de un embarazo o un bebé en cualquier momento de la gestación o poco después del nacimiento.
+
+    ### Un duelo invisible
+
+    La sociedad tiende a minimizar estas pérdidas:
+    - "Era muy pronto, no te había dado tiempo a encariñarte"
+    - "Puedes volver a intentarlo"
+    - "Es muy común, le pasa a mucha gente"
+    - "Al menos no llegaste a conocerlo"
+
+    Pero la realidad es que **ya eras madre**. Desde el momento en que supiste que estabas embarazada, proyectaste un futuro, un nombre, una vida. Esa pérdida es real y merece ser reconocida.
+
+    ### Tipos de pérdidas
+    
+    - **Aborto espontáneo temprano**: Antes de las 12 semanas
+    - **Aborto tardío**: Entre las 12 y las 20 semanas
+    - **Muerte fetal intrauterina**: Después de las 20 semanas
+    - **Muerte neonatal**: En los primeros 28 días de vida
+    - **Interrupción por anomalías**: Decisiones médicamente indicadas
+    - **Embarazo ectópico**: Pérdida con riesgo para la madre
+    - **Reducción embrionaria**: En embarazos múltiples por reproducción asistida
+
+    ### El duelo de la pareja
+
+    El duelo gestacional afecta a ambos miembros de la pareja, aunque a menudo de forma diferente. A veces uno se convierte en el "cuidador" del otro y no tiene espacio para su propio dolor.
+
+cuando_acudir:
+  title: "¿Cuándo buscar ayuda?"
+  subtitle: "No hay un momento correcto ni incorrecto"
+  items:
+    - title: "Inmediatamente tras la pérdida"
+      description: "Necesitas procesar lo ocurrido, tomar decisiones médicas, comunicarlo."
+    - title: "Semanas después"
+      description: "Cuando la vida 'vuelve a la normalidad' pero tú no. Cuando todos esperan que estés bien."
+    - title: "Antes de un nuevo intento"
+      description: "El miedo a que vuelva a pasar. Decidir si estás lista para intentarlo de nuevo."
+    - title: "Durante un nuevo embarazo"
+      description: "La ansiedad de que se repita. No poder disfrutar del embarazo."
+    - title: "En fechas señaladas"
+      description: "La fecha probable de parto, el aniversario de la pérdida, Navidades."
+    - title: "Si afecta a tu pareja"
+      description: "Diferentes ritmos de duelo, reproches, distancia."
+    - title: "Si tienes otros hijos"
+      description: "Cómo acompañarles en su propio proceso, cómo hablar de lo ocurrido."
+    - title: "Si el duelo se complica"
+      description: "Meses o años después, si sientes que no avanzas."
+
+enfoque:
+  title: "Mi enfoque en duelo gestacional"
+  content: |
+    Trabajo el duelo gestacional desde un profundo respeto por tu experiencia y tu ritmo. No hay formas correctas de hacer duelo, solo la tuya.
+
+    ### Cómo te acompaño
+
+    - **Nombrar la pérdida**: Tu bebé existió. Puede tener un nombre si quieres. Podemos hablar de él/ella.
+    - **Validar tu dolor**: Todas tus emociones son legítimas, incluyendo la rabia, la culpa, la envidia hacia otras embarazadas.
+    - **Rituales de despedida**: A veces necesitamos crear nuestros propios rituales para despedirnos.
+    - **EMDR**: Para procesar aspectos traumáticos (malas experiencias médicas, el parto, etc.).
+    - **Trabajo con la pareja**: Cuando los ritmos de duelo son diferentes y genera conflicto.
+
+    ### Lo que no haré
+
+    - No te diré que "es la voluntad de la naturaleza"
+    - No te presionaré para "seguir adelante"
+    - No minimizaré tu pérdida por pequeña que fuera la edad gestacional
+    - No te compararé con otras experiencias
+
+    ### Terapia online
+
+    La terapia online te permite conectar desde casa, un espacio seguro donde puedes llorar sin contención. Especialmente valioso cuando no tienes energía para salir o enfrentarte al mundo.
+
+cta_final:
+  title: "Tu bebé existió. Tu dolor importa."
+  subtitle: "Estoy aquí para acompañarte. El primer paso es una llamada donde me cuentas lo que necesites."

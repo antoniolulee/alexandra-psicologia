@@ -1,0 +1,100 @@
+---
+# ============================================
+# TDAH ADULTOS - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga TDAH Adultos Online | Diagnóstico y Terapia | Alexandra Barroso"
+  description: "Psicóloga especialista en TDAH adultos. Terapia online para gestionar la atención, impulsividad y regulación emocional. Estrategias prácticas."
+  keywords:
+    - "psicóloga TDAH adultos online"
+    - "terapia TDAH adultos"
+    - "TDAH adultos síntomas"
+    - "déficit atención adultos"
+    - "impulsividad TDAH tratamiento"
+    - "TDAH y regulación emocional"
+    - "TDAH mujer adulta"
+    - "procrastinación TDAH"
+    - "funciones ejecutivas TDAH"
+    - "TDAH diagnóstico tardío"
+    - "TDAH en mujeres"
+    - "coaching TDAH"
+
+hero:
+  badge: "Neurodivergencia"
+  headline: "Tu cerebro funciona diferente, no peor"
+  subtitle: "El TDAH en adultos tiene sus desafíos, pero también fortalezas. Aprende a trabajar con tu cerebro, no contra él."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, creo que podría tener TDAH y me gustaría explorarlo."
+
+que_es:
+  title: "¿Qué es el TDAH en adultos?"
+  content: |
+    El **Trastorno por Déficit de Atención e Hiperactividad (TDAH)** es una condición del neurodesarrollo que afecta aproximadamente al 4-5% de la población adulta. No es falta de voluntad, pereza ni desinterés: es una diferencia en cómo funciona tu cerebro.
+
+    ### Más allá del estereotipo
+
+    El TDAH en adultos no siempre se parece a lo que vemos en niños. La hiperactividad física suele transformarse en:
+    - Inquietud interna
+    - Dificultad para relajarse
+    - Hablar mucho o interrumpir
+    - Sensación de motor interno encendido
+
+    ### Las tres presentaciones
+
+    - **Predominantemente inatento**: Dificultad para mantener la atención, despistes, perder cosas, distraerse fácilmente
+    - **Predominantemente hiperactivo-impulsivo**: Inquietud, impulsividad, dificultad para esperar, interrumpir
+    - **Combinado**: Una mezcla de ambas
+
+    ### El TDAH en mujeres
+
+    Muchas mujeres llegan al diagnóstico en la edad adulta porque el TDAH se ha pasado por alto o se ha confundido con ansiedad, depresión o problemas de autoestima. El TDAH femenino suele ser más inatento y menos disruptivo, por lo que pasa desapercibido más tiempo.
+
+cuando_acudir:
+  title: "¿Te identificas con esto?"
+  subtitle: "Señales de TDAH en adultos"
+  items:
+    - title: "Procrastinación crónica"
+      description: "Dejas todo para el último momento, aunque quieras hacerlo antes. Trabajas mejor bajo presión."
+    - title: "Dificultad para concentrarte"
+      description: "Te cuesta mantener la atención en tareas aburridas, pero puedes hiperfocalizarte en lo que te interesa."
+    - title: "Olvidos frecuentes"
+      description: "Pierdes cosas, olvidas citas, no recuerdas lo que ibas a hacer."
+    - title: "Dificultad para organizarte"
+      description: "El orden te cuesta, las tareas largas te abruman, no sabes por dónde empezar."
+    - title: "Impulsividad"
+      description: "Hablas sin pensar, gastas impulsivamente, tomas decisiones precipitadas."
+    - title: "Inquietud interna"
+      description: "Sientes que no puedes parar, que siempre tienes que estar haciendo algo."
+    - title: "Sensibilidad al rechazo"
+      description: "Las críticas te afectan profundamente, incluso las que no están dirigidas a ti."
+    - title: "Montaña rusa emocional"
+      description: "Pasas de la euforia al hundimiento en minutos, y no entiendes por qué."
+
+enfoque:
+  title: "Mi enfoque en TDAH adultos"
+  content: |
+    El TDAH no se cura, pero se puede aprender a gestionar de forma que minimice sus desventajas y potencie sus fortalezas.
+
+    ### Cómo trabajamos juntas
+
+    - **Psicoeducación**: Entender cómo funciona tu cerebro es el primer paso. Cuando comprendes el TDAH, dejas de culparte.
+    - **Estrategias de compensación**: Técnicas prácticas para organización, gestión del tiempo, memoria y planificación.
+    - **Regulación emocional**: El TDAH tiene un componente emocional importante que solemos pasar por alto.
+    - **Trabajo con las creencias limitantes**: Años de "podrías si quisieras" dejan huella. Trabajamos esa narrativa.
+
+    ### Lo que ofrezco
+
+    - Exploración de si el TDAH encaja con tu experiencia
+    - Estrategias prácticas adaptadas a tu vida real
+    - Trabajo con la autoestima y la identidad (especialmente en diagnósticos tardíos)
+    - Coordinación con psiquiatras si se considera medicación
+
+    ### Una nota sobre el diagnóstico
+
+    Como psicóloga puedo hacer una evaluación clínica del TDAH, pero el diagnóstico formal y la medicación requieren un psiquiatra. Trabajo en coordinación con ellos cuando es necesario.
+
+cta_final:
+  title: "Tu cerebro es un superpoder sin manual"
+  subtitle: "Escribamos juntas ese manual. El primer paso es una llamada para conocer tu situación."

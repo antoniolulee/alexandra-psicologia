@@ -1,0 +1,93 @@
+---
+# ============================================
+# TRASTORNOS DE PERSONALIDAD - Landing Page SEO
+# ============================================
+
+seo:
+  title: "Psicóloga Trastornos de Personalidad Online | Alexandra Barroso"
+  description: "Psicóloga especialista en trastornos de personalidad. Terapia online para TLP, patrones relacionales disfuncionales e identidad. Enfoque compasivo."
+  keywords:
+    - "psicóloga trastornos personalidad online"
+    - "terapia trastorno límite personalidad"
+    - "TLP psicóloga"
+    - "borderline tratamiento"
+    - "trastorno personalidad narcisista"
+    - "trastorno personalidad evitativo"
+    - "patrones relacionales disfuncionales"
+    - "identidad difusa"
+    - "regulación emocional TLP"
+    - "terapia dialéctica conductual"
+    - "impulsividad tratamiento"
+    - "relaciones inestables terapia"
+
+hero:
+  badge: "Especialización Clínica"
+  headline: "Más allá de la etiqueta, está la persona"
+  subtitle: "Un diagnóstico no te define. Trabajamos con los patrones que te hacen sufrir para que puedas relacionarte contigo y con otros de forma más satisfactoria."
+  image: "/assets/images/alexandra-hero.webp"
+  cta_text: "SOLICITA TU LLAMADA GRATUITA"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre terapia para trastornos de personalidad."
+
+que_es:
+  title: "¿Qué son los trastornos de personalidad?"
+  content: |
+    Los **trastornos de personalidad** son patrones persistentes de experiencia interna y comportamiento que se desvían significativamente de las expectativas culturales, son inflexibles, se extienden a muchas áreas de la vida y causan malestar o deterioro.
+
+    ### Más allá del diagnóstico
+
+    Me gusta pensar en los trastornos de personalidad no como "defectos" sino como **adaptaciones que en algún momento tuvieron sentido**. Son formas de enfrentarse al mundo que probablemente te protegieron en el pasado, pero que ahora te limitan y te hacen sufrir.
+
+    ### Tipos más comunes
+
+    - **Trastorno Límite de Personalidad (TLP)**: Inestabilidad emocional, relaciones intensas y cambiantes, miedo al abandono, impulsividad, sensación de vacío.
+    - **Trastorno Evitativo**: Inhibición social extrema, hipersensibilidad al rechazo, evitación de situaciones por miedo a la evaluación negativa.
+    - **Trastorno Dependiente**: Necesidad excesiva de ser cuidada, dificultad para tomar decisiones, miedo a la separación.
+    - **Rasgos narcisistas**: Necesidad de admiración, dificultad para la empatía, vulnerabilidad a la crítica.
+
+    ### ¿Es posible mejorar?
+
+    Absolutamente. Aunque durante mucho tiempo se consideró que los trastornos de personalidad eran "intratables", hoy sabemos que con la terapia adecuada las personas pueden experimentar cambios significativos en su funcionamiento y calidad de vida.
+
+cuando_acudir:
+  title: "¿Te reconoces en alguno de estos patrones?"
+  subtitle: "Señales de que podrías beneficiarte de terapia especializada"
+  items:
+    - title: "Relaciones intensas e inestables"
+      description: "Pasas de idealizar a alguien a sentir que te ha traicionado. Las relaciones son montaña rusa."
+    - title: "Miedo intenso al abandono"
+      description: "Harías casi cualquier cosa para evitar que te dejen. El abandono te resulta insoportable."
+    - title: "Sensación de vacío crónico"
+      description: "Un vacío interno que no sabes llenar, no importa lo que hagas."
+    - title: "Identidad inestable"
+      description: "No sabes muy bien quién eres, tus valores, metas o preferencias cambian drásticamente."
+    - title: "Desregulación emocional"
+      description: "Emociones intensas que cambian rápidamente y que te cuesta manejar."
+    - title: "Impulsividad"
+      description: "Conductas impulsivas que luego lamentas: gastos, atracones, conducta sexual, sustancias."
+    - title: "Autolesiones o ideación suicida"
+      description: "Conductas de daño hacia ti misma o pensamientos recurrentes de no querer vivir."
+    - title: "Hipersensibilidad al rechazo"
+      description: "Todo te parece un rechazo. Un gesto, un silencio, una mirada te afectan profundamente."
+
+enfoque:
+  title: "Mi enfoque en trastornos de personalidad"
+  content: |
+    El trabajo con trastornos de personalidad requiere un enfoque especializado, basado en la evidencia, y sobre todo una relación terapéutica sólida y consistente.
+
+    ### Metodologías que utilizo
+
+    - **Terapia Dialéctico-Conductual (DBT)**: Especialmente efectiva para la regulación emocional, tolerancia al malestar y habilidades interpersonales.
+    - **Terapia basada en la mentalización**: Desarrollar la capacidad de entender tu propia mente y la de los demás.
+    - **Trabajo con el apego**: Los trastornos de personalidad tienen raíces profundas en experiencias relacionales tempranas.
+    - **EMDR**: Para procesar experiencias traumáticas que subyacen a muchos de estos patrones.
+
+    ### Lo que puedes esperar
+
+    - **Una relación terapéutica constante**: No voy a abandonarte ni a juzgarte. Esa consistencia es parte del tratamiento.
+    - **Trabajo con las crisis**: Aprenderás a gestionar los momentos difíciles sin recurrir a conductas dañinas.
+    - **Cambios graduales**: No prometo cambios rápidos, pero sí un camino de crecimiento sostenido.
+    - **Validación**: Tus emociones tienen sentido, aunque a veces sean muy intensas.
+
+cta_final:
+  title: "Hay esperanza, aunque ahora no lo sientas"
+  subtitle: "El primer paso es una conversación. Cuéntame tu situación y exploramos juntas cómo puedo ayudarte."
