@@ -191,6 +191,29 @@
   {% include cookie-consent.html %}
 
   {% include scripts.html %}
+  <!-- Breadcrumb JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "{{ site.url | default: '' }}/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ site.url | default: '' }}/blog/"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }},
+      "item": "{{ site.url | default: '' }}{{ page.url }}"
+    }]
+  }
+  </script>
 </body>
 
 </html>
