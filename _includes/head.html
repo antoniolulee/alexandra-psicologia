@@ -103,10 +103,38 @@
   {% endif %}
 
   <!-- Dark Mode Detection -->
+  <!-- Dark Mode Logic (Alpine Component) -->
   <script>
-    if (localStorage.getItem('darkMode') === 'true' ||
-      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
+    function darkMode() {
+      return {
+        isDark: false,
+        init() {
+          // 1) localStorage tiene prioridad
+          const stored = localStorage.getItem('theme');
+          if (stored) {
+            this.isDark = stored === 'dark';
+          } else {
+            // 2) si no hay preferencia guardada, usa el sistema
+            this.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          }
+          this.syncHtmlClass();
+          // (opcional) listener de cambios del sistema
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+              this.isDark = e.matches;
+              this.syncHtmlClass();
+            }
+          });
+        },
+        toggle() {
+          this.isDark = !this.isDark;
+          localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
+          this.syncHtmlClass();
+        },
+        syncHtmlClass() {
+          document.documentElement.classList.toggle('dark', this.isDark);
+        }
+      }
     }
   </script>
 </head>

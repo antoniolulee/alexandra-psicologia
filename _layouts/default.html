@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="{ 
-      darkMode: document.documentElement.classList.contains('dark')
-    }" x-init="$watch('darkMode', val => { 
-      document.documentElement.classList.toggle('dark', val);
-      localStorage.setItem('darkMode', val);
-    })">
+<html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="darkMode()" x-init="init()"
+  :class="{ 'dark': isDark }">
 {% include head.html %}
 
 <body
