@@ -2,6 +2,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Dark Mode Anti-FOUC (Synchronous inline) -->
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,14 +115,32 @@
   }
   </script>
 
-  <!-- Google Analytics 4 (solo si está configurado y no es página sin tracking) -->
+  <!-- Google Analytics 4 (Carga condicional estricta RGPD con consentimiento explícito) -->
   {% if site.data.seo.analytics.ga4_id and site.data.seo.analytics.ga4_id != "" and page.track != false %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.seo.analytics.ga4_id }}"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', '{{ site.data.seo.analytics.ga4_id }}');
+    (function() {
+      function loadGA4() {
+        if (window.__ga4Loaded) return;
+        window.__ga4Loaded = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.data.seo.analytics.ga4_id }}';
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{ site.data.seo.analytics.ga4_id }}');
+      }
+
+      try {
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+          loadGA4();
+        } else {
+          window.addEventListener('cookie-consent-granted', loadGA4);
+        }
+      } catch (e) {}
+    })();
   </script>
   {% endif %}
 

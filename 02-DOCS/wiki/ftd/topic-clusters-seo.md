@@ -18,12 +18,15 @@ Definir la arquitectura interna de enlaces y la estrategia de Topic Clusters par
 ## Checklist
 - [x] Crear el documento de arquitectura de enlaces y topic clusters en `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` · Archivo creado y verificado
 - [x] Actualizar `02-DOCS/wiki/index.md` enlazando el nuevo documento · Enlace añadido en tabla de SEO
-- [x] Ejecutar self-check de lectura y coherencia documental · Verificación completada con éxito
+- [x] Aplicar los enlaces internos en los 3 artículos de blog existentes (`_posts/`) · Enlaces añadidos y validados con build
+- [x] Ejecutar self-check de lectura y coherencia documental · Verificación completada con éxito (`bundle exec jekyll build` OK)
 
 ## Evidence
 - Archivo `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` generado con especificación técnica completa de los 3 clústeres y reglas de anclaje.
 - Índice central `02-DOCS/wiki/index.md` actualizado con sección SEO y enlace al mapa de clústeres.
+- Enlaces internos integrados en `2026-01-05-apego-ansioso-relaciones.md` (hacia `/trauma-apego/` y `/terapia-emdr/`), `2026-01-10-ansiedad-vs-estres.md` (hacia `/ansiedad-estres/`) y `2025-12-28-hablar-adolescente-salud-mental.md` (hacia `/autoestima/` y `/sobre-mi/`).
+- Build de Jekyll ejecutado sin advertencias ni errores.
 
 ## Next
-- Presentar la arquitectura al usuario y definir si se aplican los enlaces internos inmediatos a los 3 posts ya existentes (`_posts/`).
+- Definir la creación de agentes y subagentes especializados en SEO, GEO/AEO (IA) y marketing digital para el proyecto.
 

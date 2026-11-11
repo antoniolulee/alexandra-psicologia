@@ -21,6 +21,20 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules
+  - 01-TOOLS
+  - 02-DOCS
+  - .rsc
+  - .gemini
+  - .antigravity
+  - .codex
+  - AGENTS.md
+  - GEMINI.md
+  - REVIEW.md
+  - auditoria.md
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - vendor
 
 # Defaults
 defaults:

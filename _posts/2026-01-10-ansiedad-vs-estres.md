@@ -25,7 +25,7 @@ Lo importante del estrés es que, **cuando la causa desaparece, el estrés tambi
 
 ## ¿Qué es la ansiedad?
 
-La ansiedad, en cambio, es una respuesta emocional que **no siempre tiene un disparador claro**. Es esa sensación de inquietud, preocupación o miedo que persiste incluso cuando no hay una amenaza real o inmediata.
+La ansiedad, en cambio, es una respuesta emocional que **no siempre tiene un disparador claro**. Es esa sensación de inquietud, preocupación o miedo que persiste incluso cuando no hay una amenaza real o inmediata. En una [terapia para la ansiedad y el estrés](/ansiedad-estres/), trabajamos precisamente para regular esta activación sostenida del sistema nervioso.
 
 Características de la ansiedad:
 
@@ -77,7 +77,7 @@ Hazte estas preguntas:
 2. **Cuestiona tus pensamientos**: ¿Es un hecho o una interpretación?
 3. **Vuelve al presente**: Los ejercicios de grounding ayudan
 4. **Reduce la evitación**: Evitar aquello que temes aumenta la ansiedad a largo plazo
-5. **Busca ayuda profesional**: Si la ansiedad interfiere con tu vida diaria
+5. **Busca ayuda profesional**: Si la sintomatología interfiere con tu día a día, trabajar con una [psicóloga especialista en ansiedad online](/ansiedad-estres/) te proporcionará pautas adaptadas a tu situación.
 
 ## Cuándo buscar ayuda profesional
 
@@ -93,4 +93,4 @@ Es momento de consultar con un profesional cuando:
 
 ---
 
-*Si te has sentido identificada con lo que has leído, quizás sea el momento de dar el primer paso. Puedo ayudarte a entender qué te está pasando y trabajar juntas en estrategias personalizadas para tu situación.*
+*Si te has sentido identificada con lo que has leído, quizás sea el momento de dar el primer paso. Conoce mi método en la sección de [tratamiento de ansiedad y estrés](/ansiedad-estres/) o [solicita tu primera sesión de valoración](/).*

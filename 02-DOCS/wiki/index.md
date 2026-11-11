@@ -30,3 +30,4 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 |---|---|---|
 | Arquitectura Topic Clusters | `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` | Estrategia de clústeres temáticos y enlaces internos |
 | FTD Topic Clusters | `02-DOCS/wiki/ftd/topic-clusters-seo.md` | Feature tracking doc de la arquitectura de enlaces |
+| FTD Remediación Técnica | `02-DOCS/wiki/ftd/remediacion-auditoria-tecnica.md` | Feature tracking doc de remediación de auditoría y RGPD |

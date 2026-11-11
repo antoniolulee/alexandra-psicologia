@@ -27,7 +27,7 @@ El cerebro adolescente está en plena remodelación. La corteza prefrontal (la q
 
 ### La etapa evolutiva
 
-La adolescencia es un momento de **individuación**: necesitan separarse de los padres para construir su identidad. Esto implica:
+La adolescencia es un momento de **individuación**: necesitan separarse de los padres para construir su identidad, consolidar su [autoestima y autoconcepto](/autoestima/) y aprender a regularse. Esto implica:
 
 - Rechazar la cercanía que antes buscaban
 - Buscar privacidad
@@ -128,7 +128,7 @@ Mientras creas ese espacio para la comunicación, mantente atenta a señales que
 - Autolesiones
 - Uso de sustancias
 
-Si observas alguna de estas señales, es importante buscar ayuda profesional.
+Si observas alguna de estas señales, es importante buscar ayuda profesional con una [psicóloga clínica colegiada](/sobre-mi/).
 
 ## Lo que importa de verdad
 
@@ -143,4 +143,4 @@ No necesitas hacerlo perfecto. Solo necesitas seguir intentándolo.
 
 ---
 
-*Si te preocupa la salud mental de tu hija adolescente y no sabes cómo ayudarla, puedo orientarte. A veces, tener a un profesional que medie facilita enormemente la comunicación.*
+*Si te preocupa la salud mental o la [autoestima de tu hija](/autoestima/) y buscas orientación profesional, en la consulta de [psicología online](/sobre-mi/) podemos valorar vuestro caso de forma personalizada. [Pide una primera sesión](/).*

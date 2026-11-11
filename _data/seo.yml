@@ -38,7 +38,7 @@ meta:
 # Open Graph (Facebook, LinkedIn, WhatsApp)
 og:
   type: "website"
-  image: "/assets/images/og-image.jpg"
+  image: "/assets/images/alexandra-hero.webp"
   image_alt: "Alexandra Barroso - Psicóloga Clínica Online"
   locale: "es_ES"
 
@@ -46,7 +46,7 @@ og:
 twitter:
   card: "summary_large_image"
   site: "@alexandrabarroso"
-  image: "/assets/images/twitter-card.jpg"
+  image: "/assets/images/alexandra-hero.webp"
 
 # Schema.org (JSON-LD)
 # Definimos "Psychologist" con énfasis en servicio virtual

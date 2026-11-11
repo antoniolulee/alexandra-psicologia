@@ -9,7 +9,7 @@ image: /assets/images/articles/apego-ansioso.jpg
 
 ¿Alguna vez has sentido que necesitas constante confirmación de que tu pareja te quiere? ¿Interpretas un mensaje no respondido como señal de que algo va mal? ¿Te cuesta estar sola y buscas relaciones de forma intensa? Si te identificas con esto, es posible que tengas un **estilo de apego ansioso**.
 
-No te preocupes: no hay nada "malo" en ti. El apego ansioso es simplemente una forma de relacionarte que aprendiste muy temprano en la vida, y **se puede transformar**.
+No te preocupes: no hay nada "malo" en ti. El apego ansioso es simplemente una forma de relacionarte que aprendiste muy temprano en la vida, y se puede transformar a través de un trabajo clínico en [terapia de trauma y apego](/trauma-apego/).
 
 ## ¿Qué es el estilo de apego ansioso?
 
@@ -104,10 +104,10 @@ En lugar de actuar desde la ansiedad, practica expresar lo que necesitas:
 ### 6. Busca apoyo profesional
 
 La terapia es el espacio ideal para:
-- Explorar el origen de tu estilo de apego
-- Procesar experiencias pasadas que aún te afectan
-- Desarrollar nuevos patrones relacionales
-- Practicar un vincular seguro con tu terapeuta
+- Explorar el origen de tu estilo de apego y sanar heridas del desarrollo con [terapia de apego y trauma relacional](/trauma-apego/)
+- Procesar experiencias pasadas no resueltas mediante [terapia EMDR online](/terapia-emdr/), que ayuda a desensibilizar recuerdos detonantes
+- Desarrollar nuevos patrones relacionales y comunicativos
+- Practicar un vincular seguro en un entorno clínico confidencial
 
 ## No estás sola en esto
 
@@ -117,4 +117,4 @@ Con trabajo, paciencia y apoyo, es posible desarrollar un apego más seguro y di
 
 ---
 
-*Si te gustaría explorar tu estilo de apego y trabajar en tus patrones relacionales, estaré encantada de acompañarte en el proceso.*
+*Si te gustaría explorar tu estilo de apego y trabajar en tus patrones vinculares, conoce más sobre mi enfoque en [terapia para trauma y apego](/trauma-apego/) o [agenda tu valoración inicial gratuita](/).*

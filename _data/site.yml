@@ -208,10 +208,10 @@ footer:
   location_seo: "Servicio de Psicología Online desde Madrid, España para todo el mundo"
   legal_links:
     - text: "Aviso Legal"
-      url: "/legal"
+      url: "/legal/"
     - text: "Política de Privacidad"
-      url: "/privacidad"
+      url: "/privacidad/"
     - text: "Cookies"
-      url: "/cookies"
+      url: "/cookies/"
     - text: "Supervisión Profesionales"
       url: "/sobre-mi/#supervision-para-profesionales"
