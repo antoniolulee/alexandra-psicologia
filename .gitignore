@@ -128,3 +128,13 @@ node_modules/
 .gemini/commands/specify.toml
 .gemini/commands/tasks.toml
 .gemini/commands/verify.toml
+.codex/agents/developer.toml
+.codex/agents/finding-verifier.toml
+.codex/agents/refuter-correctness.toml
+.codex/agents/refuter-security.toml
+.codex/agents/refuter-tests.toml
+.gemini/agents/developer.md
+.gemini/agents/finding-verifier.md
+.gemini/agents/refuter-correctness.md
+.gemini/agents/refuter-security.md
+.gemini/agents/refuter-tests.md
