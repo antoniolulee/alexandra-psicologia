@@ -5,6 +5,7 @@ description: "Aviso Legal de Alexandra Barroso, Psicóloga Clínica. Informació
 permalink: /legal/
 robots: "noindex, nofollow"
 track: false
+sitemap: false
 ---
 
 <div class="container mx-auto px-4 py-12 max-w-4xl">

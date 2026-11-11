@@ -48,6 +48,11 @@
   <meta name="robots" content="{{ page.robots }}">
   {% endif %}
 
+  <!-- Google Search Console Verification -->
+  {% if site.data.seo.google_site_verification and site.data.seo.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.data.seo.google_site_verification }}">
+  {% endif %}
+
   <!-- 
     SEO Meta Tags
     Prioridad: include params > page front matter > site defaults

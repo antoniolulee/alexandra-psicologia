@@ -5,6 +5,7 @@ description: "Política de Cookies de Alexandra Barroso. Información sobre el u
 permalink: /cookies/
 robots: "noindex, nofollow"
 track: false
+sitemap: false
 ---
 
 <div class="container mx-auto px-4 py-12 max-w-4xl">

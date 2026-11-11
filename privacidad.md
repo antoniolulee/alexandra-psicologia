@@ -5,6 +5,7 @@ description: "Política de Privacidad de Alexandra Barroso. Información sobre e
 permalink: /privacidad/
 robots: "noindex, nofollow"
 track: false
+sitemap: false
 ---
 
 <div class="container mx-auto px-4 py-12 max-w-4xl">

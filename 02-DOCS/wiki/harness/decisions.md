@@ -8,3 +8,4 @@
 - Accepted plan `1cc53d00fdbebb6bcebe07a92c5bd3d65ac2f12012dceda0da50aa52a8e87830`.
 - Project kind: software.
 - SDD: selected.
+- 2026-11-11: Ratificada la Guía Maestra de GEO/AEO y SEO Clínico E-E-A-T (`02-DOCS/wiki/seo/guia-maestra-geo-aeo-seo-clinico.md`) como norma previa e imperativa a la instanciación de subagentes autónomos de redacción y optimización.
