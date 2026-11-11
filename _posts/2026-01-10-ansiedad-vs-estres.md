@@ -1,7 +1,7 @@
 ---
 title: "Ansiedad vs Estrés: Cómo Diferenciarlos y Qué Hacer"
 date: 2026-01-10
-categories: [Bienestar Emocional]
+categories: [bienestar-emocional]
 excerpt: "Aprende a identificar si lo que sientes es ansiedad o estrés, y descubre estrategias prácticas para manejar ambos de forma efectiva."
 reading_time: "5 min"
 image: /assets/images/articles/ansiedad-estres.jpg
