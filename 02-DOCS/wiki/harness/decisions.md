@@ -9,3 +9,4 @@
 - Project kind: software.
 - SDD: selected.
 - 2026-11-11: Ratificada la Guía Maestra de GEO/AEO y SEO Clínico E-E-A-T (`02-DOCS/wiki/seo/guia-maestra-geo-aeo-seo-clinico.md`) como norma previa e imperativa a la instanciación de subagentes autónomos de redacción y optimización.
+- 2026-11-11: Instanciados y configurados los 3 subagentes de contenido y SEO (`redactor-clinico`, `optimizador-geo`, `auditor-deontologico`) en el entorno de ejecución y persistidos bajo `.gemini/agents/`.
