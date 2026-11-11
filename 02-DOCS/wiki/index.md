@@ -18,6 +18,7 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 ## SEO, GEO/AEO y Estrategia de Contenidos
 | Documento | Ruta | Descripción |
 |---|---|---|
+| Auditoría Search Console (Real) | `02-DOCS/wiki/seo/auditoria-search-console-2026-11-11.md` | Diagnóstico de rendimiento real (3 meses), clics, impresiones y oportunidades quick-wins |
 | Guía Maestra GEO/AEO y SEO Clínico | `02-DOCS/wiki/seo/guia-maestra-geo-aeo-seo-clinico.md` | Estándar normativo E-E-A-T, citabilidad por IA y contratos para subagentes |
 | Topic Clusters & Enlaces Internos | `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` | Arquitectura de silos y enlazado interno para los 3 pilares clave |
 | Search Console API | `02-DOCS/wiki/seo/search-console-api.md` | Guía técnica y credenciales de la API de Search Console con Service Account |
