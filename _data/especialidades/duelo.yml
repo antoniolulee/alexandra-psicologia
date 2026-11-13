@@ -6,6 +6,7 @@
 seo:
   title: "Psicóloga Duelo Online | Acompañamiento en Pérdidas | Alexandra Barroso"
   description: "Psicóloga especialista en duelo. Terapia online para procesar pérdidas, separaciones y muertes. Acompañamiento compasivo en tu proceso."
+  breadcrumb: "Psicóloga Duelo Online"
   keywords:
     - "psicóloga duelo online"
     - "terapia duelo"
@@ -21,15 +22,19 @@ seo:
     - "terapia pérdida"
 
 hero:
-  badge: "Acompañamiento"
-  headline: "Hay un lugar para tu dolor"
+  badge: "Especialista Clínica PIR · Acompañamiento en Duelo"
+  headline: "Hay un lugar seguro para tu dolor"
+  headline_seo: "Terapia de Duelo Online y Duelo Complicado"
   subtitle: "El duelo no se supera, se transita. Te acompaño a encontrar la forma de seguir adelante sin olvidar."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "SOLICITA TU LLAMADA GRATUITA"
-  whatsapp_msg: "Hola Alexandra, estoy pasando por un duelo y necesito ayuda."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Espacio privado desde casa · 1.ª valoración telefónica sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, estoy pasando por un duelo y me gustaría solicitar la primera valoración gratuita."
+  related_category: "Relaciones"
 
 que_es:
   title: "¿Qué es el duelo?"
+  bluf: "La terapia de duelo online ofrece un espacio clínico seguro y confidencial para transitar la pérdida de un ser querido, una ruptura o un duelo complicado sin juicios ni prisas. Acompañamos la elaboración del dolor, la culpa y los recuerdos traumáticos mediante psicoterapia integradora y EMDR cuando la pérdida quedó bloqueada."
   content: |
     El **duelo** es el proceso natural de adaptación ante una pérdida significativa. Aunque solemos asociarlo con la muerte de un ser querido, también experimentamos duelos ante:
 
@@ -57,20 +62,28 @@ cuando_acudir:
   items:
     - title: "Muerte de un ser querido"
       description: "La pérdida de alguien importante: padres, pareja, hijos, amigos. Cada pérdida es única."
+      icon: "heart"
     - title: "Duelo anticipatorio"
       description: "Cuando sabes que la pérdida va a llegar (enfermedad terminal) y el duelo comienza antes."
+      icon: "moon"
     - title: "Pérdidas no reconocidas"
       description: "Duelos que la sociedad no valida: mascotas, ex parejas, abortos, pérdidas laborales."
+      icon: "cloud"
     - title: "Ruptura de pareja"
       description: "El fin de una relación es una pérdida que requiere su propio proceso de duelo."
+      icon: "link"
     - title: "Duelo complicado"
       description: "Cuando el proceso se estanca y no encuentras la forma de avanzar."
+      icon: "alert"
     - title: "Aniversarios difíciles"
       description: "Fechas señaladas que reabren el dolor y no sabes cómo afrontarlas."
+      icon: "star"
     - title: "Culpa y arrepentimiento"
       description: "Cosas que no dijiste, que no hiciste, que te gustaría haber hecho diferente."
+      icon: "lightning"
     - title: "Duelo infantil"
       description: "Acompañamiento a padres para ayudar a sus hijos a procesar pérdidas."
+      icon: "user"
 
 enfoque:
   title: "Mi enfoque en el acompañamiento del duelo"
@@ -88,6 +101,14 @@ enfoque:
     ### Lo que puedes esperar
 
     No voy a pedirte que dejes de sentir. No voy a decirte que "está en un lugar mejor" o que "el tiempo lo cura todo". Voy a estar contigo en el dolor, ayudándote a encontrar tu propia manera de transitar este camino.
+
+articulos_relacionados:
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "Guía clínica sobre fases del duelo, duelo desautorizado y señales de duelo complicado."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
+  - title: "El Apego Ansioso en las Relaciones: Señales y Soluciones"
+    description: "Comprende cómo los vínculos de apego influyen al afrontar una ruptura o separación."
+    url: "/relaciones/2026/01/05/apego-ansioso-relaciones/"
 
 faq:
   title: "Preguntas Frecuentes sobre Terapia de Duelo Online"

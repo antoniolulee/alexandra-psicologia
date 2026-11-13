@@ -77,28 +77,28 @@ trayectoria:
 # EXPERIENCIA CLÍNICA
 # ============================================
 experiencia:
-  badge: "Visión Clínica"
-  title: "Más allá de la consulta de hoy"
-  subtitle: "Mi experiencia hospitalaria me permite detectar y abordar cualquier nivel de gravedad con seguridad."
+  badge: "Visión Clínica PIR"
+  title: "¿Qué aporta una Psicóloga Clínica vía PIR a tu salud perinatal?"
+  subtitle: "Mi residencia hospitalaria de 4 años en el Sistema Nacional de Salud garantiza rigor diagnóstico diferencial en momentos de máxima vulnerabilidad."
   columns:
-    - title: "Experiencia Hospitalaria"
-      subtitle: "Formación en patología grave"
+    - title: "Garantía Hospitalaria (PIR)"
+      subtitle: "Formación sanitaria pública de máxima exigencia"
       color: "accent"
       icon: "clipboard"
       items:
-        - "Trastornos de Personalidad"
-        - "Trastorno Bipolar y Psicosis"
-        - "Trastornos de Conducta Alimentaria"
-        - "Adicciones"
-    - title: "Enfoque Actual"
-      subtitle: "Especialización en consulta online"
+        - "Diagnóstico diferencial preciso (baby blues, depresión posparto y TOC perinatal)"
+        - "Comprensión clínica de protocolos hospitalarios, UCIN y obstetricia"
+        - "Criterio experto en interconsulta y compatibilidad psicofarmacológica"
+        - "Experiencia en patología afectiva, traumática y de alta complejidad"
+    - title: "Hiperespecialización Actual"
+      subtitle: "Consulta boutique 100% online para la mujer"
       color: "accent"
       icon: "heart"
       items:
-        - "Ansiedad, Pánico y Fobias"
-        - "Trauma y Apego (EMDR)"
-        - "Duelo y Crisis Vitales"
-        - "Salud Reproductiva (Infertilidad/Perinatal)"
+        - "Psicología Perinatal, Embarazo y Posparto"
+        - "Infertilidad, Reproducción Asistida (FIV) y Duelo Genético"
+        - "Duelo Gestacional, Perinatal, IVET y Embarazo Arcoíris"
+        - "Parto Traumático, Violencia Obstétrica, Apego y EMDR"
 
 # ============================================
 # SUPERVISIÓN

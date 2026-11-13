@@ -8,10 +8,10 @@ track: false
 sitemap: false
 ---
 
-<div class="container mx-auto px-4 py-12 max-w-4xl">
-  <h1 class="text-3xl font-bold mb-8 text-primary-900">Política de Cookies</h1>
+<div class="max-w-4xl mx-auto px-6 py-16 lg:py-24">
+  <h1 class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text mb-8">Política de Cookies</h1>
 
-  <div class="prose prose-lg text-gray-700">
+  <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
     <p>Una cookie es un pequeño fichero de texto que se almacena en su navegador cuando visita casi cualquier página web. Su utilidad es que la web sea capaz de recordar su visita cuando vuelva a navegar por esa página.</p>
 
     {% include legal/section.html number="1" title="Cookies utilizadas en este sitio web" %}

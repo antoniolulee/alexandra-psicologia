@@ -1,6 +1,7 @@
 <!-- Floating WhatsApp CTA -->
+{% assign wa_msg = include.whatsapp_msg | default: site.data.site.contact.whatsapp_msg %}
 <div class="fixed bottom-6 right-6 z-50" x-data="{ tooltip: false }">
-  <a href="https://wa.me/{{ site.data.seo.schema.telephone | remove: '+' }}?text={{ site.data.site.contact.whatsapp_msg | url_encode }}"
+  <a href="https://wa.me/{{ site.data.seo.schema.telephone | remove: '+' }}?text={{ wa_msg | url_encode }}"
     target="_blank" rel="noopener noreferrer" @mouseenter="tooltip = true" @mouseleave="tooltip = false"
     class="group flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
     aria-label="Contactar por WhatsApp">
@@ -16,7 +17,7 @@
     x-transition:enter-start="opacity-0 translate-x-2" x-transition:enter-end="opacity-100 translate-x-0"
     class="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap">
     <div class="px-4 py-2 bg-text dark:bg-dark-text text-white dark:text-dark-secondary text-sm rounded-lg shadow-lg">
-      ¡Escríbeme!
+      {{ include.tooltip_text | default: '¡Escríbeme por WhatsApp!' }}
       <div
         class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 rotate-45 w-2 h-2 bg-text dark:bg-dark-text">
       </div>

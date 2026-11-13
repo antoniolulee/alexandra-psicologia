@@ -1,0 +1,75 @@
+{% assign card_post = include.post %}
+{% assign card_heading = include.heading_tag | default: "h3" %}
+{% assign card_words = include.excerpt_words | default: 20 %}
+<article
+  {% if include.filter_slug %}x-show="activeCat === 'all' || activeCat === '{{ include.filter_slug }}'"{% endif %}
+  class="group bg-white dark:bg-dark-secondary {% if include.show_footer %}rounded-xl{% else %}rounded-lg{% endif %} overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-border dark:border-dark-border">
+
+  <!-- Image -->
+  <a href="{{ card_post.url }}"
+    class="block aspect-[16/10] overflow-hidden bg-secondary-alt dark:bg-dark-secondary-alt">
+    {% if card_post.image %}
+    <img src="{{ card_post.image }}" width="800" height="500" alt="{{ card_post.title }}" loading="lazy"
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+    {% else %}
+    <div class="w-full h-full flex items-center justify-center text-text-muted dark:text-dark-text-muted">
+      <svg class="w-16 h-16 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    </div>
+    {% endif %}
+  </a>
+
+  <!-- Content -->
+  <div class="p-6">
+    <!-- Meta -->
+    <div class="flex items-center gap-3 text-xs text-text-muted dark:text-dark-text-muted mb-3">
+      {% if card_post.categories.first %}
+      <span class="uppercase tracking-wider text-primary dark:text-dark-primary font-medium">
+        {{ card_post.categories.first }}
+      </span>
+      <span>·</span>
+      {% endif %}
+      {% if include.show_date %}
+      <span>{% include date-es.html date=card_post.date format="short" %}</span>
+      {% if card_post.reading_time %}
+      <span>·</span>
+      <span>{{ card_post.reading_time }}</span>
+      {% endif %}
+      {% else %}
+      <span>{{ card_post.reading_time | default: "5 min" }}</span>
+      {% endif %}
+    </div>
+
+    <!-- Title -->
+    <{{ card_heading }}
+      class="font-heading {% if card_heading == 'h2' %}text-xl{% else %}text-lg{% endif %} text-text dark:text-dark-text mb-3 group-hover:text-primary dark:group-hover:text-dark-primary transition-colors duration-300 leading-snug">
+      <a href="{{ card_post.url }}">{{ card_post.title }}</a>
+    </{{ card_heading }}>
+
+    <!-- Excerpt -->
+    <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed {% if include.show_footer %}mb-4 line-clamp-3{% else %}line-clamp-2{% endif %}">
+      {{ card_post.excerpt | strip_html | truncatewords: card_words }}
+    </p>
+
+    {% if include.show_footer %}
+    <!-- Author & Read More -->
+    <div
+      class="flex items-center justify-between gap-2 pt-3 border-t border-border/60 dark:border-dark-border/60">
+      <span class="text-xs text-text-muted dark:text-dark-text-muted">
+        Por {{ card_post.author | default: site.data.site.identity.name }}
+      </span>
+      <a href="{{ card_post.url }}"
+        class="inline-flex items-center gap-2 text-sm text-primary dark:text-dark-primary hover:text-primary-hover dark:hover:text-dark-primary-hover font-medium transition-colors duration-300">
+        <span>Leer artículo</span>
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</article>
+

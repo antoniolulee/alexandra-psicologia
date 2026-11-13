@@ -1,10 +1,14 @@
 ---
 title: "Ansiedad vs Estrés: Cómo Diferenciarlos y Qué Hacer"
+seo_title: "Ansiedad vs. Estrés: Diferencias, Síntomas y Qué Hacer | Alexandra Barroso"
+seo_description: "Aprende a diferenciar entre ansiedad y estrés, identifica sus síntomas físicos y emocionales y descubre estrategias clínicas para recuperar la calma."
 date: 2026-01-10
-categories: [bienestar-emocional]
+permalink: /bienestar-emocional/2026/01/10/ansiedad-vs-estres/
+categories: [Bienestar Emocional]
+author: "Alexandra Barroso"
 excerpt: "Aprende a identificar si lo que sientes es ansiedad o estrés, y descubre estrategias prácticas para manejar ambos de forma efectiva."
 reading_time: "5 min"
-image: /assets/images/alexandra-about.webp
+image: /assets/images/blog/ansiedad-vs-estres.webp
 ---
 
 ¿Cuántas veces has dicho "estoy estresada" cuando en realidad lo que sientes es ansiedad? O viceversa. Es muy común confundir ambos estados emocionales, y no es casualidad: comparten síntomas físicos similares y a menudo aparecen juntos. Sin embargo, **entender la diferencia es crucial** para poder gestionarlos de forma efectiva.
@@ -94,3 +98,5 @@ Es momento de consultar con un profesional cuando:
 ---
 
 *Si te has sentido identificada con lo que has leído, quizás sea el momento de dar el primer paso. Conoce mi método en la sección de [tratamiento de ansiedad y estrés](/ansiedad-estres/) o [solicita tu primera sesión de valoración](/).*
+
+> **Aviso informativo y sanitario:** El contenido de este artículo tiene fines exclusivamente divulgativos y psicoeducativos. No sustituye la evaluación, diagnóstico ni tratamiento psicológico individualizado por parte de un profesional sanitario colegiado. Si te encuentras en una situación de crisis emocional o necesitas atención urgente, recurre a los servicios públicos de emergencia: **024** (Línea de atención a la conducta suicida en España), **717 003 717** (Teléfono de la Esperanza) o acude al centro sanitario / urgencias más cercano (**112**).

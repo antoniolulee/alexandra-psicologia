@@ -1,0 +1,560 @@
+{% assign eval_data = site.data.autoevaluacion %}
+{% assign wa_phone = site.data.seo.schema.telephone | remove: '+' %}
+
+<!-- Autoevaluación Clínica Orientativa (Alpine.js) -->
+<section id="autoevaluacion"
+  class="scroll-mt-24 py-16 lg:py-24 bg-secondary dark:bg-dark-secondary border-y border-border dark:border-dark-border transition-colors duration-300"
+  x-data="autoevaluacionClinica('{{ wa_phone }}')">
+  <div class="max-w-5xl mx-auto px-6" x-ref="cardTop">
+
+    <!-- Cabecera Editorial de Sección -->
+    <div class="text-center mb-12">
+      <span
+        class="inline-block px-4 py-1.5 bg-accent/10 dark:bg-dark-accent/10 text-accent dark:text-dark-accent text-xs sm:text-sm font-medium tracking-wide uppercase rounded-full mb-4">
+        {{ eval_data.badge }}
+      </span>
+      <h2 id="autoevaluacion-heading"
+        class="font-heading text-3xl md:text-4xl lg:text-5xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
+        {{ eval_data.title }}
+      </h2>
+      <p class="text-base sm:text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto leading-relaxed">
+        {{ eval_data.subtitle }}
+      </p>
+    </div>
+
+    <!-- Tarjeta Principal -->
+    <div
+      class="relative bg-white dark:bg-dark-secondary-alt rounded-lg shadow-sm border border-border dark:border-dark-border overflow-hidden transition-colors duration-300">
+      <!-- Barra superior de acento coherente con Specialties -->
+      <div class="h-1 bg-gradient-to-r from-primary to-accent dark:from-dark-primary dark:to-dark-accent"></div>
+
+      <div class="p-6 sm:p-8 lg:p-10">
+
+        <!-- Cabecera interna de progreso minimalista (solo durante los 3 pasos) -->
+        <div x-show="step <= totalSteps" class="mb-8 pb-6 border-b border-border dark:border-dark-border">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <ol class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm" aria-label="Etapas de la orientación">
+              {% for step_item in eval_data.steps %}
+              <li class="flex items-center gap-2 transition-colors duration-200"
+                :aria-current="step === {{ step_item.number }} ? 'step' : null"
+                :class="step > {{ step_item.number }} ? 'text-primary dark:text-dark-primary font-medium' : (step === {{ step_item.number }} ? 'text-text dark:text-dark-text font-bold' : 'text-text-muted/70 dark:text-dark-text-muted/70')">
+                <span
+                  class="w-6 h-6 rounded-full flex items-center justify-center text-xs border flex-shrink-0 transition-colors duration-200"
+                  :class="step > {{ step_item.number }} ? 'bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary border-primary dark:border-dark-primary' : (step === {{ step_item.number }} ? 'border-primary dark:border-dark-primary text-primary dark:text-dark-primary bg-primary/10 dark:bg-dark-primary/10 font-bold' : 'border-border dark:border-dark-border text-text-muted dark:text-dark-text-muted')">
+                  <span x-show="step <= {{ step_item.number }}">{{ step_item.number }}</span>
+                  <svg x-show="step > {{ step_item.number }}" x-cloak class="w-3.5 h-3.5" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <span>{{ step_item.label }}</span>
+              </li>
+              {% endfor %}
+            </ol>
+
+            <span class="text-xs font-medium text-text-muted dark:text-dark-text-muted"
+              x-text="'Paso ' + step + ' de ' + totalSteps">
+              Paso 1 de 3
+            </span>
+          </div>
+
+          <!-- Barra de progreso fina -->
+          <div class="w-full h-1.5 bg-secondary-alt dark:bg-dark-border rounded-full overflow-hidden" role="progressbar"
+            :aria-valuenow="Math.min(step, totalSteps)" aria-valuemin="1" aria-valuemax="{{ eval_data.steps.size }}"
+            :aria-label="'Progreso de la orientación: paso ' + Math.min(step, totalSteps) + ' de ' + totalSteps">
+            <div
+              class="h-full bg-primary dark:bg-dark-primary rounded-full transition-all duration-300 motion-reduce:transition-none"
+              :style="'width: ' + ((Math.min(step, totalSteps) / totalSteps) * 100) + '%'">
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario Multi-paso (3 pasos renderizados estáticamente en Liquid) -->
+        <form x-show="step <= totalSteps" :inert="step > totalSteps" @submit.prevent="handleNext()"
+          aria-labelledby="autoevaluacion-heading" novalidate>
+
+          {% for step_item in eval_data.steps %}
+          <div x-show="step === {{ step_item.number }}" {% if step_item.number > 1 %}x-cloak{% endif %}
+            :inert="step !== {{ step_item.number }}">
+            <fieldset>
+              <legend x-ref="headingStep{{ step_item.number }}" tabindex="-1"
+                class="font-heading text-2xl sm:text-3xl text-text dark:text-dark-text leading-snug mb-2 focus:outline-none">
+                {{ step_item.question }}
+              </legend>
+              <p class="text-sm sm:text-base text-text-muted dark:text-dark-text-muted mb-6 leading-relaxed">
+                {{ step_item.hint }}
+              </p>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                {% for opt in step_item.options %}
+                <div class="relative">
+                  <input type="radio"
+                    id="eval-{{ step_item.key }}-{{ opt.value }}"
+                    name="{{ step_item.key }}"
+                    value="{{ opt.value }}"
+                    :checked="answers.{{ step_item.key }} === '{{ opt.value }}'"
+                    @change="selectOption('{{ step_item.key }}', '{{ opt.value }}')"
+                    class="peer sr-only">
+                  <label for="eval-{{ step_item.key }}-{{ opt.value }}"
+                    class="rounded-lg border p-5 cursor-pointer transition-all duration-300 flex items-start gap-4 h-full min-h-[52px] peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-primary dark:peer-focus-visible:outline-dark-primary"
+                    :class="answers.{{ step_item.key }} === '{{ opt.value }}' ? 'border-primary dark:border-dark-primary bg-primary/5 dark:bg-dark-primary/10 shadow-sm' : 'border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary hover:border-primary/40 dark:hover:border-dark-primary/40 hover:bg-secondary/80'">
+                    <span
+                      class="mt-1 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 transition-colors duration-200"
+                      :class="answers.{{ step_item.key }} === '{{ opt.value }}' ? 'border-primary dark:border-dark-primary bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary' : 'border-text-muted/40 dark:border-dark-text-muted/50 bg-white dark:bg-dark-secondary-alt'">
+                      <svg x-show="answers.{{ step_item.key }} === '{{ opt.value }}'" x-cloak class="w-3 h-3" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span class="block min-w-0 flex-1">
+                      <span class="flex items-center gap-2 font-heading text-lg text-text dark:text-dark-text leading-snug">
+                        {% if opt.icon %}
+                        <span class="text-primary dark:text-dark-primary flex-shrink-0">
+                          {% include icon.html name=opt.icon class="w-4 h-4" %}
+                        </span>
+                        {% endif %}
+                        <span>{{ opt.title }}</span>
+                      </span>
+                      <span class="block text-sm text-text-muted dark:text-dark-text-muted mt-1.5 leading-relaxed">
+                        {{ opt.desc }}
+                      </span>
+                    </span>
+                  </label>
+                </div>
+                {% endfor %}
+              </div>
+            </fieldset>
+          </div>
+          {% endfor %}
+
+          <!-- Aviso de validación accesible -->
+          <div role="status" aria-live="polite" class="mt-5">
+            <p x-show="validationError" x-cloak
+              class="flex items-center gap-2 text-sm font-medium text-accent dark:text-dark-accent bg-accent/10 dark:bg-dark-accent/15 px-4 py-3 rounded-lg border border-accent/30 dark:border-dark-accent/30">
+              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <span x-text="validationError"></span>
+            </p>
+          </div>
+
+          <!-- Controles de Navegación del Wizard -->
+          <div class="mt-7 pt-6 border-t border-border dark:border-dark-border flex flex-wrap items-center justify-between gap-4">
+            <button type="button" x-show="step > 1" x-cloak @click="prevStep()" enterkeyhint="previous"
+              class="min-h-[48px] px-5 py-3 rounded-md border border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary text-text dark:text-dark-text text-sm font-medium hover:border-primary dark:hover:border-dark-primary transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+              ← Anterior
+            </button>
+            <span x-show="step === 1" class="text-xs sm:text-sm text-text-muted dark:text-dark-text-muted">
+              Privado en tu navegador · 3 preguntas breves
+            </span>
+
+            <button type="submit" :enterkeyhint="step < totalSteps ? 'next' : 'done'"
+              class="ml-auto min-h-[48px] inline-flex items-center justify-center gap-2 px-7 py-3 bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary text-sm font-bold tracking-wide uppercase rounded-md hover:bg-primary-hover dark:hover:bg-dark-primary-hover transition-all duration-200 shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary dark:focus-visible:outline-dark-primary">
+              <span x-text="step < totalSteps ? 'Continuar' : 'Ver orientación'">Continuar</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Pantalla 4: Ficha de Orientación Clínica (No Diagnóstica) -->
+        <div x-show="step === 4" x-cloak :inert="step !== 4" aria-live="polite" class="space-y-6">
+          <div>
+            <span
+              class="inline-block px-3.5 py-1 bg-primary/10 dark:bg-dark-primary/15 text-primary dark:text-dark-primary text-xs font-medium uppercase tracking-wider rounded-full mb-3"
+              x-text="recommendation().badge">
+            </span>
+
+            <h3 x-ref="headingStep4" tabindex="-1"
+              class="font-heading text-2xl sm:text-3xl text-text dark:text-dark-text leading-snug mb-3 focus:outline-none"
+              x-text="recommendation().title">
+            </h3>
+
+            <p class="text-base text-text-muted dark:text-dark-text-muted leading-relaxed mb-5"
+              x-text="recommendation().summary">
+            </p>
+
+            <!-- Nota contextual serena según impacto en el día a día -->
+            <div class="border-l-4 border-accent dark:border-dark-accent bg-secondary/60 dark:bg-dark-secondary p-4 rounded-r-lg">
+              <p class="text-sm text-text dark:text-dark-text leading-relaxed" x-text="contextNote()"></p>
+            </div>
+          </div>
+
+          <!-- Aviso prioritario de crisis si seleccionó alerta aguda -->
+          <div x-show="answers.interferencia === 'alerta_aguda'" x-cloak role="alert"
+            class="p-5 rounded-lg border border-accent dark:border-dark-accent bg-accent/10 dark:bg-dark-accent/15 text-text dark:text-dark-text">
+            <p class="font-bold text-sm sm:text-base text-accent dark:text-dark-accent mb-1">
+              {{ eval_data.crisis_title }}
+            </p>
+            <p class="text-sm leading-relaxed mb-3">
+              {{ eval_data.crisis_text }}
+            </p>
+            <div class="flex flex-wrap gap-2.5 text-xs sm:text-sm font-bold">
+              <a href="tel:024"
+                class="inline-flex items-center px-3.5 py-2 min-h-[44px] rounded-md bg-white dark:bg-dark-secondary border border-accent/40 text-text dark:text-dark-text hover:underline">
+                Llamar al 024 (24h gratuito)
+              </a>
+              <a href="tel:717003717"
+                class="inline-flex items-center px-3.5 py-2 min-h-[44px] rounded-md bg-white dark:bg-dark-secondary border border-accent/40 text-text dark:text-dark-text hover:underline">
+                Teléfono de la Esperanza: 717 003 717
+              </a>
+              <a href="tel:112"
+                class="inline-flex items-center px-3.5 py-2 min-h-[44px] rounded-md bg-white dark:bg-dark-secondary border border-accent/40 text-text dark:text-dark-text hover:underline">
+                Emergencias: 112
+              </a>
+            </div>
+          </div>
+
+          <!-- Enlaces a Área Clínica y Lecturas Psicoeducativas -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-primary dark:text-dark-primary mb-3">
+                Área clínica recomendada
+              </p>
+              <div class="space-y-3">
+                <template x-for="land in recommendation().landings" :key="land.url">
+                  <a :href="land.url"
+                    class="flex items-center justify-between gap-3 p-5 min-h-[48px] rounded-lg border border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary hover:border-primary dark:hover:border-dark-primary transition-colors duration-300 group">
+                    <span class="block">
+                      <span class="block font-heading text-lg text-text dark:text-dark-text group-hover:text-primary dark:group-hover:text-dark-primary"
+                        x-text="land.label"></span>
+                      <span class="block text-sm text-text-muted dark:text-dark-text-muted mt-1 leading-relaxed"
+                        x-text="land.desc"></span>
+                    </span>
+                    <span aria-hidden="true" class="text-primary dark:text-dark-primary font-bold">→</span>
+                  </a>
+                </template>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-accent dark:text-dark-accent mb-3">
+                Lecturas psicoeducativas relacionadas
+              </p>
+              <div class="space-y-3">
+                <template x-for="art in recommendation().articles" :key="art.url">
+                  <a :href="art.url"
+                    class="flex items-center justify-between gap-3 p-5 min-h-[48px] rounded-lg border border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary hover:border-primary dark:hover:border-dark-primary transition-colors duration-300 group">
+                    <span class="block">
+                      <span class="block font-heading text-lg text-text dark:text-dark-text group-hover:text-primary dark:group-hover:text-dark-primary"
+                        x-text="art.label"></span>
+                      <span class="block text-xs font-bold uppercase tracking-wider text-primary dark:text-dark-primary mt-2">
+                        Leer guía clínica →
+                      </span>
+                    </span>
+                  </a>
+                </template>
+              </div>
+            </div>
+          </div>
+
+          <!-- Barra de acciones final sobria -->
+          <div class="pt-6 border-t border-border dark:border-dark-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <button type="button" @click="reset()"
+              class="min-h-[44px] inline-flex items-center gap-2 text-sm font-medium text-text-muted dark:text-dark-text-muted hover:text-primary dark:hover:text-dark-primary underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+              <span>← Volver a empezar</span>
+            </button>
+
+            <a :href="whatsappUrl()" target="_blank" rel="noopener noreferrer"
+              class="min-h-[48px] inline-flex items-center justify-center gap-3 px-7 py-3.5 bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary text-sm font-bold tracking-wide uppercase rounded-md hover:bg-primary-hover dark:hover:bg-dark-primary-hover transition-all duration-300 shadow-sm hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary dark:focus-visible:outline-dark-primary">
+              {% include icons/whatsapp.svg class="w-5 h-5 flex-shrink-0" %}
+              <span>Consultar disponibilidad por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Pie discreto de privacidad y aviso deontológico -->
+    <div class="mt-6 text-center text-xs text-text-muted dark:text-dark-text-muted leading-relaxed max-w-3xl mx-auto space-y-1">
+      <p><strong class="text-text dark:text-dark-text">{{ eval_data.disclaimer_title }}:</strong> {{ eval_data.privacy_note }}</p>
+      <p>{{ eval_data.disclaimer_text }}</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function autoevaluacionClinica(waPhone) {
+    return {
+      step: 1,
+      totalSteps: 3,
+      validationError: '',
+      answers: {
+        etapa: null,
+        sintoma: null,
+        interferencia: null
+      },
+      selectOption: function (key, value) {
+        this.answers[key] = value;
+        this.validationError = '';
+      },
+      clearError: function () {
+        this.validationError = '';
+      },
+      currentKey: function () {
+        var keys = ['etapa', 'sintoma', 'interferencia'];
+        return keys[this.step - 1] || null;
+      },
+      isStepComplete: function () {
+        var key = this.currentKey();
+        return Boolean(key && this.answers[key]);
+      },
+      handleNext: function () {
+        if (!this.isStepComplete()) {
+          this.validationError = 'Por favor, selecciona la opción que mejor refleje tu situación para continuar.';
+          return;
+        }
+        this.validationError = '';
+        if (this.step < this.totalSteps) {
+          this.step += 1;
+          this.focusStepHeading();
+        } else {
+          this.step = 4;
+          this.focusStepHeading();
+        }
+      },
+      prevStep: function () {
+        this.validationError = '';
+        if (this.step > 1) {
+          this.step -= 1;
+          this.focusStepHeading();
+        }
+      },
+      reset: function () {
+        this.answers = {
+          etapa: null,
+          sintoma: null,
+          interferencia: null
+        };
+        this.validationError = '';
+        this.step = 1;
+        this.focusStepHeading();
+      },
+      focusStepHeading: function () {
+        var self = this;
+        this.$nextTick(function () {
+          var targetRef = self.$refs['headingStep' + self.step];
+          if (targetRef) {
+            targetRef.focus({ preventScroll: true });
+          }
+          if (self.$refs.cardTop) {
+            var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            self.$refs.cardTop.scrollIntoView({
+              behavior: reduceMotion ? 'auto' : 'smooth',
+              block: 'nearest'
+            });
+          }
+        });
+      },
+      contextNote: function () {
+        var map = {
+          intenso: 'Cuando el malestar ya condiciona el sueño y el ánimo casi cada día, contar con una valoración clínica estructurada ayuda a poner orden y aliviar la carga antes de que se cronifique.',
+          olas: 'Aunque haya días en los que consigues sostener la rutina, esos picos nocturnos o ante citas médicas suelen indicar que estás cargando con más de lo que conviene sostener sola.',
+          preventivo: 'Pedir orientación cuando el desgaste empieza a asomar permite trabajar con margen, comprender lo que sientes y prevenir que la sobrecarga vaya a más.',
+          alerta_aguda: 'Si sientes que en este momento la situación te supera, prioriza la contención inmediata mediante los teléfonos gratuitos 24h indicados abajo y, si lo deseas, escríbeme para valorar atención prioritaria.'
+        };
+        return map[this.answers.interferencia] || map.olas;
+      },
+      recommendation: function () {
+        var etapa = this.answers.etapa;
+        var sintoma = this.answers.sintoma;
+
+        if (etapa === 'perinatal' && sintoma === 'impacto_medico') {
+          return {
+            badge: 'Orientación sugerida · Perinatal y Trauma Obstétrico',
+            title: 'Psicología Perinatal y Reprocesamiento con Terapia EMDR',
+            summary: 'Tu situación apunta a un impacto emocional significativo en torno al embarazo, el parto o el posparto. Combinar el acompañamiento perinatal con terapia EMDR ayuda a aliviar los recuerdos intrusivos, la hipervigilancia y la tensión corporal sin patologizarte.',
+            waTopic: 'el posparto o un parto/vivencia obstétrica difícil',
+            landings: [
+              {
+                label: 'Psicología Perinatal Online',
+                desc: 'Acompañamiento clínico en embarazo, posparto y vínculo temprano.',
+                url: '/psicologia-perinatal/'
+              },
+              {
+                label: 'Terapia EMDR Online',
+                desc: 'Reprocesamiento de trauma obstétrico, recuerdos médicos y bloqueos.',
+                url: '/terapia-emdr/'
+              }
+            ],
+            articles: [
+              {
+                label: 'Baby blues vs. depresión posparto: diferencias clave',
+                url: '/blog/baby-blues-vs-depresion-posparto-diferencias/'
+              },
+              {
+                label: 'Pensamientos intrusivos en el posparto y miedo a hacer daño',
+                url: '/blog/pensamientos-intrusivos-posparto-miedo-hacer-dano-bebe/'
+              }
+            ]
+          };
+        }
+
+        if (etapa === 'perinatal') {
+          return {
+            badge: 'Orientación sugerida · Salud Mental Perinatal',
+            title: 'Acompañamiento Clínico en Psicología Perinatal, Embarazo y Posparto',
+            summary: 'Lo que describes es frecuente en mujeres que atraviesan el embarazo o el puerperio con ansiedad, tristeza silenciosa, culpa o pensamientos intrusivos. Una valoración perinatal permite entender qué está ocurriendo y cuidarte con rigor clínico.',
+            waTopic: 'mi embarazo o posparto',
+            landings: [
+              {
+                label: 'Psicología Perinatal Online',
+                desc: 'Atención clínica en ansiedad gestacional, posparto y puerperio.',
+                url: '/psicologia-perinatal/'
+              },
+              {
+                label: 'Duelo Gestacional y Perinatal',
+                desc: 'Si además convives con pérdidas previas o duelos de expectativas.',
+                url: '/duelo-gestacional/'
+              }
+            ],
+            articles: [
+              {
+                label: 'Baby blues vs. depresión posparto: señales y duración',
+                url: '/blog/baby-blues-vs-depresion-posparto-diferencias/'
+              },
+              {
+                label: 'Pensamientos intrusivos en el posparto: por qué ocurren',
+                url: '/blog/pensamientos-intrusivos-posparto-miedo-hacer-dano-bebe/'
+              }
+            ]
+          };
+        }
+
+        if (etapa === 'infertilidad') {
+          return {
+            badge: 'Orientación sugerida · Reproducción Asistida y Fertilidad',
+            title: 'Psicología en Infertilidad, FIV, Betaespera y Duelo Genético',
+            summary: 'El desgaste de pruebas médicas, estimulaciones, betaesperas y decisiones reproductivas afecta profundamente al bienestar emocional y a la pareja. El acompañamiento especializado ayuda a sostener la incertidumbre y proteger tu salud mental durante el proceso.',
+            waTopic: 'un proceso de fertilidad o reproducción asistida',
+            landings: [
+              {
+                label: 'Psicología en Infertilidad y FIV',
+                desc: 'Apoyo clínico en betaespera, ovodonación y desgaste reproductivo.',
+                url: '/infertilidad/'
+              },
+              {
+                label: 'Duelo Gestacional y Perinatal',
+                desc: 'Sostén ante negativos repetidos o pérdidas durante tratamientos.',
+                url: '/duelo-gestacional/'
+              }
+            ],
+            articles: [
+              {
+                label: 'El impacto psicológico de la reproducción asistida, FIV y betaespera',
+                url: '/blog/impacto-psicologico-reproduccion-asistida-fiv/'
+              },
+              {
+                label: 'Duelo perinatal y gestacional: validar el dolor que nadie nombra',
+                url: '/blog/duelo-perinatal-gestacional-fases-apoyo/'
+              }
+            ]
+          };
+        }
+
+        if (etapa === 'duelo_perinatal') {
+          return {
+            badge: 'Orientación sugerida · Duelo Perinatal y Gestacional',
+            title: 'Psicoterapia Especializada en Duelo Gestacional y Perinatal',
+            summary: 'El dolor tras una pérdida gestacional o perinatal suele quedar silenciado por el entorno, lo que intensifica la culpa y la soledad. En consulta damos un lugar legítimo a tu pérdida y a tu ritmo, sin presiones por "pasar página".',
+            waTopic: 'una pérdida gestacional o duelo perinatal',
+            landings: [
+              {
+                label: 'Duelo Gestacional y Perinatal',
+                desc: 'Acompañamiento clínico ante aborto, pérdida perinatal o tras FIV.',
+                url: '/duelo-gestacional/'
+              },
+              {
+                label: 'Terapia EMDR Online',
+                desc: 'Para reprocesar imágenes o vivencias traumáticas ligadas a la pérdida.',
+                url: '/terapia-emdr/'
+              }
+            ],
+            articles: [
+              {
+                label: 'Duelo perinatal y gestacional: cómo transitar la pérdida',
+                url: '/blog/duelo-perinatal-gestacional-fases-apoyo/'
+              },
+              {
+                label: 'Impacto psicológico en reproducción asistida y pérdidas previas',
+                url: '/blog/impacto-psicologico-reproduccion-asistida-fiv/'
+              }
+            ]
+          };
+        }
+
+        return {
+          badge: 'Orientación sugerida · Trauma, Apego y Salud Emocional',
+          title: 'Terapia EMDR, Trauma Relacional, Heridas de Apego y Duelo',
+          summary: 'Cuando la ansiedad, el bloqueo emocional o ciertos patrones vinculares se repiten una y otra vez, no suele bastar con entenderlo racionalmente: es necesario trabajar su origen de forma segura y estructurada mediante psicoterapia clínica y EMDR.',
+          waTopic: 'ansiedad, trauma, apego o un proceso de duelo',
+          landings: [
+            {
+              label: 'Terapia EMDR Online',
+              desc: 'Reprocesamiento clínico de trauma, bloqueos y recuerdos dolorosos.',
+              url: '/terapia-emdr/'
+            },
+            {
+              label: 'Trauma y Heridas de Apego',
+              desc: 'Trabajo en vínculos, regulación emocional y seguridad interna.',
+              url: '/trauma-apego/'
+            },
+            {
+              label: 'Psicoterapia en Procesos de Duelo',
+              desc: 'Acompañamiento clínico en duelos vitales o pérdidas significativas.',
+              url: '/duelo/'
+            }
+          ],
+          articles: [
+            {
+              label: 'El apego ansioso en las relaciones: señales y cómo sanarlo',
+              url: '/relaciones/2026/01/05/apego-ansioso-relaciones/'
+            },
+            {
+              label: 'Ansiedad vs. estrés: cómo diferenciarlos y qué hacer',
+              url: '/bienestar-emocional/2026/01/10/ansiedad-vs-estres/'
+            }
+          ]
+        };
+      },
+      whatsappUrl: function () {
+        var rec = this.recommendation();
+        var etapaMap = {
+          perinatal: 'estoy atravesando un momento de embarazo, posparto o maternidad reciente',
+          infertilidad: 'estoy en un proceso de búsqueda de embarazo o reproducción asistida',
+          duelo_perinatal: 'estoy transitando una pérdida gestacional o duelo perinatal',
+          trauma_apego: 'estoy viviendo ansiedad persistente, heridas de apego, trauma o un duelo vital'
+        };
+        var sintomaMap = {
+          hipervigilancia: 'alerta constante, insomnio o pensamientos intrusivos',
+          tristeza_culpa: 'tristeza, culpa o sensación de desconexión',
+          impacto_medico: 'recuerdos difíciles ligados a un parto o proceso médico',
+          desgaste_relacional: 'sobrecarga silenciosa y dificultad en mis vínculos'
+        };
+        var interferenciaMap = {
+          intenso: 'Este malestar está presente casi a diario en mi descanso y mi rutina.',
+          olas: 'Va por olas, intensificándose en ciertos momentos o cuando baja el ritmo.',
+          preventivo: 'Es reciente, pero prefiero cuidarme a tiempo antes de que vaya a más.',
+          alerta_aguda: 'Siento que ahora mismo me supera y necesitaría orientación prioritaria.'
+        };
+        var etapaText = etapaMap[this.answers.etapa] || ('me encuentro en un momento relacionado con ' + rec.waTopic);
+        var sintomaText = sintomaMap[this.answers.sintoma];
+        var interferenciaText = interferenciaMap[this.answers.interferencia];
+
+        var parts = [
+          'Hola Alexandra, acabo de completar la orientación en tu web.',
+          'Actualmente ' + etapaText + (sintomaText ? ' y lo que más noto últimamente es ' + sintomaText : '') + '.'
+        ];
+        if (interferenciaText) {
+          parts.push(interferenciaText);
+        }
+        parts.push('La orientación sugerida ha sido: ' + rec.title + '.');
+        parts.push('Te escribo para consultar disponibilidad y ver cómo dar el primer paso.');
+
+        return 'https://wa.me/' + waPhone + '?text=' + encodeURIComponent(parts.join(' '));
+      }
+    };
+  }
+</script>

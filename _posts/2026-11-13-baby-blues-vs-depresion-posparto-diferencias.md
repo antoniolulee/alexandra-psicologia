@@ -17,7 +17,7 @@ categories: [Salud Perinatal]
 tags: [baby-blues, depresion-posparto, psicologia-perinatal, posparto, trauma-apego]
 author: "Alexandra Barroso"
 reading_time: "9 min"
-image: /assets/images/alexandra-about.webp
+image: /assets/images/blog/baby-blues-depresion-posparto.webp
 excerpt: "Sentir ganas de llorar o desbordamiento tras dar a luz es muy frecuente, pero distinguir entre el baby blues fisiológico y una depresión posparto clínica resulta esencial para cuidar tu salud mental materna."
 faq:
   - question: "¿Cuánto dura la tristeza posparto o baby blues antes de desaparecer?"

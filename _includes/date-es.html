@@ -1,0 +1,8 @@
+{%- assign mes_idx = include.date | date: "%m" | minus: 1 -%}
+{%- if include.format == "short" -%}
+{%- assign meses_es_cortos = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic" | split: "," -%}
+{{ include.date | date: "%-d" }} {{ meses_es_cortos[mes_idx] }} {{ include.date | date: "%Y" }}
+{%- else -%}
+{%- assign meses_es = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," -%}
+{{ include.date | date: "%-d" }} de {{ meses_es[mes_idx] }} de {{ include.date | date: "%Y" }}
+{%- endif -%}

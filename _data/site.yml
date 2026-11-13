@@ -7,7 +7,7 @@ identity:
   tagline: "Psicóloga Clínica Online experta en Salud Perinatal, Duelo Gestacional y Trauma (EMDR). Terapia personalizada sin desplazamientos."
   subtitle: "Psicoterapia integradora que se adapta a ti"
   credentials: "Psicóloga Colegiada CV-13539 · Universidad Complutense de Madrid"
-  location: "Madrid, España"
+  location: "Valencia, España"
 
 # ============================================
 # CONTACTO
@@ -45,6 +45,7 @@ hero:
   title_emotional: "Recupera tu bienestar emocional"
   title_professional: "Psicóloga Clínica especialista Online"
   subtitle: "Entiendo tu sufrimiento. Juntos, lo transformamos."
+  credentials: "Especialista en Psicología Clínica vía PIR (Colegiada CV-13539)"
   cta_primary: "Agenda tu primera sesión"
   cta_secondary: "Conoce mi metodología"
   image: "/assets/images/alexandra-hero.webp"
@@ -81,21 +82,29 @@ about:
 # ¿PARA QUIÉN ES?
 # ============================================
 for_whom:
-  title: "¿Te identificas?"
-  subtitle: "Mi terapia está diseñada para ti si..."
+  title: "¿En qué momento vital te encuentras?"
+  subtitle: "Acompañamiento psicológico hiperespecializado en salud mental de la mujer, etapa perinatal y trauma"
   profiles:
-    - icon: "heart"
-      title: "Vives con ansiedad o miedos"
-      description: "Si la preocupación constante o el pánico te impiden disfrutar del presente."
-    - icon: "cloud"
-      title: "Atraviesas un duelo o ruptura"
-      description: "Una pérdida, una separación, o el fin de una etapa que necesitas procesar."
     - icon: "refresh"
-      title: "Intentas ser madre"
-      description: "Acompañamiento emocional en procesos de infertilidad, reproducción asistida o pérdidas gestacionales."
+      title: "Búsqueda y Reproducción Asistida"
+      description: "Sostén emocional en infertilidad, FIV, inseminación, ovodonación, duelo genético y manejo de la ansiedad en la betaespera."
+      url: "/infertilidad/"
+      cta_label: "Apoyo en fertilidad"
+    - icon: "heart"
+      title: "Embarazo, Parto y Posparto"
+      description: "Psicología perinatal online para ansiedad gestacional, miedo al parto (tocofobia), depresión posparto, pensamientos intrusivos y matrescencia."
+      url: "/psicologia-perinatal/"
+      cta_label: "Psicología perinatal"
+    - icon: "cloud"
+      title: "Duelo Gestacional y Perinatal"
+      description: "Un refugio sin juicios para transitar pérdidas gestacionales tempranas o tardías, interrupción médica (IVET) y miedos en el embarazo arcoíris."
+      url: "/duelo-gestacional/"
+      cta_label: "Terapia de duelo perinatal"
     - icon: "briefcase"
-      title: "Buscas entenderte mejor"
-      description: "Problemas de autoestima, relaciones conflictivas o patrones que se repiten en tu vida."
+      title: "Trauma, Parto Traumático y Apego"
+      description: "Reprocesamiento clínico con terapia EMDR online para secuelas de parto traumático, violencia obstétrica, heridas de infancia y apego."
+      url: "/terapia-emdr/"
+      cta_label: "Terapia EMDR online"
 
 
 # ============================================
@@ -103,17 +112,17 @@ for_whom:
 # ============================================
 testimonials:
   title: "Lo que dicen de mí"
-  subtitle: "Experiencias reales de transformación"
+  subtitle: "Experiencias reales de acompañamiento clínico en maternidad, fertilidad y trauma"
   items:
-    - text: "Después de años buscando a la profesional adecuada, encontré en Alexandra exactamente lo que necesitaba. Su enfoque cercano pero profesional me ayudó a superar mi ansiedad laboral en pocos meses."
-      author: "Directiva de marketing"
-      age: "42 años"
-    - text: "Como madre, ver la transformación de mi hija ha sido increíble. Alexandra conectó con ella desde la primera sesión y le dio herramientas que usa a diario."
-      author: "Madre de adolescente"
-      age: "48 años"
-    - text: "La flexibilidad de las sesiones online fue clave para poder compatibilizarlo con mi trabajo. Alexandra me ayudó a poner límites sanos y recuperar mi equilibrio."
-      author: "Emprendedora"
-      age: "35 años"
+    - text: "Durante mis ciclos de FIV y la espera de la beta sentía que nadie de mi entorno entendía el desgaste. Con Alexandra encontré rigor, calma y un espacio sin presiones donde sostener cada resultado sin romperme."
+      author: "Paciente en proceso de reproducción asistida"
+      age: "36 años"
+    - text: "Tras mi pérdida gestacional me sentía completamente sola y culpable. Poder hacer las sesiones online desde casa, con una psicóloga clínica que validó el nombre de mi bebé y trabajó el trauma del hospital con EMDR, me devolvió el aire."
+      author: "Madre en duelo perinatal y embarazo arcoíris"
+      age: "34 años"
+    - text: "Después del parto me aterrorizaban mis pensamientos intrusivos y la sensación de desconexión. Alexandra supo distinguir desde el primer día lo que me ocurría sin juzgarme y me dio herramientas reales para recuperar mi equilibrio."
+      author: "Madre en etapa posparto"
+      age: "33 años"
 
 # ============================================
 # FAQ
@@ -124,14 +133,14 @@ faq:
   items:
     - question: "¿Es efectiva la terapia online?"
       answer: "Absolutamente. Numerosos estudios científicos demuestran que la terapia online tiene la misma efectividad que la presencial. Además, ofrece ventajas como mayor flexibilidad horaria, eliminación de desplazamientos y la comodidad de realizarla desde tu espacio seguro."
-    - question: "¿Cuánto dura una sesión ?"
+    - question: "¿Cuánto dura una sesión?"
       answer: "Las sesiones tienen una duración de 50 minutos."
     - question: "¿Cómo funciona el pago?"
       answer: "El pago se realiza por transferencia bancaria o mediante un enlace seguro con tarjeta de crédito/débito. Recibirás la factura correspondiente tras cada sesión."
     - question: "¿Qué diferencia hay con otras plataformas de psicología online?"
       answer: "A diferencia de las plataformas masivas donde te asignan un profesional según disponibilidad, aquí trabajarás directamente conmigo. No hay intermediarios, algoritmos ni rotación de psicólogos. Es un servicio boutique donde priorizo la calidad sobre la cantidad."
     - question: "¿Cómo es la primera sesión?"
-      answer: "El proceso comienza con una **llamada telefónica** donde me cuentas tu situación y valoro si soy la profesional adecuada para ti. Si es así, agendaremos la primera sesión de terapia para iniciar el tratamiento. Si no, te derivaré al especialista que crea que mejor pueda ayudarte."
+      answer: "El proceso comienza con una **llamada telefónica gratuita de valoración (15 minutos)** donde me cuentas tu situación y valoro si soy la profesional adecuada para ti. Si es así, agendaremos la primera sesión online de 50 minutos para iniciar el tratamiento. Si no, te derivaré al especialista que mejor pueda ayudarte."
     - question: "¿Qué necesito para las sesiones online?"
       answer: "Solo necesitas un dispositivo con cámara y micrófono (ordenador, tablet o móvil), conexión a internet estable, y un espacio privado donde te sientas cómoda. Utilizamos plataformas seguras y cifradas para garantizar la confidencialidad."
     - question: "¿Con qué frecuencia tendremos las sesiones?"
@@ -141,7 +150,7 @@ faq:
     - question: "¿Qué pasa si tengo que cancelar una sesión?"
       answer: "Entiendo los imprevistos. Solo te pido que me avises con al menos 24 horas de antelación para poder reorganizar la agenda y ofrecer ese hueco a otra persona que lo necesite. Las cancelaciones con menos tiempo implican el abono de la sesión."
     - question: "¿Es segura y confidencial la terapia online?"
-      answer: "Totalmente. La confidencialidad es sagrada en mi consulta. Utilizo plataformas de videollamada encriptadas (Google Meet, Skype, Zoom) y seguras que cumplen estrictamente con la Ley de Protección de Datos, garantizando que nuestro espacio sea tan privado como una consulta presencial."
+      answer: "Totalmente. La confidencialidad es sagrada en mi consulta. Utilizo plataformas de videollamada cifradas (Google Meet y Zoom) y seguras que cumplen estrictamente con el RGPD y la Ley de Protección de Datos, garantizando que nuestro espacio sea tan privado como una consulta presencial."
 
 # ============================================
 # ESPECIALIDADES (SEO)
@@ -173,20 +182,6 @@ specialties:
           url: "/duelo/"
           desc: "Acompañamiento psicológico online para elaborar pérdidas significativas, duelos traumáticos o bloqueos vitales."
 
-footer_specialties:
-  - name: "Psicología Perinatal y Posparto"
-    url: "/psicologia-perinatal/"
-  - name: "Duelo Gestacional y Perinatal"
-    url: "/duelo-gestacional/"
-  - name: "Infertilidad y Reproducción Asistida"
-    url: "/infertilidad/"
-  - name: "Terapia EMDR Online para Adultos"
-    url: "/terapia-emdr/"
-  - name: "Trauma Relacional y Heridas de Apego"
-    url: "/trauma-apego/"
-  - name: "Duelo Complejo y Crisis Vitales"
-    url: "/duelo/"
-
 # ============================================
 # LEGAL (Datos del responsable)
 # ============================================
@@ -194,7 +189,7 @@ legal:
   responsable:
     nombre: "Alexandra Barroso"
     nif: "49024563V"
-    direccion: "Madrid, España"
+    direccion: "Valencia, España"
     email: "contacto@alexandrabarroso.com"
     colegiado: "Psicóloga Colegiada CV-13539"
 
@@ -203,7 +198,7 @@ legal:
 # ============================================
 footer:
   copyright: "Alexandra Barroso - Psicóloga Clínica"
-  location_seo: "Servicio de Psicología Online desde Madrid, España para todo el mundo"
+  location_seo: "Servicio de Psicología Clínica Online desde Valencia para toda España y habla hispana"
   legal_links:
     - text: "Aviso Legal"
       url: "/legal/"
@@ -213,3 +208,75 @@ footer:
       url: "/cookies/"
     - text: "Supervisión Profesionales"
       url: "/sobre-mi/#supervision-para-profesionales"
+
+# ============================================
+# DEFAULTS DE ESPECIALIDADES
+# ============================================
+especialidad_defaults:
+  hero_microcopy: "Respuesta personal por WhatsApp en menos de 24h · 1.ª valoración telefónica gratuita · 100% confidencial"
+  cuando_acudir_cta_title: "¿Te identificas con alguna de estas situaciones?"
+  cuando_acudir_cta_subtitle: "No necesitas tener todo claro ni explicarlo en detalle hoy. Escríbeme un mensaje breve por WhatsApp y vemos juntas cómo acompañarte a tu ritmo."
+  credenciales_bar:
+    - icon: "check-circle"
+      text: "Psicóloga Especialista Clínica (PIR)"
+    - icon: "book"
+      text: "Colegiada CV-13539 · +15 años exp."
+    - icon: "hospital"
+      text: "Hospital Arnau de Vilanova y Vithas"
+    - icon: "user"
+      text: "Atención boutique 1 a 1, sin algoritmos"
+  pasos_whatsapp:
+    title: "¿Cómo damos el primer paso por WhatsApp?"
+    subtitle: "Sin formularios fríos ni compromisos previos: así funciona tu primera toma de contacto."
+    steps:
+      - title: "Me escribes por WhatsApp"
+        description: "Al pulsar el botón se abre un mensaje pre-escrito adaptado a esta especialidad. Sin formularios largos ni llamadas en frío."
+      - title: "Valoración telefónica gratuita (15 min)"
+        description: "Te respondo personalmente para agendar una breve llamada sin coste, escucharte y resolver tus dudas antes de empezar."
+      - title: "Tu primera sesión online a tu ritmo"
+        description: "Sesiones de 50 min por videollamada cifrada desde la comodidad y privacidad de tu hogar."
+  prueba_social_highlights:
+    - "Más de 15 años de trayectoria clínica y experiencia hospitalaria (Hospital Arnau de Vilanova y Vithas)."
+    - "Atención directa 1 a 1 por videollamada cifrada, sin plataformas masivas ni rotación de profesionales."
+    - "Formación acreditada en EMDR, trauma relacional, apego y psicoterapia perinatal."
+
+# ============================================
+# BLOG (Categorías, Bio y CTAs por clúster)
+# ============================================
+blog:
+  categories:
+    - slug: "all"
+      label: "Todos los artículos"
+    - slug: "salud-perinatal"
+      label: "Salud Perinatal y Posparto"
+    - slug: "relaciones"
+      label: "Trauma, Apego y Relaciones"
+    - slug: "bienestar-emocional"
+      label: "Bienestar Emocional"
+  author_bio: "Más de 15 años de experiencia clínica y formación hospitalaria (Hospital Arnau de Vilanova y Hospital Vithas). Especializada en psicoterapia online para la mujer: psicología perinatal, duelo gestacional, reproducción asistida, trauma y EMDR."
+  cluster_ctas:
+    duelo:
+      pilar_url: "/duelo-gestacional/"
+      pilar_label: "Ver Terapia de Duelo Gestacional"
+      heading: "¿Atraviesas una pérdida gestacional o perinatal?"
+      copy: "No tienes que sostener este dolor en silencio. Podemos conversar en una primera llamada gratuita de valoración para acompañarte a tu ritmo desde casa."
+    infertilidad:
+      pilar_url: "/infertilidad/"
+      pilar_label: "Ver Apoyo en Infertilidad y FIV"
+      heading: "¿Vives un proceso de reproducción asistida?"
+      copy: "No tienes que cargar sola con la incertidumbre de cada ciclo. Solicita una primera llamada gratuita para explorar cómo acompañarte."
+    perinatal:
+      pilar_url: "/psicologia-perinatal/"
+      pilar_label: "Ver Psicología Perinatal Online"
+      heading: "¿Necesitas acompañamiento perinatal especializado?"
+      copy: "Puedes realizar las sesiones online desde casa, incluso con tu bebé en brazos. El primer paso es una llamada de valoración gratuita sin compromiso."
+    trauma_apego:
+      pilar_url: "/terapia-emdr/"
+      pilar_label: "Ver Terapia EMDR y Trauma"
+      heading: "¿Te gustaría trabajar estos patrones en terapia?"
+      copy: "Comprender tu historia es el inicio; reprocesarla con seguridad clínica y enfoque EMDR te ayuda a transformar cómo te vinculas hoy."
+    default:
+      pilar_url: "/psicologia-perinatal/"
+      pilar_label: "Ver Psicología Perinatal Online"
+      heading: "¿Necesitas apoyo profesional?"
+      copy: "Si te has sentido identificada con lo que has leído, podemos hablar en una llamada de valoración gratuita para ver cómo puedo acompañarte online."

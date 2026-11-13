@@ -9,10 +9,12 @@ seo_keywords:
   - "trampa ansioso evitativa"
   - "terapia apego ansioso online"
 date: 2026-01-05
+permalink: /relaciones/2026/01/05/apego-ansioso-relaciones/
 categories: [Relaciones]
+author: "Alexandra Barroso"
 excerpt: "Descubre cómo el estilo de apego ansioso afecta tus relaciones y qué puedes hacer para desarrollar vínculos más seguros y satisfactorios."
 reading_time: "8 min"
-image: /assets/images/alexandra-about.webp
+image: /assets/images/blog/apego-ansioso-relaciones.webp
 faq:
   - question: "¿Cómo saber si tengo apego ansioso en mi relación de pareja?"
     answer: "Las señales más claras son el miedo intenso al abandono, la necesidad de confirmación afectiva constante, la hipervigilancia ante cambios en el tono o frecuencia de los mensajes y priorizar la relación por encima de tus propias necesidades."
@@ -88,15 +90,6 @@ El apego ansioso puede crear dinámicas difíciles:
 **El ciclo de ansiedad**: Cuando sientes que tu pareja se distancia, tu ansiedad aumenta y te acercas más. Si la otra persona tiene apego evitativo, esto puede ahuyentarle más, aumentando tu ansiedad.
 
 **Relaciones desequilibradas**: Puedes acabar en relaciones donde das mucho más de lo que recibes, o con personas emocionalmente no disponibles (un patrón familiar).
-
-## Apego Ansioso vs. Apego Evitativo vs. Apego Seguro en la pareja
-
-| Dimensión Vincular | Apego Ansioso | Apego Evitativo | Apego Seguro |
-|---|---|---|---|
-| **Miedo central** | Abandono y rechazo afectivo | Pérdida de autonomía y asfixia emocional | No hay miedo crónico; confía en el vínculo |
-| **Respuesta ante el conflicto** | Hiperactivación: insistir, buscar contacto inmediato | Desactivación: silencio, retirada o frialdad | Diálogo regulado y búsqueda de reparación |
-| **Percepción de la distancia** | Señal de alarma de que la relación peligra | Necesidad de espacio para recuperar calma | Algo natural y compatible con el afecto |
-| **Límites personales** | Difusos por miedo a perder al otro | Rígidos para proteger la independencia | Claros, flexibles y comunicados con calma |
 
 ## Cómo desarrollar un apego más seguro
 

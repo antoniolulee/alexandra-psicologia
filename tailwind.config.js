@@ -17,6 +17,7 @@ module.exports = {
         'primary-hover': '#4a5649',
         'secondary': '#f9f8f4',      // Crema cálido (fondo)
         'secondary-alt': '#f0efe8',  // Crema más oscuro
+        'surface': '#f0efe8',
         'accent': '#b8860b',         // Dorado mate
         'accent-hover': '#9a7209',
         'text': '#2d2d2d',           // Texto principal
@@ -27,6 +28,7 @@ module.exports = {
         'dark-primary-hover': '#9dab9a',
         'dark-secondary': '#1a1a1a',      // Fondo oscuro
         'dark-secondary-alt': '#252525',
+        'dark-surface': '#252525',
         'dark-accent': '#d4a853',         // Dorado más brillante
         'dark-accent-hover': '#e0b865',
         'dark-text': '#f0f0f0',           // Texto claro

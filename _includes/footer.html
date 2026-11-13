@@ -40,10 +40,12 @@
           Especialidades
         </h4>
         <nav class="space-y-3">
-          {% for item in site.data.site.footer_specialties %}
+          {% for category in site.data.site.specialties.categories %}
+          {% for item in category.items %}
           <a href="{{ item.url }}" class="block text-white/80 hover:text-white text-sm transition-colors duration-300">
             {{ item.name }}
           </a>
+          {% endfor %}
           {% endfor %}
         </nav>
       </div>

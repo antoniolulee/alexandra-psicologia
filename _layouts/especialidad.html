@@ -1,267 +1,425 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'es' }}" class="scroll-smooth" x-data="darkMode()" x-init="init()"
-  :class="{ 'dark': isDark }">
-
+---
+layout: default
+---
 {% assign datos = site.data.especialidades[page.data_key] %}
-{% include head.html
-seo_title=datos.seo.title
-seo_description=datos.seo.description
-seo_keywords=datos.seo.keywords
-og_image=datos.hero.image
-%}
+{% assign defaults = site.data.site.especialidad_defaults %}
+{% assign wa_phone = site.data.seo.schema.telephone | remove: '+' %}
+{% assign wa_msg = datos.hero.whatsapp_msg | default: site.data.site.contact.whatsapp_msg %}
+{% assign cta_label = datos.hero.cta_text | default: site.data.site.cta_text %}
+{% assign hero_microcopy = datos.hero.microcopy | default: defaults.hero_microcopy %}
 
-<body
-  class="bg-secondary text-text font-body antialiased transition-colors duration-300 dark:bg-dark-secondary dark:text-dark-text">
+<!-- ============================================ -->
+<!-- HERO SECTION -->
+<!-- ============================================ -->
+<section class="relative min-h-[70vh] flex items-center py-14 lg:py-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 w-full">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-  {% assign datos = site.data.especialidades[page.data_key] %}
+      <!-- Content -->
+      <div class="order-2 lg:order-1 text-center lg:text-left">
+        <!-- Badge -->
+        <span
+          class="inline-block px-4 py-1.5 bg-accent/10 dark:bg-dark-accent/10 text-accent dark:text-dark-accent text-sm font-medium rounded-full mb-5">
+          {{ datos.hero.badge }}
+        </span>
 
-  <!-- Header -->
-  {% include header.html %}
-
-  <main>
-    <!-- ============================================ -->
-    <!-- HERO SECTION -->
-    <!-- ============================================ -->
-    <section class="relative min-h-[70vh] flex items-center py-16 lg:py-24 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 w-full">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          <!-- Content -->
-          <div class="order-2 lg:order-1 text-center lg:text-left">
-            <!-- Badge -->
-            <span
-              class="inline-block px-4 py-1 bg-accent/10 dark:bg-dark-accent/10 text-accent dark:text-dark-accent text-sm font-medium rounded-full mb-6">
-              {{ datos.hero.badge }}
-            </span>
-
-            <h1
-              class="font-heading text-4xl md:text-5xl lg:text-6xl text-text dark:text-dark-text leading-heading tracking-heading mb-6">
-              {{ datos.hero.headline }}
-            </h1>
-
-            <p
-              class="text-lg md:text-xl text-text-muted dark:text-dark-text-muted leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-              {{ datos.hero.subtitle }}
-            </p>
-
-            <!-- CTA -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="https://wa.me/{{ site.data.seo.schema.telephone | remove: '+' }}?text={{ datos.hero.whatsapp_msg | default: site.data.site.contact.whatsapp_msg | url_encode }}"
-                target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary dark:bg-dark-primary text-white text-sm tracking-wide uppercase rounded-md hover:bg-primary-hover dark:hover:bg-dark-primary-hover transition-all duration-300 shadow-md hover:shadow-lg">
-                {{ datos.hero.cta_text }}
-              </a>
-            </div>
-          </div>
-
-          <!-- Image -->
-          <div class="order-1 lg:order-2 relative">
-            <div class="relative aspect-[4/5] max-w-md mx-auto lg:max-w-none">
-              <!-- Decorative frame -->
-              <div
-                class="absolute -inset-4 border-2 border-accent/30 dark:border-dark-accent/30 rounded-lg transform rotate-3">
-              </div>
-              <div
-                class="absolute -inset-4 border-2 border-primary/20 dark:border-dark-primary/20 rounded-lg transform -rotate-2">
-              </div>
-              <img src="{{ datos.hero.image }}" width="682" height="1024" alt="{{ datos.hero.headline }}"
-                class="relative w-full h-full object-cover rounded-lg shadow-xl" loading="eager">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- QUÉ ES SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16 lg:py-24 bg-white dark:bg-dark-secondary">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2
-          class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-8 text-center">
-          {{ datos.que_es.title }}
-        </h2>
-        <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
-          {{ datos.que_es.content | markdownify }}
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- CUÁNDO ACUDIR SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16 lg:py-24 bg-secondary dark:bg-dark-secondary">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2
-            class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
-            {{ datos.cuando_acudir.title }}
-          </h2>
-          {% if datos.cuando_acudir.subtitle %}
-          <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
-            {{ datos.cuando_acudir.subtitle }}
-          </p>
+        <h1
+          class="font-heading text-4xl md:text-5xl lg:text-6xl text-text dark:text-dark-text leading-heading tracking-heading mb-6">
+          {{ datos.hero.headline }}
+          {% assign headline_seo_text = datos.hero.headline_seo | default: datos.hero.seo_h1 %}
+          {% if headline_seo_text %}
+          <span class="block text-primary dark:text-dark-primary text-2xl md:text-3xl lg:text-4xl mt-3 font-normal">
+            {{ headline_seo_text }}
+          </span>
           {% endif %}
-        </div>
+        </h1>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {% for item in datos.cuando_acudir.items %}
-          <div
-            class="bg-white dark:bg-dark-primary/5 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h3 class="font-heading text-lg text-text dark:text-dark-text mb-2">
-              {{ item.title }}
-            </h3>
-            <p class="text-text-muted dark:text-dark-text-muted text-sm">
-              {{ item.description }}
-            </p>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
+        <p
+          class="text-lg md:text-xl text-text-muted dark:text-dark-text-muted leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+          {{ datos.hero.subtitle }}
+        </p>
 
-    <!-- ============================================ -->
-    <!-- ENFOQUE SECTION -->
-    <!-- ============================================ -->
-    <section class="py-16 lg:py-24 bg-white dark:bg-dark-secondary">
-      <div class="max-w-4xl mx-auto px-6">
-        <h2
-          class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-8 text-center">
-          {{ datos.enfoque.title }}
-        </h2>
-        <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
-          {{ datos.enfoque.content | markdownify }}
-        </div>
-      </div>
-    </section>
-
-    {% if datos.faq %}
-    <!-- ============================================ -->
-    <!-- FAQ SECTION -->
-    <!-- ============================================ -->
-    <section id="faq" class="py-16 lg:py-24 bg-secondary dark:bg-dark-secondary" x-data="{ openItem: null }">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2
-            class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
-            {{ datos.faq.title | default: "Preguntas Frecuentes" }}
-          </h2>
-          {% if datos.faq.subtitle %}
-          <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
-            {{ datos.faq.subtitle }}
+        <!-- CTA Primario WhatsApp + Microcopy reductor de fricción -->
+        <div class="flex flex-col items-center lg:items-start gap-3">
+          <a href="https://wa.me/{{ wa_phone }}?text={{ wa_msg | url_encode }}"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary text-sm font-bold tracking-wide uppercase rounded-md hover:bg-primary-hover dark:hover:bg-dark-primary-hover transition-all duration-300 shadow-md hover:shadow-lg">
+            {% include icons/whatsapp.svg class="w-5 h-5 flex-shrink-0" %}
+            <span>{{ cta_label }}</span>
+          </a>
+          <p class="flex items-center justify-center lg:justify-start gap-2 text-xs md:text-sm text-text-muted dark:text-dark-text-muted">
+            <span class="w-2 h-2 rounded-full bg-[#25D366] flex-shrink-0" aria-hidden="true"></span>
+            <span>{{ hero_microcopy }}</span>
           </p>
-          {% endif %}
-        </div>
-
-        <div class="space-y-4">
-          {% for item in datos.faq.items %}
-          <div
-            class="border border-border dark:border-dark-border rounded-lg overflow-hidden bg-white dark:bg-dark-secondary transition-colors duration-300">
-            <button @click="openItem = openItem === {{ forloop.index }} ? null : {{ forloop.index }}"
-              class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-secondary-alt dark:hover:bg-dark-secondary-alt transition-colors duration-300"
-              :aria-expanded="openItem === {{ forloop.index }}">
-              <h3 class="font-heading text-lg text-text dark:text-dark-text pr-4">
-                {{ item.question }}
-              </h3>
-              <svg class="w-5 h-5 text-primary dark:text-dark-primary flex-shrink-0 transition-transform duration-300"
-                :class="{ 'rotate-180': openItem === {{ forloop.index }} }" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div x-show="openItem === {{ forloop.index }}" x-collapse>
-              <div class="px-6 pb-5 prose dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted leading-relaxed">
-                {{ item.answer | markdownify }}
-              </div>
-            </div>
-          </div>
-          {% endfor %}
         </div>
       </div>
-    </section>
+
+      <!-- Image -->
+      <div class="order-1 lg:order-2 relative">
+        <div class="relative aspect-[4/5] max-w-md mx-auto lg:max-w-none">
+          <!-- Decorative frame -->
+          <div
+            class="absolute -inset-4 border-2 border-accent/30 dark:border-dark-accent/30 rounded-lg transform rotate-3">
+          </div>
+          <div
+            class="absolute -inset-4 border-2 border-primary/20 dark:border-dark-primary/20 rounded-lg transform -rotate-2">
+          </div>
+          <img src="{{ datos.hero.image }}" width="682" height="1024"
+            alt="{{ datos.hero.headline_seo | default: datos.hero.headline }} - {{ site.data.site.identity.name }}"
+            class="relative w-full h-full object-cover rounded-lg shadow-xl" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- BARRA DE CREDENCIALES Y AUTORIDAD CLÍNICA -->
+<!-- ============================================ -->
+<section aria-label="Credenciales clínicas"
+  class="py-6 bg-secondary-alt dark:bg-dark-secondary-alt border-y border-border dark:border-dark-border transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center sm:text-left">
+      {% for cred in defaults.credenciales_bar %}
+      <div class="flex items-center justify-center sm:justify-start gap-3">
+        <span class="w-8 h-8 rounded-full bg-primary/10 dark:bg-dark-primary/10 text-primary dark:text-dark-primary flex items-center justify-center flex-shrink-0">
+          {% include icon.html name=cred.icon class="w-4 h-4" %}
+        </span>
+        <p class="text-sm font-medium text-text dark:text-dark-text">{{ cred.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- QUÉ ES SECTION (BLUF + CONTENIDO CLÍNICO) -->
+<!-- ============================================ -->
+<section class="py-16 lg:py-24 bg-white dark:bg-dark-secondary">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2
+      class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-8 text-center">
+      {{ datos.que_es.title }}
+    </h2>
+
+    {% if datos.que_es.bluf %}
+    <div
+      class="border-l-4 border-primary dark:border-dark-primary bg-secondary/60 dark:bg-dark-primary/10 p-6 rounded-r-lg mb-8 text-lg text-text dark:text-dark-text leading-relaxed font-medium">
+      {{ datos.que_es.bluf }}
+    </div>
     {% endif %}
 
-    <!-- ============================================ -->
-    <!-- CTA FINAL SECTION -->
-    <!-- ============================================ -->
-    <section class="relative py-16 lg:py-24 bg-primary dark:bg-dark-primary overflow-hidden"
-      style="background: linear-gradient(135deg, #5d6b5b 0%, #4a5649 100%);">
-      <!-- Decorative patterns -->
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute inset-0 opacity-10"
-          style="background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px); background-size: 40px 40px;">
-        </div>
-        <div class="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+    <div class="overflow-x-auto">
+      <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
+        {{ datos.que_es.content | markdownify }}
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="max-w-3xl mx-auto px-6 relative text-center">
-        <h2 class="font-heading text-3xl lg:text-4xl xl:text-5xl text-white mb-6">
-          {{ datos.cta_final.title }}
-        </h2>
-        <p class="text-lg lg:text-xl text-white/90 mb-10 leading-relaxed font-light max-w-xl mx-auto">
-          {{ datos.cta_final.subtitle }}
+<!-- ============================================ -->
+<!-- CUÁNDO ACUDIR SECTION + CTA INTERMEDIO -->
+<!-- ============================================ -->
+<section class="py-16 lg:py-24 bg-secondary dark:bg-dark-secondary">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2
+        class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
+        {{ datos.cuando_acudir.title }}
+      </h2>
+      {% if datos.cuando_acudir.subtitle %}
+      <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
+        {{ datos.cuando_acudir.subtitle }}
+      </p>
+      {% endif %}
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for item in datos.cuando_acudir.items %}
+      <div
+        class="bg-white dark:bg-dark-primary/5 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border/60 dark:border-dark-border">
+        <div
+          class="w-10 h-10 mb-4 flex items-center justify-center rounded-full bg-primary/10 dark:bg-dark-primary/10 text-primary dark:text-dark-primary">
+          {% include icon.html name=item.icon class="w-5 h-5" %}
+        </div>
+        <h3 class="font-heading text-lg text-text dark:text-dark-text mb-2">
+          {{ item.title }}
+        </h3>
+        <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed">
+          {{ item.description }}
         </p>
-        <a href="https://wa.me/{{ site.data.seo.schema.telephone | remove: '+' }}?text={{ datos.hero.whatsapp_msg | default: site.data.site.contact.whatsapp_msg | url_encode }}"
-          target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary dark:text-dark-primary text-sm tracking-wide uppercase rounded-md shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-          {{ site.data.site.cta_text }}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- CTA Intermedio de Conversión Suave -->
+    <div
+      class="mt-12 max-w-4xl mx-auto bg-white dark:bg-dark-secondary-alt border border-primary/20 dark:border-dark-primary/30 rounded-xl p-8 text-center shadow-sm">
+      <h3 class="font-heading text-2xl md:text-3xl text-text dark:text-dark-text mb-3">
+        {{ datos.cuando_acudir.cta_title | default: defaults.cuando_acudir_cta_title }}
+      </h3>
+      <p class="text-text-muted dark:text-dark-text-muted mb-6 max-w-2xl mx-auto">
+        {{ datos.cuando_acudir.cta_subtitle | default: defaults.cuando_acudir_cta_subtitle }}
+      </p>
+      <a href="https://wa.me/{{ wa_phone }}?text={{ wa_msg | url_encode }}"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-3 px-7 py-4 bg-primary dark:bg-dark-primary text-white dark:text-dark-secondary text-sm font-bold tracking-wide uppercase rounded-md hover:bg-primary-hover dark:hover:bg-dark-primary-hover transition-all duration-300 shadow-md hover:shadow-lg">
+        {% include icons/whatsapp.svg class="w-5 h-5 flex-shrink-0" %}
+        <span>{{ cta_label }}</span>
+      </a>
+      <div class="mt-4">
+        <a href="/#autoevaluacion"
+          class="inline-flex items-center justify-center gap-1.5 min-h-[44px] px-3 py-2 text-sm font-medium text-primary dark:text-dark-primary hover:underline">
+          <span>¿No estás segura de si esta es el área que necesitas? Realiza la orientación clínica de 1 min</span>
+          <span aria-hidden="true">→</span>
         </a>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  {% include footer.html %}
+<!-- ============================================ -->
+<!-- ENFOQUE SECTION -->
+<!-- ============================================ -->
+<section class="py-16 lg:py-24 bg-white dark:bg-dark-secondary">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2
+      class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-8 text-center">
+      {{ datos.enfoque.title }}
+    </h2>
+    <div class="overflow-x-auto">
+      <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
+        {{ datos.enfoque.content | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Floating WhatsApp CTA -->
-  {% include cta.html %}
+<!-- ============================================ -->
+<!-- CÓMO DAMOS EL PRIMER PASO POR WHATSAPP -->
+<!-- ============================================ -->
+{% assign pasos_steps = datos.pasos_whatsapp.steps | default: defaults.pasos_whatsapp.steps %}
+<section id="como-empezar"
+  class="py-16 lg:py-20 bg-secondary-alt dark:bg-dark-secondary-alt border-y border-border dark:border-dark-border">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2
+        class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
+        {{ datos.pasos_whatsapp.title | default: defaults.pasos_whatsapp.title }}
+      </h2>
+      <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
+        {{ datos.pasos_whatsapp.subtitle | default: defaults.pasos_whatsapp.subtitle }}
+      </p>
+    </div>
 
-  {% include cookie-consent.html %}
-
-  {% include scripts.html %}
-
-  <!-- BreadcrumbList JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "{{ site.url | default: '' }}/"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": {{ datos.hero.headline | jsonify }},
-      "item": "{{ site.url | default: '' }}{{ page.url }}"
-    }]
-  }
-  </script>
-
-  {% if datos.faq %}
-  <!-- Schema.org FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {% for item in datos.faq.items %}
-      {
-        "@type": "Question",
-        "name": {{ item.question | jsonify }},
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": {{ item.answer | markdownify | strip_html | strip_newlines | jsonify }}
-        }
-      }{% unless forloop.last %},{% endunless %}
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for step in pasos_steps %}
+      <div class="bg-white dark:bg-dark-secondary rounded-lg p-8 shadow-sm border border-border dark:border-dark-border">
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 dark:bg-dark-primary/10 text-primary dark:text-dark-primary font-heading font-bold text-lg mb-4">
+          {{ forloop.index }}
+        </span>
+        <h3 class="font-heading text-xl text-text dark:text-dark-text mb-3">
+          {{ step.title }}
+        </h3>
+        <p class="text-text-muted dark:text-dark-text-muted text-sm leading-relaxed">
+          {{ step.description }}
+        </p>
+      </div>
       {% endfor %}
-    ]
-  }
-  </script>
-  {% endif %}
+    </div>
+  </div>
+</section>
 
-</body>
+<!-- ============================================ -->
+<!-- QUIÉN TE ACOMPAÑA (PRUEBA CLÍNICA) & LECTURAS -->
+<!-- ============================================ -->
+{% assign social_highlights = datos.prueba_social.highlights | default: defaults.prueba_social_highlights %}
+<section class="py-16 lg:py-24 bg-white dark:bg-dark-secondary">
+  <div class="max-w-5xl mx-auto px-6">
+    <div
+      class="grid md:grid-cols-3 gap-8 items-center bg-secondary/50 dark:bg-dark-secondary-alt rounded-xl p-8 border border-border dark:border-dark-border">
+      <div class="md:col-span-1">
+        <div class="relative aspect-[3/4] max-w-[240px] mx-auto">
+          <img src="{{ site.data.site.about.image }}" width="682" height="1024"
+            alt="{{ site.data.site.identity.name }} - {{ site.data.site.identity.title }}"
+            class="w-full h-full object-cover rounded-lg shadow-md" loading="lazy">
+        </div>
+      </div>
 
-</html>
+      <div class="md:col-span-2">
+        <span class="text-xs uppercase tracking-widest text-accent dark:text-dark-accent font-bold">
+          Quién te acompaña
+        </span>
+        <h2 class="font-heading text-2xl md:text-3xl text-text dark:text-dark-text mt-1 mb-2">
+          {{ site.data.site.identity.name }}
+        </h2>
+        <p class="text-sm text-primary dark:text-dark-primary font-medium mb-4">
+          Psicóloga Especialista en Psicología Clínica (vía PIR) · {{ site.data.site.identity.credentials }}
+        </p>
+
+        <blockquote
+          class="border-l-4 border-accent dark:border-dark-accent pl-4 italic text-text dark:text-dark-text mb-6">
+          "{{ datos.prueba_social.quote | default: site.data.site.about.bio_boutique }}"
+        </blockquote>
+
+        <ul class="space-y-2 text-sm text-text-muted dark:text-dark-text-muted mb-6">
+          {% for highlight in social_highlights %}
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-primary dark:text-dark-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>{{ highlight }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <a href="{{ site.data.site.about.cta_more_url }}"
+          class="inline-flex items-center gap-2 text-sm font-bold text-primary dark:text-dark-primary hover:underline">
+          <span>Conoce mi formación y experiencia completa</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {% if datos.articulos_relacionados %}
+    <div class="mt-14">
+      <h3 class="font-heading text-2xl text-text dark:text-dark-text text-center mb-6">
+        Lecturas clínicas recomendadas
+      </h3>
+      <div class="grid {% if datos.articulos_relacionados.size == 2 %}md:grid-cols-2{% else %}md:grid-cols-3{% endif %} gap-6">
+        {% for art in datos.articulos_relacionados %}
+        <a href="{{ art.url }}"
+          class="block p-6 rounded-lg border border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary-alt hover:border-primary dark:hover:border-dark-primary transition-colors duration-300">
+          <p class="font-heading text-lg text-text dark:text-dark-text mb-2">
+            {{ art.title }}
+          </p>
+          <p class="text-sm text-text-muted dark:text-dark-text-muted mb-3">
+            {{ art.description }}
+          </p>
+          <span class="text-xs font-bold uppercase tracking-wider text-primary dark:text-dark-primary">
+            Leer guía clínica →
+          </span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% else %}
+      {% assign hub_posts = "" | split: "" %}
+      {% for post in site.posts %}
+        {% assign is_hub_match = false %}
+        {% if post.tags contains page.data_key %}
+          {% assign is_hub_match = true %}
+        {% elsif datos.hero.related_category and post.categories contains datos.hero.related_category %}
+          {% assign is_hub_match = true %}
+        {% endif %}
+        {% if is_hub_match and hub_posts.size < 3 %}
+          {% assign hub_posts = hub_posts | push: post %}
+        {% endif %}
+      {% endfor %}
+      {% if hub_posts.size > 0 %}
+      <div class="mt-14">
+        <h3 class="font-heading text-2xl text-text dark:text-dark-text text-center mb-6">
+          Lecturas clínicas recomendadas
+        </h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          {% for post in hub_posts %}
+          <a href="{{ post.url }}"
+            class="block p-6 rounded-lg border border-border dark:border-dark-border bg-secondary/40 dark:bg-dark-secondary-alt hover:border-primary dark:hover:border-dark-primary transition-colors duration-300">
+            <p class="font-heading text-lg text-text dark:text-dark-text mb-2">
+              {{ post.title }}
+            </p>
+            <p class="text-sm text-text-muted dark:text-dark-text-muted mb-3">
+              {{ post.excerpt | strip_html | truncatewords: 20 }}
+            </p>
+            <span class="text-xs font-bold uppercase tracking-wider text-primary dark:text-dark-primary">
+              Leer guía clínica →
+            </span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+{% if datos.faq %}
+<!-- ============================================ -->
+<!-- FAQ SECTION -->
+<!-- ============================================ -->
+<section id="faq" class="py-16 lg:py-24 bg-secondary dark:bg-dark-secondary" x-data="{ openItem: null }">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2
+        class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text leading-heading tracking-heading mb-4">
+        {{ datos.faq.title | default: "Preguntas Frecuentes" }}
+      </h2>
+      {% if datos.faq.subtitle %}
+      <p class="text-lg text-text-muted dark:text-dark-text-muted max-w-2xl mx-auto">
+        {{ datos.faq.subtitle }}
+      </p>
+      {% endif %}
+    </div>
+
+    {% include faq-accordion.html items=datos.faq.items %}
+  </div>
+</section>
+{% endif %}
+
+<!-- ============================================ -->
+<!-- CTA FINAL SECTION -->
+<!-- ============================================ -->
+<section class="relative py-16 lg:py-24 bg-gradient-to-br from-primary to-primary-hover overflow-hidden">
+  <!-- Decorative patterns -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute inset-0 opacity-10"
+      style="background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+    <div class="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-6 relative text-center">
+    <h2 class="font-heading text-3xl lg:text-4xl xl:text-5xl text-white mb-6">
+      {{ datos.cta_final.title }}
+    </h2>
+    <p class="text-lg lg:text-xl text-white/90 mb-10 leading-relaxed font-light max-w-xl mx-auto">
+      {{ datos.cta_final.subtitle }}
+    </p>
+    <div class="flex flex-col items-center gap-3">
+      <a href="https://wa.me/{{ wa_phone }}?text={{ wa_msg | url_encode }}"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary text-sm font-bold tracking-wide uppercase rounded-md shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+        {% include icons/whatsapp.svg class="w-5 h-5 flex-shrink-0" %}
+        <span>{{ cta_label }}</span>
+      </a>
+      <p class="text-xs md:text-sm text-white/90">
+        {{ hero_microcopy }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Inicio",
+    "item": "{{ site.url | default: '' }}/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": {{ datos.seo.breadcrumb | default: page.title | default: datos.hero.headline | jsonify }},
+    "item": "{{ site.url | default: '' }}{{ page.url }}"
+  }]
+}
+</script>
+
+{% include faq-schema.html items=datos.faq.items %}

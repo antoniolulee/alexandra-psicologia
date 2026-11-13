@@ -1,6 +1,6 @@
 # Jekyll configuration
 title: "Alexandra Barroso | Psicóloga Clínica Online"
-description: "Psicóloga clínica colegiada especializada en terapia online para mujeres y adolescentes. Sesiones 100% online. Sin intermediarios."
+description: "Psicóloga Especialista en Psicología Clínica (vía PIR · Colegiada CV-13539). Psicoterapia 100% online especializada en Salud Perinatal, Duelo Gestacional, Reproducción Asistida, Trauma, Apego y Terapia EMDR."
 url: "https://alexandrabarroso.com"
 baseurl: ""
 lang: "es"
@@ -12,7 +12,6 @@ future: true
 
 # Plugins (GitHub Pages whitelist)
 plugins:
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 # Exclude from build
@@ -35,6 +34,7 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - vendor
+  - assets/images/Alejandra_LQ/
 
 # Defaults
 defaults:
@@ -43,8 +43,14 @@ defaults:
     values:
       layout: "default"
   - scope:
+      path: "especialidades"
+    values:
+      layout: "especialidad"
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       author: "Alexandra Barroso"
+      permalink: /blog/:title/
+      image: /assets/images/alexandra-about.webp

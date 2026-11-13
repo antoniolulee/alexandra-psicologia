@@ -8,8 +8,9 @@
 # SEO
 # ============================================
 seo:
-  title: "Terapia EMDR Online para Adultos | Psicóloga Especialista en Trauma | Alexandra Barroso"
-  description: "Psicóloga especialista en trauma y Terapia EMDR online para adultos (Clínica PIR). Tratamiento eficaz para estrés postraumático, trauma relacional, apego y ansiedad."
+  title: "Terapia EMDR Online para Adultos | Especialista Trauma | Alexandra Barroso"
+  description: "Psicóloga Clínica (PIR) especialista en Terapia EMDR online para adultos: trauma, apego, estrés postraumático y ansiedad. 1.ª valoración gratis por WhatsApp."
+  breadcrumb: "Terapia EMDR Online para Adultos"
   keywords:
     - "terapia EMDR online"
     - "psicóloga EMDR online"
@@ -30,18 +31,22 @@ seo:
 # HERO
 # ============================================
 hero:
-  badge: "Psicóloga EMDR Online · Especialista en Trauma"
-  headline: "Terapia EMDR Online para Adultos: Especialista en Trauma"
+  badge: "Especialista Clínica PIR · Terapeuta EMDR"
+  headline: "Reprocesa el trauma, recupera tu calma"
+  headline_seo: "Terapia EMDR Online para Adultos: Especialista en Trauma"
   subtitle: "Trauma, ansiedad, fobias y heridas de apego. El reprocesamiento EMDR por videollamada te ayuda a integrar experiencias difíciles para que dejen de condicionar tu presente."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "AGENDA TU PRIMERA SESIÓN"
-  whatsapp_msg: "Hola Alexandra, me gustaría información sobre la terapia EMDR que ofreces."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Evaluación clínica previa sin compromiso · 1.ª valoración sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, me gustaría información sobre la terapia EMDR online y solicitar la primera valoración gratuita."
+  related_category: "Relaciones"
 
 # ============================================
 # QUÉ ES
 # ============================================
 que_es:
   title: "¿Qué es la Terapia EMDR Online y cómo funciona?"
+  bluf: "La terapia EMDR online para adultos es un tratamiento psicoterapéutico de primera línea, avalado por la OMS y la APA, que reprocesa recuerdos traumáticos, ansiedad crónica y heridas de apego mediante estimulación bilateral guiada por videollamada. Permite desensibilizar el malestar emocional almacenado para que el pasado deje de activarse en tu presente."
   content: |
     La **terapia EMDR online para adultos** (*Eye Movement Desensitization and Reprocessing*) es un abordaje psicoterapéutico de primera línea, avalado por la **OMS** y la **APA**, para reprocesar recuerdos traumáticos, ansiedad crónica y heridas de apego mediante estimulación bilateral guiada por videollamada. Permite desensibilizar el malestar emocional para que el pasado deje de activarse en tu presente.
 
@@ -139,6 +144,17 @@ enfoque:
     ### Un proceso seguro y respetuoso
 
     Nunca te fuerzo a hablar en detalle sobre lo que sucedió si no quieres. El EMDR permite procesar sin necesidad de narrar cada detalle del trauma. El proceso es **gradual** y siempre respetamos tu ritmo.
+
+# ============================================
+# LECTURAS RECOMENDADAS
+# ============================================
+articulos_relacionados:
+  - title: "El Apego Ansioso en las Relaciones: Señales y Soluciones"
+    description: "Comprende los patrones vinculares aprendidos y cómo trabajarlos con EMDR y terapia de apego."
+    url: "/relaciones/2026/01/05/apego-ansioso-relaciones/"
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "Cómo interviene la psicología clínica y el EMDR cuando una pérdida gestacional deja huella traumática."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
 
 # ============================================
 # PREGUNTAS FRECUENTES (FAQPage Schema)

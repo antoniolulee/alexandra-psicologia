@@ -17,7 +17,7 @@ categories: [Salud Perinatal]
 tags: [duelo-perinatal, duelo-gestacional, psicologia-perinatal, terapia-emdr, duelo-desautorizado]
 author: "Alexandra Barroso"
 reading_time: "9 min"
-image: /assets/images/alexandra-about.webp
+image: /assets/images/blog/duelo-perinatal-gestacional.webp
 excerpt: "Perder un bebé durante el embarazo o poco después de nacer es una de las experiencias más devastadoras y silenciadas. Abordamos desde la psicología clínica perinatal cómo transitar el duelo gestacional y perinatal sin juicios."
 faq:
   - question: "¿Cuánto tiempo dura el duelo perinatal y cuándo empieza a doler menos?"

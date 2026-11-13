@@ -54,7 +54,7 @@ Este documento define la estructura definitiva de **Topic Clusters (Hub & Spoke)
 | *Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé* | Emocional / Dolor | `/duelo-gestacional/` ("terapia de duelo perinatal online") | `/psicologia-perinatal/` ("psicología perinatal online") |
 | *Baby blues vs. depresión posparto: diferencias, duración y cuándo pedir ayuda* | Informacional (Sintomática) | `/psicologia-perinatal/` ("salud perinatal online") | `/terapia-emdr/` ("terapia EMDR online") |
 | *Pensamientos intrusivos en el posparto: miedo a hacer daño a tu bebé* | Psicoeducación clínica | `/psicologia-perinatal/` ("psicóloga postparto online") | `/trauma-apego/` ("regulación del sistema nervioso") |
-| *El desgaste psicológico en reproducción asistida (FIV y ovodonación)* | Afrontamiento | `/infertilidad/` ("apoyo psicológico en infertilidad") | `/duelo-gestacional/` ("duelo gestacional y perinatal") |
+| *El desgaste psicológico en reproducción asistida (FIV y ovodonación)* **(Publicado: `/blog/impacto-psicologico-reproduccion-asistida-fiv/`)** | Afrontamiento | `/infertilidad/` ("apoyo psicológico en infertilidad y reproducción asistida") | `/duelo-gestacional/` ("duelo gestacional y perinatal") |
 | *Superar un parto traumático y violencia obstétrica con EMDR* | Trauma / Solución | `/terapia-emdr/` ("especialista en trauma EMDR online") | `/psicologia-perinatal/` ("acompañamiento perinatal") |
 
 ---
@@ -100,6 +100,8 @@ Este documento define la estructura definitiva de **Topic Clusters (Hub & Spoke)
 
 | Post Actual | Enlaces Integrados |
 |---|---|
+| `2026-11-13-impacto-psicologico-reproduccion-asistida-fiv.md` | Artículo Reproducción Asistida (Bloque 3): tabla comparativa (*Fases de la reproducción asistida y desafíos emocionales*), BLUF 45-65 palabras, 4 FAQs (`FAQPage` Schema), referencias SEF/ESHRE/PubMed/APA, disclaimer sanitario y enlaces a `/infertilidad/`, `/psicologia-perinatal/`, `/duelo-gestacional/`, `/terapia-emdr/`, `/trauma-apego/` y `/blog/duelo-perinatal-gestacional-fases-apoyo/`. |
+| `2026-11-13-pensamientos-intrusivos-posparto-miedo-hacer-dano-bebe.md` | Artículo 3 Perinatal: tabla comparativa (*TOC Posparto (egodistónico) vs. Psicosis Posparto (egosintónico)*), BLUF 45-65 palabras, 4 FAQs (`FAQPage` Schema), disclaimer sanitario y enlaces a `/psicologia-perinatal/`, `/trauma-apego/`, `/terapia-emdr/` y `/blog/baby-blues-vs-depresion-posparto-diferencias/`. |
 | `2026-11-13-baby-blues-vs-depresion-posparto-diferencias.md` | Artículo 2 Perinatal: tabla comparativa (*Baby Blues vs. Depresión Posparto vs. Psicosis Puerperal*), BLUF 45-65 palabras, 4 FAQs (`FAQPage` Schema), disclaimer sanitario y enlaces a `/psicologia-perinatal/`, `/trauma-apego/`, `/terapia-emdr/` y `/blog/duelo-perinatal-gestacional-fases-apoyo/`. |
 | `2026-11-13-duelo-perinatal-gestacional-fases-apoyo.md` | Artículo 1 Perinatal: tabla comparativa, BLUF 45-65 palabras, 4 FAQs (`FAQPage` Schema), disclaimer sanitario y enlaces a `/duelo-gestacional/`, `/psicologia-perinatal/` y `/terapia-emdr/`. |
 | `2026-01-05-apego-ansioso-relaciones.md` | Quick Win (pos 11,67): tabla comparativa, bloque FAQ (`FAQPage` Schema) y enlaces a `/trauma-apego/` y `/terapia-emdr/`. |

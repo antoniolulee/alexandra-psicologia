@@ -8,10 +8,10 @@ track: false
 sitemap: false
 ---
 
-<div class="container mx-auto px-4 py-12 max-w-4xl">
-  <h1 class="text-3xl font-bold mb-8 text-primary-900">Política de Privacidad</h1>
+<div class="max-w-4xl mx-auto px-6 py-16 lg:py-24">
+  <h1 class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text mb-8">Política de Privacidad</h1>
 
-  <div class="prose prose-lg text-gray-700">
+  <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
     <p>En Alexandra Barroso nos tomamos muy en serio la privacidad de tus datos. En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD), y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), te informamos de lo siguiente:</p>
 
     {% include legal/section.html number="1" title="Responsable del Tratamiento" %}

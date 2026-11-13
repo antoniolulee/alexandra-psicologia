@@ -6,6 +6,7 @@
 seo:
   title: "Psicóloga Trauma y Apego Online | Heridas Vinculares | Alexandra Barroso"
   description: "Psicóloga especialista en trauma y apego. Terapia online para sanar heridas de la infancia, experiencias adversas y mejorar tus relaciones."
+  breadcrumb: "Psicóloga Trauma y Apego Online"
   keywords:
     - "psicóloga trauma online"
     - "terapia trauma"
@@ -21,15 +22,19 @@ seo:
     - "trauma complejo TEPT-C"
 
 hero:
-  badge: "Trauma & EMDR"
+  badge: "Especialista Clínica PIR · Trauma y Vínculo"
   headline: "Sanar las heridas que no se ven"
+  headline_seo: "Psicóloga especialista en Trauma Relacional y Apego Online"
   subtitle: "Lo que viviste en el pasado moldea cómo te relacionas hoy. Pero no tiene por qué seguir definiéndote."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "SOLICITA TU LLAMADA GRATUITA"
-  whatsapp_msg: "Hola Alexandra, me gustaría trabajar temas de trauma y apego."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Atención directa 1 a 1 sin intermediarios · 1.ª valoración sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, me gustaría trabajar temas de trauma y apego y solicitar la primera valoración gratuita."
+  related_category: "Relaciones"
 
 que_es:
   title: "¿Qué es el trauma y el apego?"
+  bluf: "La terapia especializada en trauma y apego permite identificar y sanar heridas vinculares de la infancia o experiencias adversas que siguen condicionando tus relaciones actuales. Desde la psicología clínica basada en evidencia, trabajamos la regulación del sistema nervioso y el reprocesamiento emocional para construir vínculos seguros y estables en la edad adulta."
   content: |
     El **trauma psicológico** no es solo lo que pasó, sino cómo tu sistema nervioso procesó esa experiencia. Eventos que objetivamente no parecen "tan graves" pueden dejar huellas profundas si ocurrieron en momentos de vulnerabilidad o sin el apoyo adecuado.
 
@@ -57,20 +62,28 @@ cuando_acudir:
   items:
     - title: "Relaciones que se repiten"
       description: "Siempre terminas en el mismo tipo de relaciones dolorosas o insatisfactorias."
+      icon: "refresh"
     - title: "Miedo al abandono"
       description: "Necesitas constante confirmación de que no te van a dejar. Los silencios te generan ansiedad."
+      icon: "heart"
     - title: "Dificultad para la intimidad"
       description: "Cuando alguien se acerca demasiado, sientes la necesidad de alejarte."
+      icon: "link"
     - title: "Flashbacks o recuerdos intrusivos"
       description: "Imágenes o sensaciones del pasado que irrumpen sin avisar."
+      icon: "lightning"
     - title: "Hipervigilancia"
       description: "Estás siempre alerta, anticipando peligros, sin poder relajarte."
+      icon: "alert"
     - title: "Desregulación emocional"
       description: "Pasas de 0 a 100 en segundos, o te desconectas emocionalmente para no sentir."
+      icon: "cloud"
     - title: "Sensación de vacío"
       description: "No sabes muy bien quién eres o qué quieres. Sensación crónica de insatisfacción."
+      icon: "moon"
     - title: "Dificultad para poner límites"
       description: "Te cuesta decir no, defender tus necesidades o alejarte de relaciones tóxicas."
+      icon: "user"
 
 enfoque:
   title: "Mi enfoque en trauma y apego"
@@ -90,6 +103,14 @@ enfoque:
     2. **Comprensión**: Entender cómo tu historia moldea tu presente.
     3. **Procesamiento**: Trabajar con los recuerdos y experiencias de forma segura.
     4. **Integración**: Incorporar los cambios en tu vida y relaciones actuales.
+
+articulos_relacionados:
+  - title: "El Apego Ansioso en las Relaciones: Señales y Soluciones"
+    description: "Señales de hiperactivación vincular, trampa ansioso-evitativa y pautas clínicas para construir apego seguro."
+    url: "/relaciones/2026/01/05/apego-ansioso-relaciones/"
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "El papel del vínculo temprano y el abordaje clínico del trauma tras pérdidas significativas."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
 
 faq:
   title: "Preguntas Frecuentes sobre Trauma y Apego"

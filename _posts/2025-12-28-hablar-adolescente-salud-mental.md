@@ -1,10 +1,15 @@
 ---
 title: "Cómo Hablar con tu Hija Adolescente sobre Salud Mental"
+seo_title: "Cómo Hablar con tu Hija Adolescente sobre Salud Mental | Alexandra Barroso"
+seo_description: "Guía clínica para madres y padres: cómo hablar de emociones y salud mental con tu hija adolescente, errores a evitar y señales de alerta."
 date: 2025-12-28
-categories: [Adolescentes]
+permalink: /adolescentes/2025/12/28/hablar-adolescente-salud-mental/
+categories: [Bienestar Emocional]
+tags: [adolescentes, bienestar-emocional]
+author: "Alexandra Barroso"
 excerpt: "Guía práctica para padres que quieren abrir conversaciones sobre emociones y bienestar con sus hijos adolescentes sin que salgan huyendo."
 reading_time: "6 min"
-image: /assets/images/alexandra-about.webp
+image: /assets/images/blog/hablar-adolescente-salud-mental.webp
 ---
 
 "¿Cómo estás?" — "Bien". Y ahí termina la conversación. Si tienes una hija adolescente, probablemente conoces bien este intercambio. Conseguir que se abra sobre cómo se siente puede parecer misión imposible, especialmente cuando se trata de temas como la salud mental.
@@ -144,3 +149,5 @@ No necesitas hacerlo perfecto. Solo necesitas seguir intentándolo.
 ---
 
 *Si te preocupa la salud mental, los vínculos familiares o la [autoestima de tu hija](/autoestima/) y buscas orientación profesional, en la consulta de [psicología online](/sobre-mi/) trabajamos desde el enfoque de [apego y trauma relacional](/trauma-apego/) para valorar vuestro caso de forma personalizada. [Pide una primera sesión](/).*
+
+> **Aviso informativo y sanitario:** El contenido de este artículo tiene fines exclusivamente divulgativos y psicoeducativos. No sustituye la evaluación, diagnóstico ni tratamiento psicológico individualizado por parte de un profesional sanitario colegiado. Si te encuentras en una situación de crisis emocional o necesitas atención urgente, recurre a los servicios públicos de emergencia: **024** (Línea de atención a la conducta suicida en España), **717 003 717** (Teléfono de la Esperanza) o acude al centro sanitario / urgencias más cercano (**112**).

@@ -1,11 +1,12 @@
 ---
 # ============================================
-# INFERTILIDAD - Landing Page SEO
+# INFERTILIDAD - Landing Page SEO & CRO
 # ============================================
 
 seo:
-  title: "Psicóloga Infertilidad Online | Apoyo Reproducción Asistida | Alexandra Barroso"
-  description: "Psicóloga especialista en infertilidad. Terapia online para el proceso emocional de la reproducción asistida, donación y espera de resultados."
+  title: "Psicóloga Infertilidad y Reproducción Asistida Online | Alexandra Barroso"
+  description: "Psicóloga Clínica (PIR) especialista en infertilidad y reproducción asistida online: FIV, betaespera y ovodonación. 1.ª valoración gratuita por WhatsApp."
+  breadcrumb: "Psicóloga Infertilidad y Reproducción Asistida"
   keywords:
     - "psicóloga infertilidad online"
     - "apoyo emocional reproducción asistida"
@@ -21,78 +22,100 @@ seo:
     - "no poder quedarme embarazada"
 
 hero:
-  badge: "Salud de la Mujer"
-  headline: "Entiendo cada negativo, cada espera, cada silencio"
-  subtitle: "Entiendo la montaña rusa emocional de la infertilidad. Te acompaño en cada paso del proceso."
+  badge: "Salud Reproductiva · Especialista Clínica PIR"
+  headline: "Sostén emocional en cada espera y tratamiento"
+  headline_seo: "Psicóloga Especialista en Infertilidad y Reproducción Asistida Online"
+  subtitle: "Para mujeres y parejas en búsqueda de embarazo, ciclos de FIV, inseminación u ovodonación: regula la ansiedad de la betaespera, elabora cada negativo y toma decisiones médicas en calma."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "SOLICITA TU LLAMADA GRATUITA"
-  whatsapp_msg: "Hola Alexandra, estoy en un proceso de fertilidad y necesito apoyo emocional."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Flexibilidad ante tus controles médicos y día de beta · 1.ª valoración sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, estoy en un proceso de fertilidad/reproducción asistida y me gustaría solicitar la primera llamada de valoración gratuita."
 
 que_es:
-  title: "El impacto emocional de la infertilidad"
+  title: "El impacto emocional de la infertilidad y la reproducción asistida"
+  bluf: "El apoyo psicológico en infertilidad y reproducción asistida acompaña el desgaste emocional que generan la dificultad para concebir y los tratamientos médicos de fertilidad. En consulta clínica trabajamos la regulación de la ansiedad durante la betaespera, el impacto hormonal de la FIV, el duelo ante cada resultado negativo y las decisiones sobre ovodonación o duelo genético."
   content: |
-    La **infertilidad** afecta aproximadamente a 1 de cada 6 parejas. Más allá del diagnóstico médico, supone un impacto emocional profundo que a menudo se minimiza o se pasa por alto.
+    La infertilidad afecta aproximadamente a 1 de cada 6 parejas en edad reproductiva, pero su impacto psicológico sigue viviendo en silencio. Mes tras mes aparece un duelo invisible por el embarazo que no llega, mientras el entorno repite frases como *"relájate y vendrá"* que aumentan la culpa y el aislamiento.
 
-    ### Lo que nadie te cuenta
+    ### Fases de la reproducción asistida y qué trabajamos en sesión
 
-    - La infertilidad es un duelo silenciado. Pierdes un futuro que imaginabas, mes a mes.
-    - Los tratamientos son invasivos física y emocionalmente, pero se espera que lo lleves "con normalidad".
-    - El entorno no siempre entiende: "Relájate y vendrá", "¿Habéis probado...?", "Podéis adoptar".
-    - Afecta a la identidad, la autoestima, la sexualidad y la relación de pareja.
+    | Etapa del proceso | Desgaste emocional más habitual | Herramientas clínicas en consulta |
+    |---|---|---|
+    | **Diagnóstico e infertilidad secundaria** | Shock inicial, sensación de injusticia y comparación constante con otras familias | Validación del duelo reproductivo y manejo de eventos sociales o embarazos cercanos |
+    | **Estimulación FIV e inseminación** | Labilidad emocional por medicación hormonal y agotamiento de agendas clínicas | Regulación somática y comunicación de límites en el trabajo y entorno |
+    | **La betaespera** | Hipervigilancia de síntomas físicos, insomnio y anticipación catastrófica | Técnicas cognitivo-conductuales y de anclaje al presente para reducir la rumiación |
+    | **Beta negativa o cancelación de ciclo** | Derrumbe emocional, rabia, tristeza y desgaste en la relación de pareja | Elaboración del duelo tras cada intento y prevención de la autoexigencia de positividad |
+    | **Ovodonación y duelo genético** | Dudas sobre el vínculo futuro con el bebé y miedo al secreto o al estigma | Acompañamiento en el duelo genético y toma de decisiones serena y alineada contigo |
 
-    ### La reproducción asistida
+    ### ¿Por qué contar con una psicóloga especializada en fertilidad?
 
-    Los tratamientos de fertilidad (FIV, inseminación, donación) añaden capas de complejidad emocional:
-    - La incertidumbre constante
-    - Las hormonas que alteran el estado de ánimo
-    - Las decisiones éticas y personales (donación, cuántos intentos)
-    - El impacto económico
-    - La espera del resultado (la famosa "beta")
-
-    ### ¿Por qué acompañamiento psicológico?
-
-    Porque necesitas un espacio donde poder expresar todo lo que sientes sin ser juzgada. Donde tu dolor sea validado. Donde recibas herramientas para gestionar la ansiedad, la incertidumbre y el impacto en tu vida.
+    Necesitas un espacio donde no te pidan "pensar en positivo" a la fuerza. Trabajamos estrategias concretas para proteger tu salud mental, tu autoestima y tu relación de pareja mientras atraviesas la incertidumbre médica.
 
 cuando_acudir:
   title: "¿En qué momentos puedo ayudarte?"
-  subtitle: "El proceso de infertilidad tiene muchas etapas difíciles"
+  subtitle: "El proceso de fertilidad tiene muchas etapas difíciles que no tienes que sostener sola"
+  cta_title: "No tienes que afrontar otra betaespera ni otro negativo en silencio"
+  cta_subtitle: "Cuéntame brevemente en qué punto del tratamiento estás por WhatsApp y agendamos una primera llamada de valoración gratuita."
   items:
     - title: "Diagnóstico de infertilidad"
-      description: "El shock inicial, las preguntas, el duelo por la fertilidad que dabas por hecha."
-    - title: "Durante los tratamientos"
-      description: "Gestionar la ansiedad, los efectos de las hormonas, las decisiones a tomar."
-    - title: "La espera del resultado"
-      description: "Las dos semanas más largas de tu vida. La betaespera."
+      description: "El impacto inicial, las pruebas médicas sin fin y el duelo por la fertilidad que dabas por hecha."
+      icon: "alert"
+    - title: "Durante los ciclos de FIV"
+      description: "Gestionar las inyecciones, los cambios hormonales y la incertidumbre de cada control ecográfico."
+      icon: "refresh"
+    - title: "Ansiedad en la betaespera"
+      description: "Las dos semanas más largas: hipervigilancia corporal y miedo constante al resultado."
+      icon: "lightning"
     - title: "Resultados negativos"
-      description: "Procesar el duelo de cada intento fallido, decidir si continuar."
-    - title: "Donación de gametos"
-      description: "Decisiones sobre ovodonación, donación de semen, embriones. Aspectos emocionales."
-    - title: "Impacto en la pareja"
-      description: "La infertilidad puede tensar la relación. Trabajamos juntos o por separado."
-    - title: "Decidir parar"
-      description: "Uno de los momentos más difíciles. Acompañamiento en la decisión de cerrar el capítulo."
+      description: "Procesar la pérdida de cada transferencia fallida y valorar con calma si continuar o descansar."
+      icon: "cloud"
+    - title: "Ovodonación y duelo genético"
+      description: "Elaborar la renuncia a la carga genética propia y resolver miedos sobre el vínculo con tu futuro hijo."
+      icon: "heart"
+    - title: "Desgaste en la pareja"
+      description: "Diferencias en cómo vivís la búsqueda, sexo programado y tensiones en la comunicación."
+      icon: "link"
+    - title: "Decidir parar los tratamientos"
+      description: "Uno de los momentos más duros: acompañamiento respetuoso para cerrar etapa con paz."
+      icon: "moon"
     - title: "Embarazo tras infertilidad"
-      description: "Sí, conseguirlo también requiere acompañamiento. El miedo no desaparece."
+      description: "Lograr el positivo no borra el miedo previo; te acompaño a transitar la gestación con calma."
+      icon: "star"
 
 enfoque:
-  title: "Mi enfoque en infertilidad"
+  title: "Mi enfoque clínico en infertilidad"
   content: |
-    Trabajo con personas y parejas en todo el proceso de infertilidad, desde el diagnóstico hasta el cierre del proceso (sea cual sea el resultado).
+    Como **Psicóloga Clínica (vía PIR)** acompaño a mujeres y parejas durante todo el recorrido reproductivo: desde los primeros estudios médicos hasta un embarazo logrado o la decisión de cerrar los tratamientos.
 
     ### Cómo te acompaño
 
-    - **Espacio de validación**: Aquí puedes sentir rabia, tristeza, envidia, desesperanza. Todo es válido.
-    - **Gestión de la ansiedad**: Técnicas específicas para momentos de espera, procedimientos médicos, etc.
-    - **Decisiones informadas**: Te ayudo a clarificar qué quieres tú, más allá de las presiones externas.
-    - **Trabajo con la pareja**: A veces los ritmos son diferentes. A veces hay desacuerdos. A veces uno lleva más peso.
-    - **Duelo**: Cada negativo es una pérdida. Cada decisión de parar es un duelo. Si has sufrido además una pérdida tras lograr el positivo, trabajamos conjuntamente el [duelo gestacional y perinatal](/duelo-gestacional/).
+    - **Validación sin positivismo tóxico**: Puedes expresar rabia, envidia hacia embarazos cercanos o cansancio extremo sin sentirte juzgada.
+    - **Regulación de la ansiedad médica**: Protocolos prácticos para el día de la punción, la transferencia embrionaria y la espera de resultados.
+    - **Claridad en decisiones complejas**: Espacio neutral para decidir sobre número de ciclos, donación de gametos, adopción de embriones o descanso terapéutico.
+    - **Integración de pérdidas y trauma médico**: Si has vivido además un aborto tras lograr el positivo, integramos el abordaje específico de [duelo gestacional y perinatal](/duelo-gestacional/) y el área troncal de [psicología perinatal online](/psicologia-perinatal/). Si un diagnóstico o pérdida dejó huella traumática, podemos trabajarlo con [terapia EMDR online](/terapia-emdr/).
 
-    ### Terapia online para infertilidad
+    ### Ventajas de la terapia online en reproducción asistida
 
-    La terapia online forma parte de mi enfoque integral en [psicología perinatal](/psicologia-perinatal/) y es ideal para este proceso:
-    - Puedes conectar el día de la beta sin tener que salir de casa
-    - Flexibilidad para adaptarse a las citas médicas impredecibles
-    - Espacio privado donde llorar sin que te vea nadie en la sala de espera de una consulta
+    - Flexibilidad para reorganizar horarios si la clínica cambia la fecha de una punción o transferencia.
+    - Conectar desde la intimidad de tu casa el día de la beta, sin tener que desplazarte ni contener el llanto en público.
+
+prueba_social:
+  quote: "En fertilidad nadie te prepara para el peso de las esperas ni para el silencio tras un negativo; aquí tienes un espacio clínico sin prisas ni exigencias de positividad."
+  highlights:
+    - "Psicóloga Especialista en Psicología Clínica (PIR) · Colegiada CV-13539 con formación perinatal y en trauma EMDR."
+    - "Atención especializada en betaespera, fallos de implantación, duelo genético por ovodonación y pareja."
+    - "Primera llamada telefónica de valoración gratuita de 15 min concertada directamente por WhatsApp."
+
+articulos_relacionados:
+  - title: "El impacto psicológico de la reproducción asistida: cómo sostener tu salud mental en la FIV, la betaespera y el duelo genético"
+    description: "Guía clínica sobre el desgaste emocional en FIV, ansiedad en la betaespera, fallos de implantación y duelo genético en ovodonación."
+    url: "/blog/impacto-psicologico-reproduccion-asistida-fiv/"
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "Recursos clínicos para afrontar pérdidas gestacionales tras tratamientos de reproducción asistida."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
+  - title: "Baby blues vs. depresión posparto: diferencias clave y cuándo pedir ayuda"
+    description: "Qué esperar a nivel emocional cuando el embarazo finalmente llega y tras el nacimiento del bebé."
+    url: "/blog/baby-blues-vs-depresion-posparto-diferencias/"
 
 faq:
   title: "Preguntas Frecuentes sobre Apoyo Psicológico en Infertilidad"
@@ -104,7 +127,9 @@ faq:
       answer: "Trabajamos estrategias concretas de regulación emocional para reducir la hipervigilancia de síntomas durante la betaespera y damos espacio legítimo al duelo tras cada transferencia fallida, evitando la autoexigencia de estar siempre positiva."
     - question: "¿Se aborda el duelo genético y las dudas sobre ovodonación?"
       answer: "Sí. Aceptar la donación de gametos implica elaborar la pérdida de la carga genética propia y trabajar miedos frecuentes sobre el futuro vínculo con el bebé, tomando la decisión con serenidad y convicción personal."
+    - question: "¿Podemos asistir en pareja o es terapia individual?"
+      answer: "Se adapta a vuestra necesidad. Muchas mujeres inician el proceso de forma individual y, en momentos clave como decisiones sobre ovodonación o desgaste tras un negativo, realizamos sesiones conjuntas con la pareja."
 
 cta_final:
   title: "Mereces apoyo en este camino"
-  subtitle: "No tienes que llevarlo todo sola. El primer paso es contarme dónde estás."
+  subtitle: "No tienes que llevar esta espera en silencio. Escríbeme por WhatsApp y agendamos una primera valoración gratuita."

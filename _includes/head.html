@@ -4,7 +4,7 @@
 
   <!-- Dark Mode Anti-FOUC (Synchronous inline) -->
   <script>
-    (function() {
+    (function () {
       try {
         const stored = localStorage.getItem('theme');
         if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -12,7 +12,7 @@
         } else {
           document.documentElement.classList.remove('dark');
         }
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
 
@@ -38,9 +38,21 @@
       rel="stylesheet">
   </noscript>
 
+  {% assign page_data = nil %}
+  {% if page.data_key %}
+  {% assign page_data = site.data.especialidades[page.data_key] %}
+  {% elsif page.url == '/404.html' %}
+  {% assign page_data = site.data.error404 %}
+  {% endif %}
+  {% assign lcp_image_url = include.lcp_image | default: page_data.hero.image %}
+
   <!-- Preload LCP Image (Hero) -->
   {% if page.url == '/' or page.url == '/index.html' %}
   <link rel="preload" as="image" href="{{ site.data.site.hero.image }}" fetchpriority="high">
+  {% elsif page.url == '/sobre-mi/' %}
+  <link rel="preload" as="image" href="{{ site.data.sobre_mi.hero.image }}" fetchpriority="high">
+  {% elsif lcp_image_url %}
+  <link rel="preload" as="image" href="{{ lcp_image_url }}" fetchpriority="high">
   {% endif %}
 
   <!-- Robots Meta Tag (para excluir páginas legales de indexación) -->
@@ -55,13 +67,20 @@
 
   <!-- 
     SEO Meta Tags
-    Prioridad: include params > page front matter > site defaults
+    Prioridad: include params > page_data > page front matter > site defaults
   -->
-  {% assign seo_title = include.seo_title | default: page.seo_title | default: page.title %}
-  {% assign seo_description = include.seo_description | default: page.seo_description | default: page.description |
-  default: site.data.seo.meta.description %}
-  {% assign seo_keywords = include.seo_keywords | default: page.seo_keywords | default: site.data.seo.meta.keywords %}
-  {% assign og_image = include.og_image | default: page.og_image | default: site.data.seo.og.image %}
+  {% if page.url == '/' or page.url == '/index.html' %}
+  {% assign seo_title = include.seo_title | default: page.seo_title | default: site.data.seo.meta.title %}
+  {% else %}
+  {% assign seo_title = include.seo_title | default: page_data.seo.title | default: page.seo_title | default: page.title
+  %}
+  {% endif %}
+  {% assign seo_description = include.seo_description | default: page_data.seo.description | default:
+  page.seo_description | default: page.description | default: site.data.seo.meta.description %}
+  {% assign seo_keywords = include.seo_keywords | default: page_data.seo.keywords | default: page.seo_keywords |
+  default: site.data.seo.meta.keywords %}
+  {% assign og_image = include.og_image | default: page_data.hero.image | default: page.og_image | default: page.image | default:
+  site.data.seo.og.image %}
 
   <title>{% if seo_title %}{{ seo_title }}{% else %}{{ site.data.seo.meta.title }}{% endif %}</title>
   <meta name="description" content="{{ seo_description }}">
@@ -106,6 +125,7 @@
     "address": {
       "@type": {{ site.data.seo.schema.address.type | jsonify }},
       "addressLocality": {{ site.data.seo.schema.address.addressLocality | jsonify }},
+      "addressRegion": {{ site.data.seo.schema.address.addressRegion | jsonify }},
       "addressCountry": {{ site.data.seo.schema.address.addressCountry | jsonify }}
     },
     "geo": {
@@ -117,6 +137,7 @@
     "medicalSpecialty": {{ site.data.seo.schema.medicalSpecialty | jsonify }},
     "knowsAbout": {{ site.data.seo.schema.knowsAbout | jsonify }},
     "areaServed": {{ site.data.seo.schema.areaServed | jsonify }},
+    "availableService": {{ site.data.seo.schema.availableService | jsonify }},
     "availableLanguage": {{ site.data.seo.schema.availableLanguage | jsonify }},
     "sameAs": {{ site.data.seo.schema.sameAs | jsonify }}
   }
@@ -125,7 +146,7 @@
   <!-- Google Analytics 4 (Carga condicional estricta RGPD con consentimiento explícito) -->
   {% if site.data.seo.analytics.ga4_id and site.data.seo.analytics.ga4_id != "" and page.track != false %}
   <script>
-    (function() {
+    (function () {
       function loadGA4() {
         if (window.__ga4Loaded) return;
         window.__ga4Loaded = true;
@@ -146,7 +167,7 @@
         } else {
           window.addEventListener('cookie-consent-granted', loadGA4);
         }
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
   {% endif %}

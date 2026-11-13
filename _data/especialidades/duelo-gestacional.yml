@@ -1,11 +1,12 @@
 ---
 # ============================================
-# DUELO GESTACIONAL - Landing Page SEO
+# DUELO GESTACIONAL - Landing Page SEO & CRO
 # ============================================
 
 seo:
-  title: "Psicóloga Duelo Gestacional y Terapia de Duelo Perinatal Online | Alexandra Barroso"
-  description: "Psicóloga especialista en duelo gestacional y terapia de duelo perinatal online. Acompañamiento clínico en pérdida gestacional, aborto espontáneo, IVET y muerte neonatal."
+  title: "Psicóloga Duelo Gestacional y Perinatal Online | Alexandra Barroso"
+  description: "Psicóloga Clínica (PIR) especialista en duelo gestacional y perinatal online: aborto, IVET y muerte neonatal. 1.ª valoración gratuita por WhatsApp."
+  breadcrumb: "Psicóloga Duelo Gestacional y Perinatal"
   keywords:
     - "psicóloga duelo gestacional online"
     - "terapia de duelo perinatal"
@@ -21,86 +22,112 @@ seo:
     - "muerte neonatal apoyo"
 
 hero:
-  badge: "Salud de la Mujer"
+  badge: "Salud Mental Perinatal · Especialista Clínica PIR"
   headline: "Tu dolor es real. Tu bebé existió."
-  subtitle: "El duelo gestacional es uno de los más silenciados. Aquí tienes un espacio para nombrarlo, sentirlo y transitarlo."
+  headline_seo: "Psicóloga Especialista en Duelo Gestacional y Perinatal Online"
+  subtitle: "Para madres y parejas tras una pérdida gestacional, aborto espontáneo, IVET o muerte neonatal: transita tu duelo en un espacio clínico seguro, sin prisas ni frases que minimicen tu pérdida."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "SOLICITA TU LLAMADA GRATUITA"
-  whatsapp_msg: "Hola Alexandra, he tenido una pérdida gestacional y necesito ayuda."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Me escribes por texto sin presión · Llamada informativa de 15 min sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, he vivido una pérdida gestacional/perinatal y me gustaría solicitar la primera llamada de valoración gratuita."
 
 que_es:
-  title: "¿Qué es el duelo gestacional?"
+  title: "¿Qué es el duelo gestacional y perinatal?"
+  bluf: "El duelo gestacional y perinatal es la respuesta emocional y psicológica natural tras la pérdida de un bebé en cualquier semana del embarazo o durante los primeros días de vida. Aunque el entorno suele minimizarlo como un duelo desautorizado, la terapia clínica especializada permite validar el vínculo, procesar el trauma hospitalario y reconstruir tu equilibrio emocional."
   content: |
-    El **duelo gestacional** o **duelo perinatal** es el proceso de duelo que sigue a la pérdida de un embarazo o un bebé en cualquier momento de la gestación o poco después del nacimiento.
+    El **duelo gestacional** o **duelo perinatal** no depende de las semanas de gestación ni de si pudiste tener a tu bebé en brazos. Desde el momento en que supiste que estabas embarazada, proyectaste un futuro, un vínculo y un lugar afectivo para tu hijo.
 
-    ### Un duelo invisible
+    ### Un duelo desautorizado e invisible
 
-    La sociedad tiende a minimizar estas pérdidas:
+    La sociedad tiende a minimizar estas pérdidas con frases bienintencionadas que causan un profundo aislamiento:
     - "Era muy pronto, no te había dado tiempo a encariñarte"
-    - "Puedes volver a intentarlo"
+    - "Eres joven, puedes volver a intentarlo"
     - "Es muy común, le pasa a mucha gente"
     - "Al menos no llegaste a conocerlo"
 
-    Pero la realidad es que **ya eras madre**. Desde el momento en que supiste que estabas embarazada, proyectaste un futuro, un nombre, una vida. Esa pérdida es real y merece ser reconocida.
+    En psicología clínica reconocemos esta experiencia como un **duelo desautorizado**: un dolor legítimo al que el entorno no da permiso para existir. Aquí tienes un espacio para nombrarlo sin tener que justificarte.
 
-    ### Tipos de pérdidas
-    
-    - **Aborto espontáneo temprano**: Antes de las 12 semanas
-    - **Aborto tardío**: Entre las 12 y las 20 semanas
-    - **Muerte fetal intrauterina**: Después de las 20 semanas
-    - **Muerte neonatal**: En los primeros 28 días de vida
-    - **Interrupción por anomalías**: Decisiones médicamente indicadas
-    - **Embarazo ectópico**: Pérdida con riesgo para la madre
-    - **Reducción embrionaria**: En embarazos múltiples por reproducción asistida
+    ### Tipos de pérdida perinatal y abordaje clínico en consulta
 
-    ### El duelo de la pareja
+    | Situación de pérdida | Impacto emocional frecuente | Cómo lo trabajamos en consulta |
+    |---|---|---|
+    | **Aborto espontáneo temprano o tardío** | Culpa, shock, sensación de fallo corporal e incomprensión social | Validación del vínculo, desculpabilización y manejo de comentarios del entorno |
+    | **Interrupción por motivos médicos (IVET)** | Ambivalencia, peso de la decisión clínica y miedo al juicio | Elaboración compasiva de la decisión tomada desde el amor y cierre simbólico |
+    | **Muerte fetal intrauterina o neonatal** | Impacto traumático hospitalario, flashbacks del parto y vacío físico | Reprocesamiento del trauma obstétrico con [terapia EMDR online](/terapia-emdr/) y rituales de despedida |
+    | **Embarazo arcoíris posterior** | Hipervigilancia ecográfica, miedo a vincular y culpa hacia el bebé anterior | Regulación del sistema nervioso y diferenciación segura entre la pérdida previa y la nueva gestación |
 
-    El duelo gestacional afecta a ambos miembros de la pareja, aunque a menudo de forma diferente. A veces uno se convierte en el "cuidador" del otro y no tiene espacio para su propio dolor.
+    ### El duelo en la pareja
+
+    El duelo gestacional afecta a ambos miembros de la pareja, aunque casi nunca se expresa al mismo ritmo ni de la misma forma. A menudo una persona asume el rol de "sostén" y relega su propio dolor, generando distancia o incomprensión mutua que también podemos abordar en sesión.
 
 cuando_acudir:
-  title: "¿Cuándo buscar ayuda?"
-  subtitle: "No hay un momento correcto ni incorrecto"
+  title: "¿Cuándo buscar acompañamiento en duelo perinatal?"
+  subtitle: "No hay un momento correcto ni incorrecto: puedes pedir ayuda desde los primeros días o años después"
+  cta_title: "No tienes que cargar con este silencio tú sola"
+  cta_subtitle: "Si sientes que el entorno te pide pasar página antes de tiempo, escríbeme un mensaje breve por WhatsApp y valoramos juntas cómo acompañarte."
   items:
     - title: "Inmediatamente tras la pérdida"
-      description: "Necesitas procesar lo ocurrido, tomar decisiones médicas, comunicarlo."
-    - title: "Semanas después"
-      description: "Cuando la vida 'vuelve a la normalidad' pero tú no. Cuando todos esperan que estés bien."
+      description: "Necesitas sostén para procesar la noticia, el paso por el hospital o cómo comunicarlo a tu entorno."
+      icon: "heart"
+    - title: "Semanas o meses después"
+      description: "Cuando todos esperan que vuelvas a la normalidad, pero tu dolor sigue intacto o aparece la soledad."
+      icon: "cloud"
+    - title: "Tras una IVET o embarazo ectópico"
+      description: "Para elaborar el shock médico, la urgencia física o la carga emocional de una interrupción terapéutica."
+      icon: "alert"
+    - title: "Flashbacks del parto o ingreso"
+      description: "Recuerdos intrusivos del diagnóstico, la sala de partos o la UCI neonatal que se repiten sin control."
+      icon: "lightning"
     - title: "Antes de un nuevo intento"
-      description: "El miedo a que vuelva a pasar. Decidir si estás lista para intentarlo de nuevo."
-    - title: "Durante un nuevo embarazo"
-      description: "La ansiedad de que se repita. No poder disfrutar del embarazo."
-    - title: "En fechas señaladas"
-      description: "La fecha probable de parto, el aniversario de la pérdida, Navidades."
-    - title: "Si afecta a tu pareja"
-      description: "Diferentes ritmos de duelo, reproches, distancia."
-    - title: "Si tienes otros hijos"
-      description: "Cómo acompañarles en su propio proceso, cómo hablar de lo ocurrido."
-    - title: "Si el duelo se complica"
-      description: "Meses o años después, si sientes que no avanzas."
+      description: "El miedo a que vuelva a ocurrir te bloquea y dudas sobre si estás preparada para buscar embarazo."
+      icon: "refresh"
+    - title: "Durante un embarazo arcoíris"
+      description: "La ansiedad ante cada ecografía o síntoma te impide conectar con la nueva gestación."
+      icon: "star"
+    - title: "Fechas señaladas y aniversarios"
+      description: "La fecha probable de parto, Navidad o el aniversario de la pérdida reactivan el dolor."
+      icon: "moon"
+    - title: "Desencuentros en la pareja"
+      description: "Ritmos distintos de duelo, silencio en casa o dificultad para sosteneros mutuamente."
+      icon: "link"
 
 enfoque:
-  title: "Mi enfoque en duelo gestacional"
+  title: "Mi enfoque clínico en duelo gestacional y perinatal"
   content: |
-    Trabajo el duelo gestacional desde un profundo respeto por tu experiencia y tu ritmo. No hay formas correctas de hacer duelo, solo la tuya.
+    Trabajo el duelo gestacional desde la **Psicología Clínica (vía PIR)**, con profundo respeto por tu historia, tus creencias y tu ritmo. No existen tiempos estándar ni maneras correctas de hacer un duelo, solo la tuya.
 
-    ### Cómo te acompaño
+    ### Cómo te acompaño en sesión
 
-    - **Nombrar la pérdida**: Tu bebé existió. Puede tener un nombre si quieres. Podemos hablar de él/ella.
-    - **Validar tu dolor**: Todas tus emociones son legítimas, incluyendo la rabia, la culpa, la envidia hacia otras embarazadas.
-    - **Rituales de despedida**: A veces necesitamos crear nuestros propios rituales para despedirnos.
-    - **EMDR**: Para procesar aspectos traumáticos (malas experiencias médicas, el parto sin vida, la noticia del diagnóstico) mediante [terapia EMDR online](/terapia-emdr/).
-    - **Trabajo con la pareja**: Cuando los ritmos de duelo son diferentes y genera conflicto.
+    - **Nombrar y legitimar a tu bebé**: Tu hijo existió en tu historia familiar. Podemos hablar de él o ella, con su nombre si lo tiene, sin tabúes.
+    - **Validar todas tus emociones**: Damos espacio sin juicio a la tristeza, la rabia, la culpa o la envidia hacia otros embarazos.
+    - **Rituales de despedida y vínculo**: Cuando la despedida hospitalaria fue fría o incompleta, construimos rituales simbólicos respetuosos para integrar su recuerdo.
+    - **Reprocesamiento del trauma con [terapia EMDR online](/terapia-emdr/)**: Para desensibilizar escenas médicas traumáticas (la noticia ecográfica, el legrado, el parto sin vida o el trato hospitalario).
+    - **Puente hacia la [psicología perinatal online](/psicologia-perinatal/)**: Acompañamiento continuo si decides iniciar un nuevo tratamiento o transitas un embarazo posterior.
 
-    ### Lo que no haré
+    ### Lo que nunca haré en consulta
 
-    - No te diré que "es la voluntad de la naturaleza"
-    - No te presionaré para "seguir adelante"
-    - No minimizaré tu pérdida por pequeña que fuera la edad gestacional
-    - No te compararé con otras experiencias
+    - No minimizaré tu pérdida por temprana que fuera la semana de gestación.
+    - No te diré frases hechas como "la naturaleza es sabia" o "ya tendrás otro".
+    - No te presionaré para acelerar tu recuperación ni compararé tu proceso con el de otras mujeres.
 
-    ### Terapia de duelo perinatal y gestacional online
+    ### Ventajas de la terapia de duelo perinatal online
 
-    La **terapia de duelo perinatal online** te permite conectar desde casa, un espacio seguro donde puedes llorar sin contención. Es especialmente valiosa cuando no tienes energía para salir, te enfrentas a entornos sociales que minimizan la pérdida o te preparas emocionalmente para un nuevo embarazo dentro de nuestra área de [psicología perinatal online](/psicologia-perinatal/).
+    Realizar la **terapia de duelo perinatal online** te protege de desplazamientos cuando no tienes fuerzas físicas o emocionales, te evita salas de espera y te permite llorar con total intimidad desde casa, incluso en días de posparto sin bebé en brazos.
+
+prueba_social:
+  quote: "Sin intermediarios ni plataformas masivas: trabajamos juntas en un espacio clínico donde tu bebé tiene lugar y tu ritmo se respeta de principio a fin."
+  highlights:
+    - "Psicóloga Especialista en Psicología Clínica (PIR) con más de 15 años de experiencia sanitaria y hospitalaria."
+    - "Protocolo específico para duelo desautorizado, IVET, trauma obstétrico con EMDR y embarazo arcoíris."
+    - "Primera llamada de valoración gratuita de 15 minutos agendada directamente por WhatsApp, sin compromiso."
+
+articulos_relacionados:
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "Guía clínica sobre fases del duelo, duelo desautorizado, rituales de despedida y señales de duelo complicado."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
+  - title: "Baby blues vs. depresión posparto: diferencias clave y cuándo pedir ayuda"
+    description: "Cómo distinguir la labilidad emocional inicial de un cuadro clínico que requiere acompañamiento perinatal."
+    url: "/blog/baby-blues-vs-depresion-posparto-diferencias/"
 
 faq:
   title: "Preguntas Frecuentes sobre Duelo Gestacional y Perinatal"
@@ -114,7 +141,9 @@ faq:
       answer: "Ofrece un espacio clínico sin juicios para validar la tristeza, la rabia o la culpa, crear rituales simbólicos de despedida, trabajar las diferencias de ritmo en la pareja y, si hubo impacto traumático en el hospital, reprocesar esos recuerdos mediante EMDR."
     - question: "¿Cuándo es recomendable pedir apoyo psicológico si busco un embarazo arcoíris?"
       answer: "Tanto antes de iniciar una nueva búsqueda como al confirmarse el nuevo embarazo. Trabajar el miedo a que vuelva a ocurrir y diferenciar la nueva gestación de la pérdida anterior te ayuda a transitar el embarazo arcoíris con mayor regulación y seguridad."
+    - question: "¿Cómo funciona el primer contacto por WhatsApp si ahora mismo me cuesta hablar?"
+      answer: "Al pulsar el botón de WhatsApp se abre un mensaje breve ya preparado para que no tengas que pensar qué escribir. Acordamos una llamada gratuita de 15 minutos cuando te sientas cómoda, o resolvemos tus dudas iniciales por texto antes de agendar tu primera sesión online de 50 minutos."
 
 cta_final:
   title: "Tu bebé existió. Tu dolor importa."
-  subtitle: "Estoy aquí para acompañarte. El primer paso es una llamada donde me cuentas lo que necesites."
+  subtitle: "No tienes que atravesar esta pérdida en soledad. Escríbeme por WhatsApp y agendamos una primera valoración gratuita."

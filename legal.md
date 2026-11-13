@@ -8,10 +8,10 @@ track: false
 sitemap: false
 ---
 
-<div class="container mx-auto px-4 py-12 max-w-4xl">
-  <h1 class="text-3xl font-bold mb-8 text-primary-900">Aviso Legal</h1>
+<div class="max-w-4xl mx-auto px-6 py-16 lg:py-24">
+  <h1 class="font-heading text-3xl md:text-4xl text-text dark:text-dark-text mb-8">Aviso Legal</h1>
 
-  <div class="prose prose-lg text-gray-700">
+  <div class="prose prose-lg dark:prose-invert max-w-none text-text-muted dark:text-dark-text-muted">
     <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), el propietario de la web hace constar lo siguiente:</p>
 
     {% include legal/section.html number="1" title="Datos Identificativos" %}
@@ -35,6 +35,6 @@ sitemap: false
     <p>En el caso de que en la web se dispusiesen enlaces o hipervínculos hacía otros sitios de Internet, Alexandra Barroso no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún caso Alexandra Barroso asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet.</p>
 
     {% include legal/section.html number="7" title="Legislación Aplicable y Jurisdicción" %}
-    <p>La relación entre Alexandra Barroso y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Madrid.</p>
+    <p>La relación entre Alexandra Barroso y el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Valencia, sin perjuicio del fuero que corresponda al consumidor o usuario conforme a la normativa vigente.</p>
   </div>
 </div>

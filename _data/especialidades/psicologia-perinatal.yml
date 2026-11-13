@@ -1,15 +1,12 @@
 ---
 # ============================================
-# PSICOLOGÍA PERINATAL - Landing Page SEO
+# PSICOLOGÍA PERINATAL - Landing Page SEO & CRO
 # ============================================
-# Acceso desde layout: site.data.especialidades.psicologia-perinatal
 
-# ============================================
-# SEO
-# ============================================
 seo:
-  title: "Psicóloga Perinatal Online y Salud Perinatal | Terapia Postparto | Alexandra Barroso"
-  description: "Psicóloga perinatal online (Especialista Clínica PIR). Salud perinatal online, terapia postparto, depresión posparto, duelo gestacional e infertilidad."
+  title: "Psicóloga Perinatal Online | Embarazo y Posparto | Alexandra Barroso"
+  description: "Psicóloga perinatal online (Clínica PIR). Tratamiento para depresión posparto, ansiedad en embarazo y parto traumático. 1.ª valoración gratis por WhatsApp."
+  breadcrumb: "Psicología Perinatal y Posparto Online"
   keywords:
     - "psicóloga perinatal online"
     - "salud perinatal online"
@@ -28,107 +25,113 @@ seo:
     - "psicóloga maternidad online"
     - "matrescencia"
 
-# ============================================
-# HERO
-# ============================================
 hero:
-  badge: "Especialidad"
-  headline: "Te acompaño en el camino hacia la maternidad"
-  subtitle: "No tienes que vivirlo sola. Apoyo emocional en infertilidad, embarazo, parto, postparto y duelo gestacional."
+  badge: "Salud Perinatal Online · Especialista Clínica PIR"
+  headline: "Acompañamiento clínico en embarazo, parto y posparto"
+  headline_seo: "Psicóloga Perinatal Online y Salud Mental Materna"
+  subtitle: "Para mujeres que viven ansiedad en el embarazo, miedo al parto, depresión posparto o pensamientos intrusivos: recupera tu calma emocional desde casa y con tu bebé en brazos si lo necesitas."
   image: "/assets/images/alexandra-hero.webp"
-  cta_text: "AGENDA TU PRIMERA SESIÓN"
-  whatsapp_msg: "Hola Alexandra, me gustaría información sobre tus servicios de psicología perinatal."
+  cta_text: "Solicitar mi 1.ª valoración gratuita por WhatsApp"
+  microcopy: "Sesiones online compatibles con tu recién nacido · 1.ª valoración sin coste · Colegiada CV-13539"
+  whatsapp_msg: "Hola Alexandra, busco acompañamiento en psicología perinatal y me gustaría solicitar la primera llamada de valoración gratuita."
 
-# ============================================
-# QUÉ ES
-# ============================================
 que_es:
-  title: "¿Qué es la Psicología Perinatal?"
+  title: "¿Qué es la Psicología Perinatal Online?"
+  bluf: "La psicología perinatal online es la especialidad sanitaria que atiende la salud mental de la mujer y su pareja desde la búsqueda del embarazo hasta el posparto y la crianza temprana. Permite prevenir y tratar la ansiedad gestacional, el miedo al parto, la depresión posparto y el parto traumático mediante psicoterapia basada en evidencia desde casa."
   content: |
-    La **psicología perinatal** es la rama de la psicología que se ocupa de la salud mental durante todo el proceso reproductivo: desde la búsqueda del embarazo hasta el postparto y la crianza temprana.
+    La maternidad implica una transformación biológica, hormonal y de identidad conocida en psicología como **matrescencia**. Cuando los cambios físicos y la presión por "estar siempre feliz" chocan con la realidad emocional del embarazo o el puerperio, contar con atención clínica especializada marca la diferencia.
 
-    Este período vital supone una de las transiciones más intensas que puede experimentar una mujer. Los cambios físicos, hormonales, emocionales y de identidad ocurren simultáneamente, y no siempre el entorno o los profesionales sanitarios están preparados para atender el malestar psicológico que puede surgir.
+    ### Diferencias clínicas frecuentes en el posparto
 
-    A esta transformación profunda de convertirse en madre se le conoce como **matrescence** (maternidad + adolescencia). Es un proceso de cambio de identidad comparable al de la adolescencia, pero que ocurre en la vida adulta y suele pasar desapercibido por la sociedad.
+    | Cuadro clínico | Duración y aparición | Señales principales | Intervención recomendada |
+    |---|---|---|---|
+    | **Baby Blues (tristeza posparto)** | Días 2–5 tras el parto; remite antes de los 15 días | Llanto fácil, hipersensibilidad y cansancio por reajuste hormonal | Psicoeducación, descanso protegido y sostén familiar |
+    | **Depresión Posparto** | Persiste más de 2 semanas o aparece meses después | Tristeza profunda, anhedonia, culpa intensa y desconexión del bebé | Psicoterapia perinatal clínica estructurada y evaluación médica coordinada |
+    | **Ansiedad y TOC Perinatal** | Embarazo o posparto temprano | Hipervigilancia constante o pensamientos intrusivos no deseados (egodistónicos) | Regulación del sistema nervioso, terapia cognitiva y desestigmatización |
+    | **TEPT tras Parto Traumático** | Tras cesárea de urgencia o violencia obstétrica | Flashbacks, pesadillas, rechazo a revisiones médicas o bloqueo vinculante | Reprocesamiento seguro con [terapia EMDR online](/terapia-emdr/) |
 
-    ### ¿Por qué es importante el acompañamiento en salud perinatal online?
+    ### ¿Por qué es clave cuidar tu salud perinatal online?
 
-    - **El bienestar emocional de la madre influye directamente en el desarrollo del bebé**
-    - Previene complicaciones como la depresión postparto y los pensamientos intrusivos posparto si se detectan a tiempo
-    - Ayuda a procesar experiencias difíciles como el [duelo gestacional y perinatal](/duelo-gestacional/), la [infertilidad](/infertilidad/) o un parto traumático mediante [terapia EMDR online](/terapia-emdr/)
-    - Facilita el establecimiento de un vínculo seguro con el bebé
-    - Valida tus emociones en una sociedad que romantiza la maternidad
+    - **Previene la cronificación del malestar** en embarazo y puerperio al intervenir de forma temprana.
+    - **Integra experiencias difíciles** como el [duelo gestacional y perinatal](/duelo-gestacional/), procesos de [infertilidad](/infertilidad/) o secuelas de un parto traumático.
+    - **Protege el vínculo con tu bebé** desde la regulación emocional real, sin exigencias ni culpa materna.
 
-    Mi trabajo consiste en acompañarte en este proceso, normalizando tus emociones, validando tu experiencia y proporcionándote herramientas para atravesar esta etapa con mayor seguridad y equilibrio.
-
-# ============================================
-# CUÁNDO ACUDIR
-# ============================================
 cuando_acudir:
-  title: "¿Cuándo buscar ayuda?"
+  title: "¿Cuándo acudir a una psicóloga perinatal?"
   subtitle: "Estas son algunas situaciones en las que puedo acompañarte:"
+  cta_title: "Cuidar tu salud mental también es cuidar a tu bebé"
+  cta_subtitle: "Si estás agotada, asustada por pensamientos que no entiendes o desbordada en el posparto, escríbeme por WhatsApp y agendamos tu valoración gratuita."
   items:
-    - title: "Dificultades para concebir"
-      description: "Cuando la búsqueda del embarazo se alarga y genera estrés, frustración o afecta a tu relación de pareja."
-      icon: "heart"
-    - title: "Reproducción asistida"
-      description: "Acompañamiento emocional durante los tratamientos de fertilidad, con sus altibajos, la incertidumbre y el impacto en tu cuerpo."
-      icon: "refresh"
-    - title: "Pérdidas gestacionales"
-      description: "Duelo perinatal por abortos, pérdidas tardías o muerte neonatal. Un dolor que necesita espacio y validación."
-      icon: "cloud"
-    - title: "Miedo al parto"
-      description: "Tocofobia o ansiedad intensa ante el parto. Miedos que pueden paralizarte e impedir que disfrutes del embarazo."
-      icon: "alert"
-    - title: "Ansiedad durante el embarazo"
-      description: "Miedos intensos a la salud del bebé, pensamientos intrusivos o preocupaciones que no te dejan descansar."
-      icon: "lightning"
-    - title: "Parto traumático"
-      description: "Experiencias de parto que dejan huella emocional: cesáreas de emergencia, partos instrumentalizados, sensación de pérdida de control."
-      icon: "star"
     - title: "Depresión postparto"
-      description: "Tristeza profunda, desconexión del bebé, agotamiento extremo o pensamientos negativos tras el nacimiento. No es solo 'baby blues'."
+      description: "Tristeza persistente más allá de dos semanas, sensación de vacío, culpa o desconexión con el bebé."
       icon: "moon"
-    - title: "Dificultades en el vínculo"
-      description: "Cuando sientes que no conectas con tu bebé como 'deberías' o la maternidad no es como esperabas."
-      icon: "link"
-    - title: "Cambio de identidad (Matrescence)"
-      description: "Sensación de pérdida de ti misma, duelo por tu vida anterior o crisis existencial al convertirte en madre."
+    - title: "Pensamientos intrusivos"
+      description: "Imágenes o miedos repentinos a que le ocurra algo al bebé (fobias de impulsión) que te generan pánico."
+      icon: "lightning"
+    - title: "Ansiedad en el embarazo"
+      description: "Preocupación constante por el desarrollo gestacional, insomnio o dificultad para disfrutar la espera."
+      icon: "alert"
+    - title: "Miedo al parto (Tocofobia)"
+      description: "Pavor intenso ante el momento del parto, el dolor o la pérdida de control en el hospital."
+      icon: "heart"
+    - title: "Parto traumático"
+      description: "Secuelas emocionales tras cesáreas de urgencia, partos instrumentalizados o violencia obstétrica."
+      icon: "star"
+    - title: "Pérdidas gestacionales"
+      description: "Duelo perinatal tras abortos espontáneos, IVET o muerte neonatal que requiere espacio y validación."
+      icon: "cloud"
+    - title: "Dificultades para concebir"
+      description: "Desgaste emocional durante la búsqueda de embarazo o en ciclos de reproducción asistida."
+      icon: "refresh"
+    - title: "Matrescencia e identidad"
+      description: "Sensación de no reconocerte tras ser madre, duelo por tu vida anterior y sobrecarga en la crianza."
       icon: "user"
-    - title: "Lactancia y crianza temprana"
-      description: "El agotamiento, la presión social y las decisiones sobre crianza pueden generar mucho malestar emocional."
-      icon: "baby"
 
-# ============================================
-# ENFOQUE
-# ============================================
 enfoque:
   title: "Mi enfoque en Psicología Perinatal"
   content: |
-    Trabajo desde una perspectiva **integradora y respetuosa**, entendiendo que cada mujer vive la maternidad de forma única. No existe una manera "correcta" de sentirse, y todas tus emociones son válidas.
+    Trabajo desde la **Psicología Clínica (vía PIR)** con una perspectiva integradora, humana y libre de juicios. En mi consulta no existen las "buenas o malas madres": existe una mujer atravesando un momento vital de máxima exigencia que merece sostén profesional.
 
-    Mi objetivo no es decirte cómo debes sentirte o qué decisiones tomar, sino acompañarte en el proceso de conectar con tus propias necesidades y recursos.
+    ### Metodologías basadas en evidencia que utilizo
 
-    ### Metodologías que utilizo
+    - **[Terapia EMDR para trauma perinatal](/terapia-emdr/)**: Reprocesamiento seguro de partos traumáticos, violencia obstétrica, pérdidas gestacionales o experiencias médicas en UCI neonatal.
+    - **Regulación del sistema nervioso y apego**: Estrategias prácticas para reducir la hipervigilancia posparto, calmar los pensamientos intrusivos y fortalecer el vínculo seguro.
+    - **Terapia narrativa y matrescencia**: Reescribir expectativas irreales sobre la maternidad para aliviar la culpa y recuperar tu espacio personal.
+    - **Acompañamiento flexible adaptado al bebé**: En las sesiones de **salud perinatal online** de 50 minutos, tu bebé siempre es bienvenido; puedes amamantar, dar el biberón o portear durante la consulta.
 
-    - **Enfoque narrativo**: Te ayudo a reescribir las historias que te cuentas sobre la maternidad, liberándote de expectativas imposibles y culpas innecesarias.
-    - **[Terapia EMDR para trauma perinatal](/terapia-emdr/)**: Especialmente útil para procesar partos traumáticos, violencia obstétrica, pérdidas gestacionales o experiencias médicas difíciles.
-    - **Regulación emocional**: Técnicas para gestionar la intensidad emocional del postparto sin desbordarte.
-    - **Trabajo con el vínculo**: Herramientas para facilitar la conexión con tu bebé desde la seguridad.
+    ### Continuidad con el resto de tu proceso
 
-    ### Especialista en Salud Perinatal Online y Terapia Postparto
+    Si además atraviesas una pérdida o estás en tratamiento médico de fertilidad, coordinamos el trabajo clínico con nuestras áreas específicas de [duelo gestacional y perinatal](/duelo-gestacional/) e [infertilidad y reproducción asistida](/infertilidad/).
 
-    **La terapia de salud perinatal online** permite que puedas acceder a este acompañamiento clínico especializado (PIR) sin salir de casa, algo especialmente valioso durante:
-    - El embarazo de riesgo o reposo
-    - El postparto inmediato, cuando salir con un bebé es un reto
-    - Las tomas del bebé (puedes conectarte con bebé en brazos, ¡lo hemos hecho muchas veces!)
-    - Procesos de [reproducción asistida e infertilidad](/infertilidad/) o tras una [pérdida gestacional](/duelo-gestacional/)
+pasos_whatsapp:
+  title: "¿Cómo damos el primer paso por WhatsApp?"
+  subtitle: "Sin formularios fríos ni compromisos previos: así funciona tu primera toma de contacto."
+  steps:
+    - title: "Me escribes por WhatsApp"
+      description: "Al pulsar el botón se abre un mensaje pre-escrito adaptado a esta especialidad. Sin formularios largos ni llamadas en frío."
+    - title: "Valoración telefónica gratuita (15 min)"
+      description: "Te respondo personalmente para agendar una breve llamada sin coste, escucharte y resolver tus dudas antes de empezar."
+    - title: "Tu primera sesión online a tu ritmo"
+      description: "Sesiones de 50 min por videollamada segura desde tu espacio privado (en posparto, tu bebé es siempre bienvenido en sesión)."
 
-    También trabajo incluir a la pareja en sesiones puntuales cuando es relevante para el proceso.
+prueba_social:
+  quote: "Puedes conectarte a sesión con tu bebé en brazos, dando el pecho o en reposo gestacional: la terapia se adapta a tu momento vital real, no al revés."
+  highlights:
+    - "Psicóloga Especialista en Psicología Clínica (PIR) · Colegiada CV-13539 con experiencia hospitalaria."
+    - "Abordaje específico de tocofobia, pensamientos intrusivos (TOC perinatal), depresión posparto y EMDR obstétrico."
+    - "Sin intermediarios ni rotación de psicólogos: atención directa 1 a 1 tras una primera llamada de valoración gratuita."
 
-# ============================================
-# PREGUNTAS FRECUENTES (FAQPage Schema)
-# ============================================
+articulos_relacionados:
+  - title: "Baby blues vs. depresión posparto: diferencias clave, duración y cuándo pedir ayuda profesional"
+    description: "Tabla comparativa clínica, escala de Edimburgo (EPDS) y señales claras para saber cuándo acudir a terapia."
+    url: "/blog/baby-blues-vs-depresion-posparto-diferencias/"
+  - title: "Pensamientos intrusivos en el posparto: por qué tienes miedo a hacer daño a tu bebé (y por qué no lo harás)"
+    description: "Diferencia clínica entre TOC perinatal y psicosis posparto, y cómo desactivar las fobias de impulsión."
+    url: "/blog/pensamientos-intrusivos-posparto-miedo-hacer-dano-bebe/"
+  - title: "Duelo perinatal y gestacional: cómo transitar la pérdida de un bebé y validar el dolor que nadie nombra"
+    description: "Fases emocionales de la pérdida gestacional, duelo desautorizado y apoyo especializado para madres y parejas."
+    url: "/blog/duelo-perinatal-gestacional-fases-apoyo/"
+
 faq:
   title: "Preguntas Frecuentes sobre Psicología Perinatal Online"
   subtitle: "Resolvemos tus dudas sobre el acompañamiento psicológico en embarazo, parto y posparto"
@@ -137,14 +140,13 @@ faq:
       answer: "Es recomendable solicitar apoyo cuando experimentas ansiedad persistente en el embarazo, miedo intenso al parto (tocofobia), tristeza profunda tras el nacimiento que supera las dos semanas, pensamientos intrusivos que te asustan, dificultades para vincular con tu bebé o tras atravesar un parto traumático o una pérdida gestacional."
     - question: "¿Qué diferencia hay entre el baby blues y la depresión posparto?"
       answer: "El baby blues es una labilidad emocional transitoria provocada por el reajuste hormonal tras el parto; aparece en los primeros días y remite de forma espontánea antes de las dos semanas. La depresión posparto, en cambio, persiste más allá de ese plazo, interfiere con tu descanso y cuidado diario, y requiere evaluación y psicoterapia especializada."
+    - question: "¿Es normal tener pensamientos intrusivos de miedo a hacer daño al bebé en el posparto?"
+      answer: "Sí, es mucho más frecuente de lo que se habla y se conoce como fobias de impulsión o TOC perinatal. Que aparezca una imagen intrusiva desagradable que te genera rechazo y angustia indica hiperalerta ansiosa, no deseo de hacer daño. Se trata eficazmente en consulta clínica."
     - question: "¿Cómo funciona la terapia de salud perinatal online con un bebé recién nacido?"
       answer: "Las sesiones de 50 minutos se realizan por videollamada cifrada desde tu hogar, evitando desplazamientos con el recién nacido. Tu bebé es bienvenido en la sesión: puedes amamantar, portear o atender sus necesidades mientras trabajamos juntas a tu ritmo."
     - question: "¿Cómo ayuda la terapia EMDR en un parto traumático o pérdida gestacional?"
       answer: "La terapia EMDR permite reprocesar de forma segura los recuerdos médicos o emocionales que quedaron bloqueados tras una cesárea de urgencia, violencia obstétrica o una muerte perinatal, reduciendo los flashbacks, la hipervigilancia y el miedo ante futuros embarazos."
 
-# ============================================
-# CTA FINAL
-# ============================================
 cta_final:
-  title: "¿Comenzamos?"
-  subtitle: "El primer paso es hablar. Agenda una llamada telefónica para contarme tu situación y explorar juntas cómo puedo acompañarte."
+  title: "No tienes que poder con todo tú sola"
+  subtitle: "El primer paso es una conversación tranquila. Escríbeme por WhatsApp y agendamos tu valoración gratuita."

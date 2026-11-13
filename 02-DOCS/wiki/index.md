@@ -23,6 +23,7 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 | Topic Clusters & Enlaces Internos | `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` | Arquitectura de silos y enlazado interno para los 2 Super-Verticales (Opción A + Vía 1) |
 | Search Console API | `02-DOCS/wiki/seo/search-console-api.md` | Guía técnica y credenciales de la API de Search Console con Service Account |
 | Benchmark SEO Salud Perinatal | `02-DOCS/wiki/seo/benchmark-articulos-salud-perinatal.md` | Análisis de competidores, matriz de keywords y plan de 10 artículos para dominar el vertical perinatal |
+| Estrategia Hiperespecialización Mujer y Perinatal | `02-DOCS/wiki/seo/estrategia-hiperespecializacion-salud-mujer-perinatal.md` | Investigación de mercado, análisis competitivo, matriz SEO de 25 temáticas y plan CRO integral |
 
 ## Subagentes Especializados (Antigravity & Workspace)
 | Subagente | Definición Persistente | Rol y Misión |
@@ -42,3 +43,11 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 | FTD Consolidación 2 Super-Verticales | `02-DOCS/wiki/ftd/consolidacion-dos-pilares-seo.md` | Ejecución de Opción A + Vía 1, optimización Quick Wins Search Console y Rich Snippets FAQPage |
 | FTD Artículo 1 Duelo Perinatal | `02-DOCS/wiki/ftd/articulo-1-duelo-perinatal.md` | Redacción, optimización GEO/AEO, auditoría deontológica y publicación del Artículo 1 perinatal |
 | FTD Artículo 2 Baby Blues vs Depresión Posparto | `02-DOCS/wiki/ftd/articulo-2-baby-blues-depresion-posparto.md` | Redacción, optimización GEO/AEO, auditoría deontológica y publicación del Artículo 2 perinatal |
+| FTD Hiperespecialización Perinatal y CRO | `02-DOCS/wiki/ftd/hiperespecializacion-perinatal-salud-mujer-cro.md` | Ejecución de Bloques 1 y 2: optimización Home, landings (`<h1>` SEO, autoridad PIR, Hub→Spoke) y blog YMYL |
+| FTD Artículo 3 Pensamientos Intrusivos Posparto | `02-DOCS/wiki/ftd/articulo-3-pensamientos-intrusivos-posparto.md` | Redacción, optimización GEO/AEO, auditoría deontológica y publicación del Artículo 3 perinatal |
+| FTD Mejora Landings Verticales CRO y SEO | `02-DOCS/wiki/ftd/mejora-landings-verticales-cro-seo.md` | Rediseño CRO WhatsApp/CTR de plantilla `_layouts/especialidad.html`, optimización profunda de 3 verticales de Salud de la Mujer y ajuste base en 3 de Trauma/EMDR |
+| FTD Artículo Reproducción Asistida, FIV y Betaespera | `02-DOCS/wiki/ftd/articulo-reproduccion-asistida-fiv-betaespera.md` | Bloque 3: redacción, optimización GEO/AEO, auditoría deontológica y publicación de `/blog/impacto-psicologico-reproduccion-asistida-fiv/`, actualización de `infertilidad.yml` y Topic Clusters |
+| FTD Remediación Auditoría Global y Coherencia | `02-DOCS/wiki/ftd/remediacion-auditoria-global-coherencia.md` | Corrección integral de `<title>`, exclusión de `Alejandra_LQ`, coherencia geográfica Valencia, fechas en español, blog posts, Dark Mode WCAG AA y `404.html` |
+| FTD Autoevaluación Interactiva Alpine.js | `02-DOCS/wiki/ftd/bloque-4-autoevaluacion-interactiva-alpine.md` | Bloque 4: herramienta interactiva no diagnóstica en Alpine.js (`#autoevaluacion`) con orientación hacia los Super-Verticales y WhatsApp pre-rellenado |
+| FTD Refactorización y Simplificación | `02-DOCS/wiki/ftd/refactorizacion-simplificacion-arquitectura.md` | Fases 1, 2 y 3 de limpieza de código muerto, desacoplamiento de datos y unificación de layouts/includes |
+| FTD Imágenes Temáticas Blog | `02-DOCS/wiki/ftd/imagenes-tematicas-articulos-blog.md` | Sustitución de foto de autora por 7 fotografías temáticas libres de copyright (`1200x675` WebP) en `_posts/` y `og_image` en `_includes/head.html` |

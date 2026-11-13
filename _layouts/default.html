@@ -12,7 +12,11 @@
   </main>
 
   {% include footer.html %}
-  {% include cta.html %}
+  {% assign default_wa_msg = site.data.site.contact.whatsapp_msg %}
+  {% if page.data_key and site.data.especialidades[page.data_key].hero.whatsapp_msg %}
+  {% assign default_wa_msg = site.data.especialidades[page.data_key].hero.whatsapp_msg %}
+  {% endif %}
+  {% include cta.html whatsapp_msg=default_wa_msg %}
   {% include cookie-consent.html %}
 
   {% include scripts.html %}
