@@ -4,7 +4,7 @@ date: 2025-12-28
 categories: [Adolescentes]
 excerpt: "Guía práctica para padres que quieren abrir conversaciones sobre emociones y bienestar con sus hijos adolescentes sin que salgan huyendo."
 reading_time: "6 min"
-image: /assets/images/articles/adolescentes.jpg
+image: /assets/images/alexandra-about.webp
 ---
 
 "¿Cómo estás?" — "Bien". Y ahí termina la conversación. Si tienes una hija adolescente, probablemente conoces bien este intercambio. Conseguir que se abra sobre cómo se siente puede parecer misión imposible, especialmente cuando se trata de temas como la salud mental.
@@ -143,4 +143,4 @@ No necesitas hacerlo perfecto. Solo necesitas seguir intentándolo.
 
 ---
 
-*Si te preocupa la salud mental o la [autoestima de tu hija](/autoestima/) y buscas orientación profesional, en la consulta de [psicología online](/sobre-mi/) podemos valorar vuestro caso de forma personalizada. [Pide una primera sesión](/).*
+*Si te preocupa la salud mental, los vínculos familiares o la [autoestima de tu hija](/autoestima/) y buscas orientación profesional, en la consulta de [psicología online](/sobre-mi/) trabajamos desde el enfoque de [apego y trauma relacional](/trauma-apego/) para valorar vuestro caso de forma personalizada. [Pide una primera sesión](/).*

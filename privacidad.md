@@ -24,7 +24,6 @@ sitemap: false
       <li>Gestionar las solicitudes de información recibidas a través de la web o correo electrónico.</li>
       <li>Prestar los servicios de psicología y terapia online contratados.</li>
       <li>Gestionar la facturación y cobro de los servicios.</li>
-      <li>[INCLUIR SI APLICA: Enviar comunicaciones comerciales o newsletter si has dado tu consentimiento]</li>
     </ul>
 
     {% include legal/section.html number="3" title="Cuánto tiempo conservaremos tus datos" %}

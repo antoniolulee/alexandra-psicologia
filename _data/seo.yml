@@ -25,22 +25,21 @@ analytics:
 # Meta Tags Principales
 meta:
   title: "Alexandra Barroso | Psicóloga Clínica Online Colegiada"
-  # Estrategia: Keyword principal "Online" + Autoridad "Colegiada" + Alcance "España"
-  description: "Psicóloga clínica colegiada. Terapia online experta para adultos en toda España. Especialista en ansiedad, estrés y autoestima. Primera valoración gratuita."
+  # Estrategia: Autoridad clínica PIR + Especialización 2 Super-Verticales + Alcance España
+  description: "Psicóloga clínica colegiada (PIR). Terapia online en toda España especializada en Psicología Perinatal, Duelo Gestacional, Terapia EMDR para Adultos, Trauma y Apego."
   keywords:
-    - "psicóloga online españa"
-    - "terapia online ansiedad"
-    - "psicóloga clínica online"
-    - "psicóloga valencia online"
     - "psicología perinatal"
-    - "terapia EMDR online"
-    - "tratamiento infertilidad psicología"
-    - "terapia trauma y apego"
-    - "psicóloga especialista TDAH adultos"
-    - "trastorno obsesivo compulsivo TOC"
-    - "terapia duelo online"
-    - "trastornos de personalidad"
-    - "autoestima y crecimiento personal"
+    - "salud perinatal online"
+    - "psicóloga perinatal online"
+    - "duelo gestacional y perinatal"
+    - "terapia de duelo perinatal"
+    - "depresión posparto"
+    - "infertilidad y reproducción asistida"
+    - "terapia EMDR online para adultos"
+    - "especialista en trauma EMDR"
+    - "psicóloga especialista en trauma y apego"
+    - "psicóloga clínica PIR online"
+    - "terapia online españa"
 
 # Open Graph (Facebook, LinkedIn, WhatsApp)
 og:
@@ -72,17 +71,14 @@ schema:
   
   knowsAbout:
     - "Psicología Perinatal"
-    - "EMDR"
-    - "Infertilidad"
-    - "Ansiedad"
-    - "Depresión"
-    - "Trauma"
-    - "Apego"
-    - "Duelo"
-    - "TDAH en adultos"
-    - "Trastorno Obsesivo-Compulsivo (TOC)"
-    - "Trastornos de Personalidad"
-    - "Autoestima"
+    - "Salud Perinatal Online"
+    - "Duelo Gestacional y Perinatal"
+    - "Depresión Posparto"
+    - "Infertilidad y Reproducción Asistida"
+    - "Terapia EMDR Online para Adultos"
+    - "Especialista en Trauma EMDR"
+    - "Trauma y Apego"
+    - "Duelo Complejo"
 
   # Dirección física real (Valencia) para Google My Business y confianza
   # Aunque el servicio sea online, Google necesita ubicar al profesional en un sitio.

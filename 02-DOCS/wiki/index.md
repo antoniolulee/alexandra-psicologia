@@ -18,12 +18,25 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 ## SEO, GEO/AEO y Estrategia de Contenidos
 | Documento | Ruta | Descripción |
 |---|---|---|
+| Auditoría Search Console (Real) | `02-DOCS/wiki/seo/auditoria-search-console-2026-11-11.md` | Diagnóstico de rendimiento real (3 meses), clics, impresiones y oportunidades quick-wins |
 | Guía Maestra GEO/AEO y SEO Clínico | `02-DOCS/wiki/seo/guia-maestra-geo-aeo-seo-clinico.md` | Estándar normativo E-E-A-T, citabilidad por IA y contratos para subagentes |
-| Topic Clusters & Enlaces Internos | `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` | Arquitectura de silos y enlazado interno para los 3 pilares clave |
+| Topic Clusters & Enlaces Internos | `02-DOCS/wiki/seo/arquitectura-enlaces-topic-clusters.md` | Arquitectura de silos y enlazado interno para los 2 Super-Verticales (Opción A + Vía 1) |
+| Search Console API | `02-DOCS/wiki/seo/search-console-api.md` | Guía técnica y credenciales de la API de Search Console con Service Account |
+| Benchmark SEO Salud Perinatal | `02-DOCS/wiki/seo/benchmark-articulos-salud-perinatal.md` | Análisis de competidores, matriz de keywords y plan de 10 artículos para dominar el vertical perinatal |
+
+## Subagentes Especializados (Antigravity & Workspace)
+| Subagente | Definición Persistente | Rol y Misión |
+|---|---|---|
+| `redactor-clinico` | `.gemini/agents/redactor-clinico.md` | Redacción clínica con rigor E-E-A-T, evidencia médica y estructura BLUF |
+| `optimizador-geo` | `.gemini/agents/optimizador-geo.md` | Extracción semántica para LLMs, tablas comparativas y FAQs conversacionales |
+| `auditor-deontologico` | `.gemini/agents/auditor-deontologico.md` | Control ético-sanitario, disclaimers, enlaces a páginas pilar y DoD |
 
 ## FTD (Fast-Track Development)
 | Documento | Ruta | Descripción |
 |---|---|---|
+| FTD Instanciación Subagentes | `02-DOCS/wiki/ftd/instanciacion-subagentes-seo-geo.md` | Registro de instanciación y contratos de los 3 subagentes |
 | FTD Guía Maestra GEO/AEO y SEO Clínico | `02-DOCS/wiki/ftd/guia-maestra-geo-seo-clinico.md` | Registro de especificación de la guía maestra para subagentes |
 | FTD Topic Clusters SEO | `02-DOCS/wiki/ftd/topic-clusters-seo.md` | Registro de ejecución y evidencia del plan de enlazado interno |
 | FTD Remediación Técnica | `02-DOCS/wiki/ftd/remediacion-auditoria-tecnica.md` | Feature tracking doc de remediación de auditoría y RGPD |
+| FTD Benchmark Perinatal | `02-DOCS/wiki/ftd/benchmark-keywords-perinatal.md` | Registro de benchmark de competidores y hoja de ruta editorial perinatal |
+| FTD Consolidación 2 Super-Verticales | `02-DOCS/wiki/ftd/consolidacion-dos-pilares-seo.md` | Ejecución de Opción A + Vía 1, optimización Quick Wins Search Console y Rich Snippets FAQPage |

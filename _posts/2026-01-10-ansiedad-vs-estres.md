@@ -4,7 +4,7 @@ date: 2026-01-10
 categories: [bienestar-emocional]
 excerpt: "Aprende a identificar si lo que sientes es ansiedad o estrés, y descubre estrategias prácticas para manejar ambos de forma efectiva."
 reading_time: "5 min"
-image: /assets/images/articles/ansiedad-estres.jpg
+image: /assets/images/alexandra-about.webp
 ---
 
 ¿Cuántas veces has dicho "estoy estresada" cuando en realidad lo que sientes es ansiedad? O viceversa. Es muy común confundir ambos estados emocionales, y no es casualidad: comparten síntomas físicos similares y a menudo aparecen juntos. Sin embargo, **entender la diferencia es crucial** para poder gestionarlos de forma efectiva.
@@ -77,7 +77,7 @@ Hazte estas preguntas:
 2. **Cuestiona tus pensamientos**: ¿Es un hecho o una interpretación?
 3. **Vuelve al presente**: Los ejercicios de grounding ayudan
 4. **Reduce la evitación**: Evitar aquello que temes aumenta la ansiedad a largo plazo
-5. **Busca ayuda profesional**: Si la sintomatología interfiere con tu día a día, trabajar con una [psicóloga especialista en ansiedad online](/ansiedad-estres/) te proporcionará pautas adaptadas a tu situación.
+5. **Busca ayuda profesional**: Si la sintomatología interfiere con tu día a día o responde a experiencias pasadas no resueltas, trabajar con una [psicóloga especialista en ansiedad online](/ansiedad-estres/) o abordar el origen emocional mediante [terapia EMDR online](/terapia-emdr/) te proporcionará pautas adaptadas a tu situación.
 
 ## Cuándo buscar ayuda profesional
 

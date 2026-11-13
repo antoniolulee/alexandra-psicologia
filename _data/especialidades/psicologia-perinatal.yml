@@ -8,11 +8,13 @@
 # SEO
 # ============================================
 seo:
-  title: "Psicología Perinatal Online | Alexandra Barroso"
-  description: "Psicóloga perinatal online. Apoyo emocional en infertilidad, embarazo, parto traumático, postparto y duelo gestacional. Terapia especializada para madres."
+  title: "Psicóloga Perinatal Online y Salud Perinatal | Terapia Postparto | Alexandra Barroso"
+  description: "Psicóloga perinatal online (Especialista Clínica PIR). Salud perinatal online, terapia postparto, depresión posparto, duelo gestacional e infertilidad."
   keywords:
     - "psicóloga perinatal online"
+    - "salud perinatal online"
     - "psicología perinatal España"
+    - "psicóloga postparto online"
     - "apoyo psicológico embarazo"
     - "duelo gestacional psicóloga"
     - "ansiedad postparto"
@@ -22,11 +24,9 @@ seo:
     - "miedo al parto tocofobia"
     - "parto traumático psicóloga"
     - "baby blues tratamiento"
-    - "ansiedad materna"
+    - "pensamientos intrusivos posparto"
     - "psicóloga maternidad online"
-    - "matrescence"
-    - "preparación emocional embarazo"
-    - "vínculo madre bebé"
+    - "matrescencia"
 
 # ============================================
 # HERO
@@ -51,11 +51,11 @@ que_es:
 
     A esta transformación profunda de convertirse en madre se le conoce como **matrescence** (maternidad + adolescencia). Es un proceso de cambio de identidad comparable al de la adolescencia, pero que ocurre en la vida adulta y suele pasar desapercibido por la sociedad.
 
-    ### ¿Por qué es importante el acompañamiento profesional?
+    ### ¿Por qué es importante el acompañamiento en salud perinatal online?
 
     - **El bienestar emocional de la madre influye directamente en el desarrollo del bebé**
-    - Previene complicaciones como la depresión postparto si se detecta a tiempo
-    - Ayuda a procesar experiencias difíciles (pérdidas, partos traumáticos)
+    - Previene complicaciones como la depresión postparto y los pensamientos intrusivos posparto si se detectan a tiempo
+    - Ayuda a procesar experiencias difíciles como el [duelo gestacional y perinatal](/duelo-gestacional/), la [infertilidad](/infertilidad/) o un parto traumático mediante [terapia EMDR online](/terapia-emdr/)
     - Facilita el establecimiento de un vínculo seguro con el bebé
     - Valida tus emociones en una sociedad que romantiza la maternidad
 
@@ -112,19 +112,35 @@ enfoque:
     ### Metodologías que utilizo
 
     - **Enfoque narrativo**: Te ayudo a reescribir las historias que te cuentas sobre la maternidad, liberándote de expectativas imposibles y culpas innecesarias.
-    - **EMDR para trauma**: Especialmente útil para procesar partos traumáticos, pérdidas gestacionales o experiencias médicas difíciles.
+    - **[Terapia EMDR para trauma perinatal](/terapia-emdr/)**: Especialmente útil para procesar partos traumáticos, violencia obstétrica, pérdidas gestacionales o experiencias médicas difíciles.
     - **Regulación emocional**: Técnicas para gestionar la intensidad emocional del postparto sin desbordarte.
     - **Trabajo con el vínculo**: Herramientas para facilitar la conexión con tu bebé desde la seguridad.
 
-    ### ¿Por qué terapia online?
+    ### Especialista en Salud Perinatal Online y Terapia Postparto
 
-    **La terapia online** permite que puedas acceder a este acompañamiento sin salir de casa, algo especialmente valioso durante:
+    **La terapia de salud perinatal online** permite que puedas acceder a este acompañamiento clínico especializado (PIR) sin salir de casa, algo especialmente valioso durante:
     - El embarazo de riesgo o reposo
     - El postparto inmediato, cuando salir con un bebé es un reto
     - Las tomas del bebé (puedes conectarte con bebé en brazos, ¡lo hemos hecho muchas veces!)
-    - Momentos de baja energía donde desplazarte sería un obstáculo más
+    - Procesos de [reproducción asistida e infertilidad](/infertilidad/) o tras una [pérdida gestacional](/duelo-gestacional/)
 
     También trabajo incluir a la pareja en sesiones puntuales cuando es relevante para el proceso.
+
+# ============================================
+# PREGUNTAS FRECUENTES (FAQPage Schema)
+# ============================================
+faq:
+  title: "Preguntas Frecuentes sobre Psicología Perinatal Online"
+  subtitle: "Resolvemos tus dudas sobre el acompañamiento psicológico en embarazo, parto y posparto"
+  items:
+    - question: "¿Cuándo acudir a una psicóloga perinatal online?"
+      answer: "Es recomendable solicitar apoyo cuando experimentas ansiedad persistente en el embarazo, miedo intenso al parto (tocofobia), tristeza profunda tras el nacimiento que supera las dos semanas, pensamientos intrusivos que te asustan, dificultades para vincular con tu bebé o tras atravesar un parto traumático o una pérdida gestacional."
+    - question: "¿Qué diferencia hay entre el baby blues y la depresión posparto?"
+      answer: "El baby blues es una labilidad emocional transitoria provocada por el reajuste hormonal tras el parto; aparece en los primeros días y remite de forma espontánea antes de las dos semanas. La depresión posparto, en cambio, persiste más allá de ese plazo, interfiere con tu descanso y cuidado diario, y requiere evaluación y psicoterapia especializada."
+    - question: "¿Cómo funciona la terapia de salud perinatal online con un bebé recién nacido?"
+      answer: "Las sesiones de 50 minutos se realizan por videollamada cifrada desde tu hogar, evitando desplazamientos con el recién nacido. Tu bebé es bienvenido en la sesión: puedes amamantar, portear o atender sus necesidades mientras trabajamos juntas a tu ritmo."
+    - question: "¿Cómo ayuda la terapia EMDR en un parto traumático o pérdida gestacional?"
+      answer: "La terapia EMDR permite reprocesar de forma segura los recuerdos médicos o emocionales que quedaron bloqueados tras una cesárea de urgencia, violencia obstétrica o una muerte perinatal, reduciendo los flashbacks, la hipervigilancia y el miedo ante futuros embarazos."
 
 # ============================================
 # CTA FINAL

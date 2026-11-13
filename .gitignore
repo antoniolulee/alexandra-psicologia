@@ -1,3 +1,8 @@
+# Credentials & API keys
+01-TOOLS/keys/
+*credentials*.json
+*.pem
+
 _site/
 .sass-cache/
 .jekyll-cache/

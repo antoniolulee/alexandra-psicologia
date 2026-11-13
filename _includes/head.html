@@ -114,6 +114,8 @@
       "longitude": {{ site.data.seo.schema.geo.longitude | jsonify }}
     },
     "priceRange": {{ site.data.seo.schema.priceRange | jsonify }},
+    "medicalSpecialty": {{ site.data.seo.schema.medicalSpecialty | jsonify }},
+    "knowsAbout": {{ site.data.seo.schema.knowsAbout | jsonify }},
     "areaServed": {{ site.data.seo.schema.areaServed | jsonify }},
     "availableLanguage": {{ site.data.seo.schema.availableLanguage | jsonify }},
     "sameAs": {{ site.data.seo.schema.sameAs | jsonify }}
@@ -135,7 +137,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', '{{ site.data.seo.analytics.ga4_id }}');
+        gtag('config', '{{ site.data.seo.analytics.ga4_id }}', { cookie_expires: 63072000 });
       }
 
       try {

@@ -34,17 +34,15 @@
         </nav>
       </div>
 
-      <!-- Especialidades (dinámico) -->
+      <!-- Especialidades (2 Super-Verticales) -->
       <div>
         <h4 class="text-sm uppercase tracking-wider text-white/90 mb-4">
           Especialidades
         </h4>
         <nav class="space-y-3">
-          {% for especialidad in site.data.especialidades %}
-          {% assign slug = especialidad[0] %}
-          {% assign data = especialidad[1] %}
-          <a href="/{{ slug }}/" class="block text-white/80 hover:text-white text-sm transition-colors duration-300">
-            {{ data.seo.title | split: ' | ' | first }}
+          {% for item in site.data.site.footer_specialties %}
+          <a href="{{ item.url }}" class="block text-white/80 hover:text-white text-sm transition-colors duration-300">
+            {{ item.name }}
           </a>
           {% endfor %}
         </nav>
@@ -99,13 +97,17 @@
         </p>
 
         <!-- Legal Links -->
-        <div class="flex items-center gap-6">
+        <div class="flex flex-wrap items-center gap-6">
           {% for link in site.data.site.footer.legal_links %}
           <a href="{{ link.url }}"
             class="text-white/70 hover:text-white text-xs uppercase tracking-wider transition-colors duration-300">
             {{ link.text }}
           </a>
           {% endfor %}
+          <button type="button" @click="$dispatch('cookie-preferences-open')"
+            class="text-white/70 hover:text-white text-xs uppercase tracking-wider transition-colors duration-300">
+            Configurar cookies
+          </button>
         </div>
       </div>
 

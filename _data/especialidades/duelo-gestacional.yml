@@ -4,20 +4,20 @@
 # ============================================
 
 seo:
-  title: "Psicóloga Duelo Gestacional Online | Pérdida Embarazo | Alexandra Barroso"
-  description: "Psicóloga especialista en duelo gestacional. Terapia online para abortos, pérdidas tardías y muerte perinatal. Acompañamiento compasivo."
+  title: "Psicóloga Duelo Gestacional y Terapia de Duelo Perinatal Online | Alexandra Barroso"
+  description: "Psicóloga especialista en duelo gestacional y terapia de duelo perinatal online. Acompañamiento clínico en pérdida gestacional, aborto espontáneo, IVET y muerte neonatal."
   keywords:
     - "psicóloga duelo gestacional online"
+    - "terapia de duelo perinatal"
+    - "duelo gestacional"
+    - "duelo perinatal"
+    - "muerte perinatal apoyo psicológico"
     - "pérdida embarazo apoyo"
     - "aborto espontáneo psicóloga"
-    - "duelo perinatal"
     - "muerte fetal intrauterina"
-    - "pérdida gestacional"
-    - "aborto diferido duelo"
-    - "embarazo ectópico psicología"
-    - "pérdida tardía embarazo"
-    - "neonatología duelo"
-    - "superar pérdida bebé"
+    - "duelo desautorizado pérdida gestacional"
+    - "interrupción embarazo motivos médicos IVET"
+    - "embarazo arcoíris psicología"
     - "muerte neonatal apoyo"
 
 hero:
@@ -88,7 +88,7 @@ enfoque:
     - **Nombrar la pérdida**: Tu bebé existió. Puede tener un nombre si quieres. Podemos hablar de él/ella.
     - **Validar tu dolor**: Todas tus emociones son legítimas, incluyendo la rabia, la culpa, la envidia hacia otras embarazadas.
     - **Rituales de despedida**: A veces necesitamos crear nuestros propios rituales para despedirnos.
-    - **EMDR**: Para procesar aspectos traumáticos (malas experiencias médicas, el parto, etc.).
+    - **EMDR**: Para procesar aspectos traumáticos (malas experiencias médicas, el parto sin vida, la noticia del diagnóstico) mediante [terapia EMDR online](/terapia-emdr/).
     - **Trabajo con la pareja**: Cuando los ritmos de duelo son diferentes y genera conflicto.
 
     ### Lo que no haré
@@ -98,9 +98,22 @@ enfoque:
     - No minimizaré tu pérdida por pequeña que fuera la edad gestacional
     - No te compararé con otras experiencias
 
-    ### Terapia online
+    ### Terapia de duelo perinatal y gestacional online
 
-    La terapia online te permite conectar desde casa, un espacio seguro donde puedes llorar sin contención. Especialmente valioso cuando no tienes energía para salir o enfrentarte al mundo.
+    La **terapia de duelo perinatal online** te permite conectar desde casa, un espacio seguro donde puedes llorar sin contención. Es especialmente valiosa cuando no tienes energía para salir, te enfrentas a entornos sociales que minimizan la pérdida o te preparas emocionalmente para un nuevo embarazo dentro de nuestra área de [psicología perinatal online](/psicologia-perinatal/).
+
+faq:
+  title: "Preguntas Frecuentes sobre Duelo Gestacional y Perinatal"
+  subtitle: "Respuestas claras y respetuosas sobre el acompañamiento psicológico tras una pérdida"
+  items:
+    - question: "¿Qué diferencia hay entre duelo gestacional y duelo perinatal?"
+      answer: "El duelo gestacional hace referencia al proceso emocional tras una pérdida durante el embarazo (aborto espontáneo, diferido, embarazo ectópico o interrupción médica). El duelo perinatal abarca de forma más amplia las pérdidas ocurridas desde la concepción hasta los primeros días o semanas tras el nacimiento (muerte fetal tardía, intraparto o neonatal)."
+    - question: "¿Por qué duele tanto una pérdida en las primeras semanas de embarazo?"
+      answer: "Porque el vínculo materno y paterno no se mide en semanas de gestación: desde el test positivo ya existían un proyecto de vida, ilusiones y un lugar afectivo para ese hijo. En psicología clínica se reconoce como un duelo desautorizado cuando el entorno minimiza ese dolor con frases como 'ya vendrán otros'."
+    - question: "¿Cómo ayuda la terapia de duelo perinatal tras una pérdida o IVET?"
+      answer: "Ofrece un espacio clínico sin juicios para validar la tristeza, la rabia o la culpa, crear rituales simbólicos de despedida, trabajar las diferencias de ritmo en la pareja y, si hubo impacto traumático en el hospital, reprocesar esos recuerdos mediante EMDR."
+    - question: "¿Cuándo es recomendable pedir apoyo psicológico si busco un embarazo arcoíris?"
+      answer: "Tanto antes de iniciar una nueva búsqueda como al confirmarse el nuevo embarazo. Trabajar el miedo a que vuelva a ocurrir y diferenciar la nueva gestación de la pérdida anterior te ayuda a transitar el embarazo arcoíris con mayor regulación y seguridad."
 
 cta_final:
   title: "Tu bebé existió. Tu dolor importa."

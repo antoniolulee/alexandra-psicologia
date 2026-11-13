@@ -9,3 +9,5 @@
 - Project kind: software.
 - SDD: selected.
 - 2026-11-11: Ratificada la Guía Maestra de GEO/AEO y SEO Clínico E-E-A-T (`02-DOCS/wiki/seo/guia-maestra-geo-aeo-seo-clinico.md`) como norma previa e imperativa a la instanciación de subagentes autónomos de redacción y optimización.
+- 2026-11-11: Instanciados y configurados los 3 subagentes de contenido y SEO (`redactor-clinico`, `optimizador-geo`, `auditor-deontologico`) en el entorno de ejecución y persistidos bajo `.gemini/agents/`.
+- 2026-11-13: Consolidación de la arquitectura SEO en 2 Super-Verticales (**Opción A**: *Salud Perinatal y Reproductiva* y *Trauma, Apego y Terapia EMDR*) aplicando **Vía 1** (ocultar de Home/Footer las 6 páginas restantes sin eliminarlas para evitar errores 404). Activación de Rich Snippets (`FAQPage` y `BreadcrumbList` JSON-LD) en landings y blog tras los hallazgos de Search Console (`02-DOCS/wiki/seo/auditoria-search-console-2026-11-11.md`).
