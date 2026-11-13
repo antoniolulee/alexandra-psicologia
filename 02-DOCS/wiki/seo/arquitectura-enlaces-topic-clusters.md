@@ -100,6 +100,7 @@ Este documento define la estructura definitiva de **Topic Clusters (Hub & Spoke)
 
 | Post Actual | Enlaces Integrados |
 |---|---|
+| `2026-11-13-duelo-perinatal-gestacional-fases-apoyo.md` | Artículo 1 Perinatal: tabla comparativa, BLUF 45-65 palabras, 4 FAQs (`FAQPage` Schema), disclaimer sanitario y enlaces a `/duelo-gestacional/`, `/psicologia-perinatal/` y `/terapia-emdr/`. |
 | `2026-01-05-apego-ansioso-relaciones.md` | Quick Win (pos 11,67): tabla comparativa, bloque FAQ (`FAQPage` Schema) y enlaces a `/trauma-apego/` y `/terapia-emdr/`. |
 | `2026-01-10-ansiedad-vs-estres.md` | Mantiene enlace histórico a `/ansiedad-estres/` (Vía 1) y añade enlace hacia `/terapia-emdr/`. |
 | `2025-12-28-hablar-adolescente-salud-mental.md` | Mantiene enlaces históricos a `/autoestima/` y `/sobre-mi/` (Vía 1), reforzado con enlace a `/trauma-apego/`. |

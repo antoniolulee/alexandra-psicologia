@@ -40,3 +40,4 @@ Mapa central de conocimiento y gobernanza del proyecto bajo `02-DOCS/wiki/`.
 | FTD Remediación Técnica | `02-DOCS/wiki/ftd/remediacion-auditoria-tecnica.md` | Feature tracking doc de remediación de auditoría y RGPD |
 | FTD Benchmark Perinatal | `02-DOCS/wiki/ftd/benchmark-keywords-perinatal.md` | Registro de benchmark de competidores y hoja de ruta editorial perinatal |
 | FTD Consolidación 2 Super-Verticales | `02-DOCS/wiki/ftd/consolidacion-dos-pilares-seo.md` | Ejecución de Opción A + Vía 1, optimización Quick Wins Search Console y Rich Snippets FAQPage |
+| FTD Artículo 1 Duelo Perinatal | `02-DOCS/wiki/ftd/articulo-1-duelo-perinatal.md` | Redacción, optimización GEO/AEO, auditoría deontológica y publicación del Artículo 1 perinatal |
